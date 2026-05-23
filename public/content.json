@@ -9,6 +9,17 @@
   },
   "blocks": [
     {
+      "id": "about",
+      "type": "about",
+      "visible": true,
+      "title": "Sobre mí persona",
+      "body": "Soy una persona que ofrece tal tal y si",
+      "bgColor": "#ffffff",
+      "textColor": "#9c6f6f",
+      "accentColor": "#7c3aed",
+      "image": ""
+    },
+    {
       "id": "hero",
       "type": "hero",
       "visible": true,
@@ -107,17 +118,6 @@
       "id": "pricing-1779516602463",
       "type": "pricing",
       "visible": true
-    },
-    {
-      "id": "about",
-      "type": "about",
-      "visible": true,
-      "title": "Sobre mí persona",
-      "body": "Soy una persona que ofrece tal tal y si",
-      "bgColor": "#ffffff",
-      "textColor": "#9c6f6f",
-      "accentColor": "#7c3aed",
-      "image": ""
     }
   ]
 }
