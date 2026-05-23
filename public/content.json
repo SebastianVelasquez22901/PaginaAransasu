@@ -4,12 +4,12 @@
       "id": "hero",
       "type": "hero",
       "visible": true,
-      "title": "Bienvenida a mi espacio",
+      "title": "Pagina amigable",
       "subtitle": "Un lugar seguro para tu bienestar emocional",
       "buttonText": "Agenda tu consulta",
       "buttonLink": "#contacto",
       "bgColor": "#f5f0ff",
-      "textColor": "#348e68",
+      "textColor": "#8edaa5",
       "image": ""
     },
     {
