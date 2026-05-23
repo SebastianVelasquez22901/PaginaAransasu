@@ -13,6 +13,74 @@
       "image": ""
     },
     {
+      "title": "Planes y Tarifas",
+      "subtitle": "Elige el plan que mejor se adapte a tus necesidades",
+      "bgColor": "#ffffff",
+      "textColor": "#2d2d2d",
+      "accentColor": "#7c3aed",
+      "plans": [
+        {
+          "id": "plan1779516567309a",
+          "name": "Sesión individual",
+          "description": "Para comenzar tu proceso",
+          "currency": "Q",
+          "price": "250",
+          "period": "por sesión",
+          "featured": false,
+          "buttonText": "Reservar",
+          "buttonLink": "#contacto",
+          "features": [
+            {
+              "id": "f1a",
+              "text": "Sesión de 50 minutos",
+              "included": true
+            },
+            {
+              "id": "f2a",
+              "text": "Evaluación inicial",
+              "included": true
+            },
+            {
+              "id": "f3a",
+              "text": "Seguimiento por WhatsApp",
+              "included": false
+            }
+          ]
+        },
+        {
+          "id": "plan1779516567309b",
+          "name": "Paquete mensual",
+          "description": "Proceso terapéutico continuo",
+          "currency": "Q",
+          "price": "900",
+          "period": "4 sesiones / mes",
+          "featured": true,
+          "buttonText": "Comenzar ahora",
+          "buttonLink": "#contacto",
+          "features": [
+            {
+              "id": "f1b",
+              "text": "Sesión de 50 minutos",
+              "included": true
+            },
+            {
+              "id": "f2b",
+              "text": "Evaluación inicial",
+              "included": true
+            },
+            {
+              "id": "f3b",
+              "text": "Seguimiento por WhatsApp",
+              "included": true
+            }
+          ]
+        }
+      ],
+      "id": "pricing-1779516602463",
+      "type": "pricing",
+      "visible": true
+    },
+    {
       "id": "about",
       "type": "about",
       "visible": true,
@@ -22,6 +90,74 @@
       "textColor": "#9c6f6f",
       "accentColor": "#7c3aed",
       "image": ""
+    },
+    {
+      "title": "Planes y Tarifas",
+      "subtitle": "Elige el plan que mejor se adapte a tus necesidades",
+      "bgColor": "#ffffff",
+      "textColor": "#2d2d2d",
+      "accentColor": "#7c3aed",
+      "plans": [
+        {
+          "id": "plan1779516567309a",
+          "name": "Sesión individual",
+          "description": "Para comenzar tu proceso",
+          "currency": "Q",
+          "price": "250",
+          "period": "por sesión",
+          "featured": false,
+          "buttonText": "Reservar",
+          "buttonLink": "#contacto",
+          "features": [
+            {
+              "id": "f1a",
+              "text": "Sesión de 50 minutos",
+              "included": true
+            },
+            {
+              "id": "f2a",
+              "text": "Evaluación inicial",
+              "included": true
+            },
+            {
+              "id": "f3a",
+              "text": "Seguimiento por WhatsApp",
+              "included": false
+            }
+          ]
+        },
+        {
+          "id": "plan1779516567309b",
+          "name": "Paquete mensual",
+          "description": "Proceso terapéutico continuo",
+          "currency": "Q",
+          "price": "900",
+          "period": "4 sesiones / mes",
+          "featured": true,
+          "buttonText": "Comenzar ahora",
+          "buttonLink": "#contacto",
+          "features": [
+            {
+              "id": "f1b",
+              "text": "Sesión de 50 minutos",
+              "included": true
+            },
+            {
+              "id": "f2b",
+              "text": "Evaluación inicial",
+              "included": true
+            },
+            {
+              "id": "f3b",
+              "text": "Seguimiento por WhatsApp",
+              "included": true
+            }
+          ]
+        }
+      ],
+      "id": "pricing-1779516607418",
+      "type": "pricing",
+      "visible": true
     },
     {
       "id": "services",
