@@ -1,4 +1,4 @@
-export default function HeroBlock({ block }) {
+export default function HeroBlock({ block, onCtaClick }) {
   return (
     <section
       style={{ backgroundColor: block.bgColor, color: block.textColor }}
@@ -16,6 +16,7 @@ export default function HeroBlock({ block }) {
       {block.buttonText && (
         <a
           href={block.buttonLink || '#'}
+          onClick={onCtaClick}
           style={{ backgroundColor: block.textColor, color: block.bgColor }}
           className="px-6 py-3 rounded-full font-semibold text-base sm:text-lg transition hover:opacity-80"
         >

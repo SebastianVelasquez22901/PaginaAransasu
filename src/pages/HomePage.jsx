@@ -1,3 +1,4 @@
+import { useState, useCallback } from 'react'
 import { useContent } from '../hooks/useContent'
 import Navbar, { BLOCK_ANCHORS } from '../components/Navbar'
 import HeroBlock from '../blocks/HeroBlock'
@@ -5,6 +6,7 @@ import AboutBlock from '../blocks/AboutBlock'
 import ServicesBlock from '../blocks/ServicesBlock'
 import PricingBlock from '../blocks/PricingBlock'
 import BooksBlock from '../blocks/BooksBlock'
+import ProximamenteModal from '../components/ProximamenteModal'
 
 const BLOCK_COMPONENTS = {
   hero: HeroBlock,
@@ -16,6 +18,12 @@ const BLOCK_COMPONENTS = {
 
 export default function HomePage() {
   const { content, loading } = useContent()
+  const [showModal, setShowModal] = useState(false)
+
+  const handleCtaClick = useCallback((e) => {
+    e.preventDefault()
+    setShowModal(true)
+  }, [])
 
   if (loading) {
     return (
@@ -36,11 +44,12 @@ export default function HomePage() {
           if (!Component) return null
           return (
             <section key={block.id} id={BLOCK_ANCHORS[block.type]}>
-              <Component block={block} />
+              <Component block={block} onCtaClick={handleCtaClick} />
             </section>
           )
         })}
       </main>
+      <ProximamenteModal visible={showModal} onClose={() => setShowModal(false)} />
     </>
   )
 }

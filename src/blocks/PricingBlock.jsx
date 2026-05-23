@@ -1,4 +1,4 @@
-export default function PricingBlock({ block }) {
+export default function PricingBlock({ block, onCtaClick }) {
   const { title, subtitle, bgColor, textColor, accentColor, plans = [] } = block
 
   return (
@@ -92,6 +92,7 @@ export default function PricingBlock({ block }) {
                 {plan.buttonText && (
                   <a
                     href={plan.buttonLink || '#'}
+                    onClick={onCtaClick}
                     className="mt-auto block text-center py-3 px-5 rounded-xl font-semibold text-sm transition"
                     style={
                       plan.featured
