@@ -16,10 +16,10 @@
       "id": "about",
       "type": "about",
       "visible": true,
-      "title": "Sobre mí",
-      "body": "Soy psicóloga clínica con más de 10 años de experiencia acompañando a personas en su proceso de crecimiento personal y bienestar emocional. Mi enfoque es humanista e integrador, adaptado a las necesidades únicas de cada persona.",
+      "title": "Sobre mí persona",
+      "body": "Soy una persona que ofrece tal tal y si",
       "bgColor": "#ffffff",
-      "textColor": "#2d2d2d",
+      "textColor": "#9c6f6f",
       "accentColor": "#7c3aed",
       "image": ""
     },
