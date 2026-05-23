@@ -2,22 +2,35 @@ import { useState } from 'react'
 import HeroEditor from './HeroEditor'
 import AboutEditor from './AboutEditor'
 import ServicesEditor from './ServicesEditor'
+import PricingEditor from './PricingEditor'
 
 const EDITORS = {
   hero: HeroEditor,
   about: AboutEditor,
   services: ServicesEditor,
+  pricing: PricingEditor,
 }
 
 const BLOCK_LABELS = {
   hero: 'Bienvenida (Hero)',
   about: 'Sobre mí',
   services: 'Servicios',
+  pricing: 'Precios',
 }
 
-export default function BlockWrapper({ block, onUpdate, onUpdateCard, onAddCard, onRemoveCard, onToggle, children }) {
+export default function BlockWrapper({ block, onUpdate, onUpdateCard, onAddCard, onRemoveCard, onToggle, onDelete, children }) {
   const [open, setOpen] = useState(false)
+  const [confirmDelete, setConfirmDelete] = useState(false)
   const Editor = EDITORS[block.type]
+
+  function handleDelete() {
+    if (confirmDelete) {
+      onDelete()
+    } else {
+      setConfirmDelete(true)
+      setTimeout(() => setConfirmDelete(false), 3000)
+    }
+  }
 
   return (
     <div className="relative group">
@@ -40,6 +53,18 @@ export default function BlockWrapper({ block, onUpdate, onUpdateCard, onAddCard,
             className="text-xs px-3 py-1 rounded-full bg-white text-violet-700 font-semibold hover:bg-violet-100 transition"
           >
             {open ? 'Cerrar editor' : 'Editar bloque'}
+          </button>
+          <button
+            type="button"
+            onClick={handleDelete}
+            className={`text-xs px-3 py-1 rounded-full border transition font-semibold ${
+              confirmDelete
+                ? 'bg-red-500 border-red-400 text-white hover:bg-red-600 animate-pulse'
+                : 'border-white/40 text-white/70 hover:bg-red-500/60 hover:text-white'
+            }`}
+            title={confirmDelete ? 'Haz clic de nuevo para confirmar' : 'Borrar bloque'}
+          >
+            {confirmDelete ? '¿Confirmar borrado?' : '✕ Borrar'}
           </button>
         </div>
       </div>

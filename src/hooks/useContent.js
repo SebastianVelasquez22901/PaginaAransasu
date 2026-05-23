@@ -66,6 +66,39 @@ export function useContent() {
     }))
   }
 
+  function removeBlock(blockId) {
+    setContent(prev => ({
+      ...prev,
+      blocks: prev.blocks.filter(b => b.id !== blockId),
+    }))
+  }
+
+  function addBlock(template, overBlockId) {
+    const newBlock = { ...template.defaults, id: `${template.type}-${Date.now()}`, type: template.type, visible: true }
+    setContent(prev => {
+      const blocks = [...prev.blocks]
+      const insertAt = overBlockId ? blocks.findIndex(b => b.id === overBlockId) : -1
+      if (insertAt !== -1) {
+        blocks.splice(insertAt, 0, newBlock)
+      } else {
+        blocks.push(newBlock)
+      }
+      return { ...prev, blocks }
+    })
+  }
+
+  function moveBlock(activeId, overId) {
+    setContent(prev => {
+      const blocks = [...prev.blocks]
+      const from = blocks.findIndex(b => b.id === activeId)
+      const to = blocks.findIndex(b => b.id === overId)
+      if (from === -1 || to === -1 || from === to) return prev
+      const [moved] = blocks.splice(from, 1)
+      blocks.splice(to, 0, moved)
+      return { ...prev, blocks }
+    })
+  }
+
   return {
     content,
     loading,
@@ -74,5 +107,8 @@ export function useContent() {
     addServiceCard,
     removeServiceCard,
     toggleBlock,
+    moveBlock,
+    addBlock,
+    removeBlock,
   }
 }
