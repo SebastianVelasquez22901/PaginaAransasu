@@ -11,13 +11,13 @@ export default function HeroBlock({ block }) {
           className="w-32 h-32 rounded-full object-cover mb-8 shadow-lg"
         />
       )}
-      <h1 className="text-5xl font-bold mb-4 leading-tight">{block.title}</h1>
-      <p className="text-xl mb-8 max-w-xl opacity-80">{block.subtitle}</p>
+      <h1 className="text-3xl sm:text-5xl font-bold mb-4 leading-tight">{block.title}</h1>
+      <p className="text-base sm:text-xl mb-8 max-w-xl opacity-80">{block.subtitle}</p>
       {block.buttonText && (
         <a
           href={block.buttonLink || '#'}
           style={{ backgroundColor: block.textColor, color: block.bgColor }}
-          className="px-8 py-3 rounded-full font-semibold text-lg transition hover:opacity-80"
+          className="px-6 py-3 rounded-full font-semibold text-base sm:text-lg transition hover:opacity-80"
         >
           {block.buttonText}
         </a>

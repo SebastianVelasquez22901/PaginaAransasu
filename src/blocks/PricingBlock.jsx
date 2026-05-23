@@ -5,8 +5,8 @@ export default function PricingBlock({ block }) {
     <section style={{ backgroundColor: bgColor, color: textColor }} className="py-16 px-6">
       <div className="max-w-5xl mx-auto">
         {/* Header */}
-        <div className="text-center mb-12">
-          <h2 className="text-3xl font-bold mb-3" style={{ color: textColor }}>{title}</h2>
+        <div className="text-center mb-8 md:mb-12">
+          <h2 className="text-2xl sm:text-3xl font-bold mb-3" style={{ color: textColor }}>{title}</h2>
           {subtitle && (
             <p className="text-base opacity-70 max-w-xl mx-auto">{subtitle}</p>
           )}
@@ -23,7 +23,7 @@ export default function PricingBlock({ block }) {
               key={plan.id}
               className={`relative bg-white rounded-2xl flex flex-col transition-transform ${
                 plan.featured
-                  ? 'shadow-xl ring-2 scale-[1.02]'
+                  ? 'shadow-xl ring-2 sm:scale-[1.02]'
                   : 'shadow-md hover:shadow-lg'
               }`}
               style={plan.featured ? { ringColor: accentColor } : {}}

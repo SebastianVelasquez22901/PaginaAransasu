@@ -4,8 +4,8 @@ export default function BooksBlock({ block }) {
   return (
     <section style={{ backgroundColor: bgColor, color: textColor }} className="py-16 px-6">
       <div className="max-w-5xl mx-auto">
-        <div className="text-center mb-12">
-          <h2 className="text-3xl font-bold mb-3" style={{ color: textColor }}>{title}</h2>
+        <div className="text-center mb-8 md:mb-12">
+          <h2 className="text-2xl sm:text-3xl font-bold mb-3" style={{ color: textColor }}>{title}</h2>
           {subtitle && (
             <p className="text-base opacity-70 max-w-xl mx-auto">{subtitle}</p>
           )}
