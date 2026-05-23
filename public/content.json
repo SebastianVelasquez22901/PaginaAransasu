@@ -12,12 +12,12 @@
       "id": "hero",
       "type": "hero",
       "visible": true,
-      "title": "Pagina amigable",
+      "title": "Página amigable",
       "subtitle": "Un lugar seguro para tu bienestar emocional",
       "buttonText": "Agenda tu consulta",
       "buttonLink": "#contacto",
       "bgColor": "#f5f0ff",
-      "textColor": "#8edaa5",
+      "textColor": "#4dcd73",
       "image": ""
     },
     {
