@@ -52,6 +52,23 @@
       "visible": true
     },
     {
+      "title": "Mis servicios",
+      "bgColor": "#faf7ff",
+      "textColor": "#2d2d2d",
+      "accentColor": "#7c3aed",
+      "cards": [
+        {
+          "id": "s1779518672303",
+          "title": "Cita Virtual",
+          "description": "Descripción del servicio.",
+          "icon": "⭐"
+        }
+      ],
+      "id": "services-1779518883484",
+      "type": "services",
+      "visible": true
+    },
+    {
       "title": "Planes y Tarifas",
       "subtitle": "Elige el plan que mejor se adapte a tus necesidades",
       "bgColor": "#ffffff",
