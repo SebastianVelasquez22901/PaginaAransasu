@@ -16,16 +16,19 @@ import { CSS } from '@dnd-kit/utilities'
 import { useContent } from '../hooks/useContent'
 import BlockWrapper from '../editor/BlockWrapper'
 import BlocksSidebar from '../editor/BlocksSidebar'
+import NavbarEditor from '../editor/NavbarEditor'
 import HeroBlock from '../blocks/HeroBlock'
 import AboutBlock from '../blocks/AboutBlock'
 import ServicesBlock from '../blocks/ServicesBlock'
 import PricingBlock from '../blocks/PricingBlock'
+import BooksBlock from '../blocks/BooksBlock'
 
 const BLOCK_COMPONENTS = {
   hero: HeroBlock,
   about: AboutBlock,
   services: ServicesBlock,
   pricing: PricingBlock,
+  books: BooksBlock,
 }
 
 const BLOCK_LABELS = {
@@ -33,6 +36,7 @@ const BLOCK_LABELS = {
   about: 'Sobre mí',
   services: 'Servicios',
   pricing: 'Precios',
+  books: 'Libros recomendados',
 }
 
 const ADMIN_PASSWORD = import.meta.env.VITE_ADMIN_PASSWORD || 'admin123'
@@ -95,6 +99,7 @@ export default function AdminPage() {
   const [publishStatus, setPublishStatus] = useState(null)
   const [activeId, setActiveId] = useState(null)
   const [activeDragData, setActiveDragData] = useState(null)
+  const [navbarEditorOpen, setNavbarEditorOpen] = useState(false)
 
   const {
     content,
@@ -107,6 +112,7 @@ export default function AdminPage() {
     moveBlock,
     addBlock,
     removeBlock,
+    updateNavbar,
   } = useContent()
 
   const sensors = useSensors(
@@ -220,6 +226,16 @@ export default function AdminPage() {
           </span>
         </div>
         <div className="flex items-center gap-3">
+          <button
+            onClick={() => setNavbarEditorOpen(o => !o)}
+            className={`text-xs px-3 py-2 rounded-lg font-medium transition ${
+              navbarEditorOpen
+                ? 'bg-white text-gray-900'
+                : 'text-gray-400 hover:text-white border border-gray-600 hover:border-gray-400'
+            }`}
+          >
+            ☰ Navbar
+          </button>
           <a href="/" target="_blank" className="text-xs text-gray-400 hover:text-white transition">
             Ver sitio →
           </a>
@@ -232,6 +248,16 @@ export default function AdminPage() {
           </button>
         </div>
       </div>
+
+      {/* Navbar editor panel */}
+      {navbarEditorOpen && content.navbar && (
+        <div className="bg-white border-b border-gray-200 px-6 py-5 shadow-inner">
+          <div className="max-w-lg">
+            <p className="text-xs font-bold text-gray-400 uppercase tracking-widest mb-4">Editar navbar</p>
+            <NavbarEditor navbar={content.navbar} onChange={updateNavbar} />
+          </div>
+        </div>
+      )}
 
       {/* Publish status */}
       {publishStatus && (

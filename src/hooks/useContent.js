@@ -87,6 +87,13 @@ export function useContent() {
     })
   }
 
+  function updateNavbar(changes) {
+    setContent(prev => ({
+      ...prev,
+      navbar: { ...prev.navbar, ...changes },
+    }))
+  }
+
   function moveBlock(activeId, overId) {
     setContent(prev => {
       const blocks = [...prev.blocks]
@@ -110,5 +117,6 @@ export function useContent() {
     moveBlock,
     addBlock,
     removeBlock,
+    updateNavbar,
   }
 }

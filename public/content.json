@@ -1,4 +1,12 @@
 {
+  "navbar": {
+    "brandName": "Aransasu",
+    "bgColor": "#ffffff",
+    "textColor": "#2d2d2d",
+    "accentColor": "#7c3aed",
+    "ctaText": "Agendar consulta",
+    "ctaLink": "#contacto"
+  },
   "blocks": [
     {
       "id": "hero",

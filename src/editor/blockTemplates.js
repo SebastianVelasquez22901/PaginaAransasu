@@ -90,4 +90,27 @@ export const BLOCK_TEMPLATES = [
       ],
     },
   },
+  {
+    type: 'books',
+    label: 'Libros recomendados',
+    icon: '📚',
+    description: 'Grid de portadas con título, autor y descripción',
+    defaults: {
+      title: 'Libros recomendados',
+      subtitle: 'Recursos que han transformado mi práctica',
+      bgColor: '#faf7ff',
+      textColor: '#2d2d2d',
+      accentColor: '#7c3aed',
+      books: [
+        {
+          id: `b${Date.now()}`,
+          title: 'El cuerpo lleva la cuenta',
+          author: 'Bessel van der Kolk',
+          description: 'Un libro fundamental sobre el trauma y cómo el cuerpo lo almacena.',
+          image: '',
+          link: '',
+        },
+      ],
+    },
+  },
 ]

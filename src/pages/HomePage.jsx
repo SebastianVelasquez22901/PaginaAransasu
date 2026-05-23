@@ -1,12 +1,17 @@
 import { useContent } from '../hooks/useContent'
+import Navbar, { BLOCK_ANCHORS } from '../components/Navbar'
 import HeroBlock from '../blocks/HeroBlock'
 import AboutBlock from '../blocks/AboutBlock'
 import ServicesBlock from '../blocks/ServicesBlock'
+import PricingBlock from '../blocks/PricingBlock'
+import BooksBlock from '../blocks/BooksBlock'
 
 const BLOCK_COMPONENTS = {
   hero: HeroBlock,
   about: AboutBlock,
   services: ServicesBlock,
+  pricing: PricingBlock,
+  books: BooksBlock,
 }
 
 export default function HomePage() {
@@ -20,15 +25,22 @@ export default function HomePage() {
     )
   }
 
+  const visibleBlocks = content.blocks.filter(b => b.visible)
+
   return (
-    <main>
-      {content.blocks
-        .filter(b => b.visible)
-        .map(block => {
+    <>
+      <Navbar navbar={content.navbar} blocks={content.blocks} />
+      <main>
+        {visibleBlocks.map(block => {
           const Component = BLOCK_COMPONENTS[block.type]
           if (!Component) return null
-          return <Component key={block.id} block={block} />
+          return (
+            <section key={block.id} id={BLOCK_ANCHORS[block.type]}>
+              <Component block={block} />
+            </section>
+          )
         })}
-    </main>
+      </main>
+    </>
   )
 }
