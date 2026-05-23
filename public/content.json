@@ -1,0 +1,56 @@
+{
+  "blocks": [
+    {
+      "id": "hero",
+      "type": "hero",
+      "visible": true,
+      "title": "Bienvenida a mi espacio",
+      "subtitle": "Un lugar seguro para tu bienestar emocional",
+      "buttonText": "Agenda tu consulta",
+      "buttonLink": "#contacto",
+      "bgColor": "#f5f0ff",
+      "textColor": "#3b1f6e",
+      "image": ""
+    },
+    {
+      "id": "about",
+      "type": "about",
+      "visible": true,
+      "title": "Sobre mí",
+      "body": "Soy psicóloga clínica con más de 10 años de experiencia acompañando a personas en su proceso de crecimiento personal y bienestar emocional. Mi enfoque es humanista e integrador, adaptado a las necesidades únicas de cada persona.",
+      "bgColor": "#ffffff",
+      "textColor": "#2d2d2d",
+      "accentColor": "#7c3aed",
+      "image": ""
+    },
+    {
+      "id": "services",
+      "type": "services",
+      "visible": true,
+      "title": "Mis servicios",
+      "bgColor": "#faf7ff",
+      "textColor": "#2d2d2d",
+      "accentColor": "#7c3aed",
+      "cards": [
+        {
+          "id": "s1",
+          "title": "Terapia individual",
+          "description": "Sesiones personalizadas para trabajar tus objetivos emocionales y personales en un ambiente de confianza.",
+          "icon": "🧠"
+        },
+        {
+          "id": "s2",
+          "title": "Terapia de pareja",
+          "description": "Acompañamiento para fortalecer el vínculo y mejorar la comunicación en tu relación.",
+          "icon": "💑"
+        },
+        {
+          "id": "s3",
+          "title": "Consulta online",
+          "description": "Sesiones por videollamada con la misma calidad y confidencialidad que la atención presencial.",
+          "icon": "💻"
+        }
+      ]
+    }
+  ]
+}
