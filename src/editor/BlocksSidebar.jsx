@@ -30,14 +30,16 @@ function TemplateCard({ template }) {
 export default function BlocksSidebar() {
   return (
     <aside className="w-64 flex-shrink-0 bg-gray-50 border-l border-gray-200 min-h-screen">
-      <div className="sticky top-[52px] p-4 flex flex-col gap-3">
-        <div className="flex items-center gap-2 mb-1">
-          <span className="text-xs font-bold text-gray-400 uppercase tracking-widest">Bloques</span>
+      <div className="sticky top-[52px] flex flex-col" style={{ maxHeight: 'calc(100vh - 52px)' }}>
+        <div className="px-4 pt-4 pb-2 flex-shrink-0">
+          <div className="flex items-center gap-2 mb-1">
+            <span className="text-xs font-bold text-gray-400 uppercase tracking-widest">Bloques</span>
+          </div>
+          <p className="text-xs text-gray-400">
+            Arrastra un bloque a la página para agregarlo
+          </p>
         </div>
-        <p className="text-xs text-gray-400 -mt-1">
-          Arrastra un bloque a la página para agregarlo
-        </p>
-        <div className="flex flex-col gap-3 mt-2">
+        <div className="flex flex-col gap-3 px-4 pb-4 overflow-y-auto">
           {BLOCK_TEMPLATES.map(template => (
             <TemplateCard key={template.type} template={template} />
           ))}
