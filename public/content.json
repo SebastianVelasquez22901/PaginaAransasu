@@ -179,8 +179,8 @@
       "accentColor": "#7c3aed",
       "blockAnimation": "none",
       "address": "",
-      "mapUrl": "https://maps.app.goo.gl/T9sfM34a3GSkR1Ux9",
-      "mapsLink": "https://maps.app.goo.gl/T9sfM34a3GSkR1Ux9",
+      "mapUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3860.327568194334!2d-90.5140978!3d14.6373378!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8589a3a624e4f79f%3A0xda2290fa2f398f54!2sLa%20TECA%20Biblioteca!5e0!3m2!1ses-419!2sgt!4v1779849252858!5m2!1ses-419!2sgt\" width=\"600\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade",
+      "mapsLink": "https://maps.app.goo.gl/ysR6LDR9Kge9vfDCA",
       "buttonText": "Cómo llegar",
       "phone": "",
       "email": "",
@@ -198,7 +198,7 @@
       ],
       "id": "location-1779848771615",
       "type": "location",
-      "visible": true
+      "visible": false
     },
     {
       "title": "Planes y Tarifas",
