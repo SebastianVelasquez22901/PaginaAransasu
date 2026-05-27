@@ -1,12 +1,14 @@
 import { useState, useCallback } from 'react'
 import { useContent } from '../hooks/useContent'
 import Navbar, { BLOCK_ANCHORS } from '../components/Navbar'
+import Footer from '../components/Footer'
 import HeroBlock from '../blocks/HeroBlock'
 import AboutBlock from '../blocks/AboutBlock'
 import ServicesBlock from '../blocks/ServicesBlock'
 import PricingBlock from '../blocks/PricingBlock'
 import BooksBlock from '../blocks/BooksBlock'
 import PodcastBlock from '../blocks/PodcastBlock'
+import CarouselBlock from '../blocks/CarouselBlock'
 import ProximamenteModal from '../components/ProximamenteModal'
 
 const BLOCK_COMPONENTS = {
@@ -16,6 +18,7 @@ const BLOCK_COMPONENTS = {
   pricing: PricingBlock,
   books: BooksBlock,
   podcast: PodcastBlock,
+  carousel: CarouselBlock,
 }
 
 export default function HomePage() {
@@ -51,6 +54,7 @@ export default function HomePage() {
           )
         })}
       </main>
+      <Footer footer={content.footer} />
       <ProximamenteModal visible={showModal} onClose={() => setShowModal(false)} />
     </>
   )

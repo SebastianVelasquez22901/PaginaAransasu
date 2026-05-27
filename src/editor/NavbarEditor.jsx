@@ -22,6 +22,28 @@ export default function NavbarEditor({ navbar, onChange }) {
       </div>
 
       <div className="border-t pt-4 flex flex-col gap-3">
+        <span className="text-xs font-semibold text-gray-500 uppercase tracking-wide">Hover de enlaces</span>
+        <ColorField
+          label="Color de línea al pasar el cursor"
+          value={navbar.hoverLineColor || navbar.accentColor || '#7c3aed'}
+          onChange={v => set('hoverLineColor', v)}
+        />
+        <div className="flex flex-col gap-1">
+          <label className="text-xs text-gray-400">Grosor de la línea (px)</label>
+          <input
+            type="range"
+            min={1}
+            max={6}
+            step={1}
+            value={navbar.hoverLineWidth || 2}
+            onChange={e => set('hoverLineWidth', Number(e.target.value))}
+            className="w-full accent-violet-600"
+          />
+          <span className="text-xs text-gray-400 text-right">{navbar.hoverLineWidth || 2} px</span>
+        </div>
+      </div>
+
+      <div className="border-t pt-4 flex flex-col gap-3">
         <span className="text-xs font-semibold text-gray-500 uppercase tracking-wide">Botón CTA</span>
         <div className="flex flex-col gap-2">
           <div className="flex flex-col gap-1">

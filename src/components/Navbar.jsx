@@ -1,5 +1,35 @@
 import { useState } from 'react'
 
+function NavLink({ label, anchor, textColor, hoverLineColor, hoverLineWidth, onClick }) {
+  const [hovered, setHovered] = useState(false)
+  const lineColor = hoverLineColor || textColor
+  const lineH = hoverLineWidth || 2
+
+  return (
+    <a
+      href={`#${anchor}`}
+      onClick={onClick}
+      onMouseEnter={() => setHovered(true)}
+      onMouseLeave={() => setHovered(false)}
+      className="relative text-sm font-medium pb-0.5"
+      style={{ color: textColor }}
+    >
+      {label}
+      <span
+        style={{
+          display: 'block',
+          height: `${lineH}px`,
+          background: lineColor,
+          borderRadius: '9999px',
+          transformOrigin: 'left',
+          transform: hovered ? 'scaleX(1)' : 'scaleX(0)',
+          transition: 'transform 0.25s ease',
+        }}
+      />
+    </a>
+  )
+}
+
 const BLOCK_ANCHORS = {
   hero: 'inicio',
   about: 'sobre-mi',
@@ -53,15 +83,15 @@ export default function Navbar({ navbar, blocks }) {
         {/* Desktop links */}
         <div className="hidden md:flex items-center gap-6">
           {links.map(link => (
-            <a
+            <NavLink
               key={link.anchor}
-              href={`#${link.anchor}`}
+              label={link.label}
+              anchor={link.anchor}
+              textColor={navbar.textColor}
+              hoverLineColor={navbar.hoverLineColor}
+              hoverLineWidth={navbar.hoverLineWidth}
               onClick={e => handleNavClick(e, link.anchor)}
-              className="text-sm font-medium transition-opacity hover:opacity-70"
-              style={{ color: navbar.textColor }}
-            >
-              {link.label}
-            </a>
+            />
           ))}
         </div>
 

@@ -1,4 +1,23 @@
 {
+  "footer": {
+    "brandName": "Aransasú Aguilar",
+    "tagline": "Psicoterapia Humanista-Existencial",
+    "bgColor": "#1a1a2e",
+    "textColor": "#e8e0f0",
+    "accentColor": "#a78bfa",
+    "email": "",
+    "phone": "",
+    "copyright": "© {year} Aransasú Aguilar · Todos los derechos reservados",
+    "socials": {
+      "instagram": "",
+      "facebook": "",
+      "whatsapp": "",
+      "tiktok": "",
+      "youtube": "",
+      "linkedin": "",
+      "twitter": ""
+    }
+  },
   "navbar": {
     "brandName": "Aransasu",
     "bgColor": "#ffffff",

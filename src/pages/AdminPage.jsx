@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { Link } from 'react-router-dom'
 import {
   DndContext,
   closestCenter,
@@ -17,12 +18,15 @@ import { useContent } from '../hooks/useContent'
 import BlockWrapper from '../editor/BlockWrapper'
 import BlocksSidebar from '../editor/BlocksSidebar'
 import NavbarEditor from '../editor/NavbarEditor'
+import FooterEditor from '../editor/FooterEditor'
+import Footer from '../components/Footer'
 import HeroBlock from '../blocks/HeroBlock'
 import AboutBlock from '../blocks/AboutBlock'
 import ServicesBlock from '../blocks/ServicesBlock'
 import PricingBlock from '../blocks/PricingBlock'
 import BooksBlock from '../blocks/BooksBlock'
 import PodcastBlock from '../blocks/PodcastBlock'
+import CarouselBlock from '../blocks/CarouselBlock'
 
 const BLOCK_COMPONENTS = {
   hero: HeroBlock,
@@ -31,6 +35,7 @@ const BLOCK_COMPONENTS = {
   pricing: PricingBlock,
   books: BooksBlock,
   podcast: PodcastBlock,
+  carousel: CarouselBlock,
 }
 
 const BLOCK_LABELS = {
@@ -40,6 +45,7 @@ const BLOCK_LABELS = {
   pricing: 'Precios',
   books: 'Libros recomendados',
   podcast: 'Podcast',
+  carousel: 'Carrusel de fotos',
 }
 
 const ADMIN_PASSWORD = import.meta.env.VITE_ADMIN_PASSWORD || 'admin123'
@@ -103,6 +109,7 @@ export default function AdminPage() {
   const [activeId, setActiveId] = useState(null)
   const [activeDragData, setActiveDragData] = useState(null)
   const [navbarEditorOpen, setNavbarEditorOpen] = useState(false)
+  const [footerEditorOpen, setFooterEditorOpen] = useState(false)
 
   const {
     content,
@@ -116,6 +123,7 @@ export default function AdminPage() {
     addBlock,
     removeBlock,
     updateNavbar,
+    updateFooter,
   } = useContent()
 
   const sensors = useSensors(
@@ -230,7 +238,7 @@ export default function AdminPage() {
         </div>
         <div className="flex items-center gap-3">
           <button
-            onClick={() => setNavbarEditorOpen(o => !o)}
+            onClick={() => { setNavbarEditorOpen(o => !o); setFooterEditorOpen(false) }}
             className={`text-xs px-3 py-2 rounded-lg font-medium transition ${
               navbarEditorOpen
                 ? 'bg-white text-gray-900'
@@ -239,6 +247,19 @@ export default function AdminPage() {
           >
             ☰ Navbar
           </button>
+          <button
+            onClick={() => { setFooterEditorOpen(o => !o); setNavbarEditorOpen(false) }}
+            className={`text-xs px-3 py-2 rounded-lg font-medium transition ${
+              footerEditorOpen
+                ? 'bg-white text-gray-900'
+                : 'text-gray-400 hover:text-white border border-gray-600 hover:border-gray-400'
+            }`}
+          >
+            ▦ Footer
+          </button>
+          <Link to="/admin/ayuda" className="text-xs text-gray-400 hover:text-white transition">
+            ? Ayuda
+          </Link>
           <a href="/" target="_blank" className="text-xs text-gray-400 hover:text-white transition">
             Ver sitio →
           </a>
@@ -258,6 +279,16 @@ export default function AdminPage() {
           <div className="max-w-lg">
             <p className="text-xs font-bold text-gray-400 uppercase tracking-widest mb-4">Editar navbar</p>
             <NavbarEditor navbar={content.navbar} onChange={updateNavbar} />
+          </div>
+        </div>
+      )}
+
+      {/* Footer editor panel */}
+      {footerEditorOpen && content.footer && (
+        <div className="bg-white border-b border-gray-200 px-6 py-5 shadow-inner">
+          <div className="max-w-lg">
+            <p className="text-xs font-bold text-gray-400 uppercase tracking-widest mb-4">Editar footer</p>
+            <FooterEditor footer={content.footer} onChange={updateFooter} />
           </div>
         </div>
       )}
@@ -311,6 +342,23 @@ export default function AdminPage() {
             {isDraggingFromSidebar && (
               <div className="mx-4 mt-2 border-2 border-dashed border-violet-300 rounded-xl py-8 text-center text-violet-400 text-sm">
                 Suelta aquí para agregar al final
+              </div>
+            )}
+
+            {/* Footer preview (fixed, no delete) */}
+            {content.footer && (
+              <div className="relative">
+                <div className="sticky top-0 z-30 flex items-center justify-between bg-gray-700 text-white px-4 py-2 shadow">
+                  <span className="text-sm font-semibold">▦ Footer</span>
+                  <button
+                    type="button"
+                    onClick={() => { setFooterEditorOpen(o => !o); setNavbarEditorOpen(false) }}
+                    className="text-xs px-3 py-1 rounded-full bg-white text-gray-700 font-semibold hover:bg-gray-100 transition"
+                  >
+                    {footerEditorOpen ? 'Cerrar editor' : 'Editar footer'}
+                  </button>
+                </div>
+                <Footer footer={content.footer} />
               </div>
             )}
           </main>

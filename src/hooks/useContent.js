@@ -94,6 +94,13 @@ export function useContent() {
     }))
   }
 
+  function updateFooter(changes) {
+    setContent(prev => ({
+      ...prev,
+      footer: { ...prev.footer, ...changes },
+    }))
+  }
+
   function moveBlock(activeId, overId) {
     setContent(prev => {
       const blocks = [...prev.blocks]
@@ -118,5 +125,6 @@ export function useContent() {
     addBlock,
     removeBlock,
     updateNavbar,
+    updateFooter,
   }
 }
