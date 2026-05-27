@@ -43,6 +43,32 @@
       "whatsappMessage": ""
     },
     {
+      "title": "Carrusel de fotos",
+      "subtitle": "",
+      "bgColor": "#ffffff",
+      "textColor": "#2d2d2d",
+      "accentColor": "#7c3aed",
+      "blockAnimation": "fade-left",
+      "autoPlay": true,
+      "interval": 4,
+      "height": "480px",
+      "photos": [
+        {
+          "id": "ph1779847343270",
+          "url": "https://content.nationalgeographic.com.es/medio/2018/02/27/playa-de-isuntza-lekeitio__1280x720.jpg",
+          "caption": "Foto 1"
+        },
+        {
+          "id": "ph1779847392839",
+          "url": "https://www.dzoom.org.es/wp-content/uploads/2019/09/paisajes-expresivos-734x489.jpg",
+          "caption": "Foto 2"
+        }
+      ],
+      "id": "carousel-1779847307439",
+      "type": "carousel",
+      "visible": true
+    },
+    {
       "id": "about",
       "type": "about",
       "visible": true,
