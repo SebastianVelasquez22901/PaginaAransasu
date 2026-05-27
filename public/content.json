@@ -64,6 +64,33 @@
       "image": "",
       "id": "hero-1779832601146",
       "type": "hero",
+      "visible": false
+    },
+    {
+      "title": "Mi Podcast",
+      "subtitle": "Conversaciones sobre bienestar emocional y salud mental",
+      "bgColor": "#f5f0ff",
+      "textColor": "#2d2d2d",
+      "accentColor": "#7c3aed",
+      "blockAnimation": "none",
+      "platforms": {
+        "spotify": "https://open.spotify.com/show/6HzQrV7159UxQVSfLN0naA?si=e02a2bb7f2194d56",
+        "apple": "",
+        "youtube": "",
+        "google": ""
+      },
+      "episodes": [
+        {
+          "id": "ep1779845467262",
+          "title": "Nuevo episodio",
+          "description": "Enero suele venir cargado de expectativas: empezar con energía, cambiar hábitos, hacerlo mejor. Pero en la práctica clínica, este mes muchas veces se vive con culpa, presión y autoexigencia.",
+          "duration": "9 min",
+          "link": "https://open.spotify.com/episode/2bLGXvUAQkf2qOyO1vyo8j?si=cOD4Br6NS92ZFRTmWKT4aQ",
+          "image": ""
+        }
+      ],
+      "id": "podcast-1779845234985",
+      "type": "podcast",
       "visible": true
     },
     {
