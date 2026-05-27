@@ -27,6 +27,7 @@ import PricingBlock from '../blocks/PricingBlock'
 import BooksBlock from '../blocks/BooksBlock'
 import PodcastBlock from '../blocks/PodcastBlock'
 import CarouselBlock from '../blocks/CarouselBlock'
+import LocationBlock from '../blocks/LocationBlock'
 
 const BLOCK_COMPONENTS = {
   hero: HeroBlock,
@@ -36,6 +37,7 @@ const BLOCK_COMPONENTS = {
   books: BooksBlock,
   podcast: PodcastBlock,
   carousel: CarouselBlock,
+  location: LocationBlock,
 }
 
 const BLOCK_LABELS = {
@@ -46,6 +48,7 @@ const BLOCK_LABELS = {
   books: 'Libros recomendados',
   podcast: 'Podcast',
   carousel: 'Carrusel de fotos',
+  location: 'Ubicación',
 }
 
 const ADMIN_PASSWORD = import.meta.env.VITE_ADMIN_PASSWORD || 'admin123'

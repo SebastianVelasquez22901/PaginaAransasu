@@ -402,6 +402,39 @@ const MANUAL = [
     ],
   },
   {
+    id: 'ubicacion',
+    emoji: '📍',
+    title: 'Bloque Ubicación',
+    color: 'green',
+    items: [
+      {
+        title: 'Para qué sirve',
+        tags: ['ubicación', 'consultorio', 'dirección', 'mapa', 'horarios'],
+        body: 'Muestra la dirección de tu consultorio, los horarios de atención, teléfono, correo y un mapa interactivo de Google Maps. Aparece en la navbar como "Ubicación" y los visitantes pueden hacer clic en "Cómo llegar" para abrir Google Maps directamente.',
+      },
+      {
+        title: 'Cómo agregar el mapa de Google',
+        tags: ['mapa', 'google maps', 'embed', 'url', 'incrustar'],
+        body: 'Sigue estos pasos: (1) Abre Google Maps y busca tu dirección exacta. (2) Haz clic en el ícono de Compartir. (3) Selecciona la pestaña "Incorporar un mapa". (4) Copia solo la URL que está dentro de src="..." — no copies todo el código, solo la URL. (5) Pégala en el campo "URL del mapa" del editor.',
+      },
+      {
+        title: 'Enlace de Google Maps (botón Cómo llegar)',
+        tags: ['enlace', 'como llegar', 'botón', 'maps', 'navegación'],
+        body: 'Este es un enlace diferente al del mapa incrustado. Para obtenerlo: busca tu dirección en Google Maps, copia la URL de la barra del navegador (ej: https://maps.google.com/?q=...). Este enlace abre Google Maps en una nueva pestaña cuando el visitante hace clic en "Cómo llegar".',
+      },
+      {
+        title: 'Horarios de atención',
+        tags: ['horarios', 'días', 'horas', 'atención'],
+        body: 'Agrega los días y horas que atiendes. Cada fila tiene dos campos: días (ej: "Lunes – Viernes") y horas (ej: "9:00 – 18:00"). Puedes tener tantas filas como necesites y eliminar las que no uses.',
+      },
+      {
+        title: 'Teléfono y correo en el bloque',
+        tags: ['teléfono', 'correo', 'contacto', 'ubicación'],
+        body: 'Si rellenas el teléfono y el correo, aparecen como enlaces clicables en la tarjeta de información. El teléfono llama al número al hacer clic (en móviles). El correo abre el cliente de correo del visitante.',
+      },
+    ],
+  },
+  {
     id: 'footer',
     emoji: '▦',
     title: 'Footer (pie de página)',
