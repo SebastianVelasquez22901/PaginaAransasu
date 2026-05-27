@@ -29,7 +29,10 @@
       "bgColor": "#ffffff",
       "textColor": "#9c6f6f",
       "accentColor": "#7c3aed",
-      "image": ""
+      "image": "",
+      "blockAnimation": "fade-right",
+      "fontFamily": "\"Playfair Display\", serif",
+      "textAlign": "left"
     },
     {
       "title": "Libros recomendados",
