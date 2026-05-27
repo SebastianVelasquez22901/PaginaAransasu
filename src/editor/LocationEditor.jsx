@@ -134,19 +134,30 @@ export default function LocationEditor({ block, onChange }) {
       <div className="border-t pt-4 flex flex-col gap-2">
         <label className="text-xs font-semibold text-gray-500 uppercase tracking-wide">URL del mapa (Google Maps embed)</label>
         <input
-          className="border border-gray-200 rounded-lg px-3 py-2 text-sm"
+          className={`border rounded-lg px-3 py-2 text-sm ${
+            block.mapUrl && !block.mapUrl.startsWith('https://www.google.com/maps/embed')
+              ? 'border-red-400 bg-red-50'
+              : 'border-gray-200'
+          }`}
           value={block.mapUrl || ''}
           onChange={e => set('mapUrl', e.target.value)}
           placeholder="https://www.google.com/maps/embed?pb=..."
         />
+        {block.mapUrl && !block.mapUrl.startsWith('https://www.google.com/maps/embed') && (
+          <div className="bg-red-50 border border-red-200 rounded-xl p-3 text-xs text-red-700 leading-relaxed">
+            <p className="font-semibold mb-1">URL incorrecta</p>
+            <p>Esta URL no se puede incrustar. Los enlaces cortos (<code className="bg-red-100 px-1 rounded">maps.app.goo.gl</code>) y los de compartir no funcionan en el mapa. Sigue los pasos de abajo para obtener la URL correcta.</p>
+          </div>
+        )}
         <div className="bg-blue-50 border border-blue-100 rounded-xl p-3 text-xs text-blue-700 leading-relaxed">
-          <p className="font-semibold mb-1">¿Cómo obtener el enlace?</p>
+          <p className="font-semibold mb-1">¿Cómo obtener la URL correcta?</p>
           <ol className="list-decimal list-inside flex flex-col gap-0.5">
-            <li>Abre <strong>Google Maps</strong> y busca tu dirección</li>
+            <li>Abre <strong>Google Maps</strong> en tu computadora y busca tu dirección</li>
             <li>Haz clic en <strong>Compartir</strong> (ícono de compartir)</li>
-            <li>Selecciona la pestaña <strong>"Incorporar un mapa"</strong></li>
-            <li>Copia solo la URL que aparece dentro de <code className="bg-blue-100 px-1 rounded">src="..."</code></li>
-            <li>Pégala aquí arriba</li>
+            <li>Selecciona la pestaña <strong>"Incorporar un mapa"</strong> — <em>no</em> "Copiar enlace"</li>
+            <li>Haz clic en <strong>"Copiar HTML"</strong></li>
+            <li>Del código copiado, extrae solo el valor dentro de <code className="bg-blue-100 px-1 rounded">src="…"</code></li>
+            <li>Pega esa URL aquí arriba — debe iniciar con <code className="bg-blue-100 px-1 rounded">https://www.google.com/maps/embed</code></li>
           </ol>
         </div>
       </div>
