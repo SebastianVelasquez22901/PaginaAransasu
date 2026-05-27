@@ -103,30 +103,36 @@
           "id": "s1779518672303",
           "title": "Sesión virtual ",
           "description": "Modalidad de atención psicológica que se realiza a través de Google Meet,  permitiendo que el proceso terapéutico se lleve a cabo a distancia.\nEste espacio busca brindar acompañamiento emocional, orientación y herramientas psicológicas desde un entorno seguro, confidencial y accesible, adaptándose a las necesidades y horarios de cada persona según cita previa.\n",
-          "icon": "⭐"
+          "icon": "💻",
+          "textAlign": "center"
         },
         {
           "id": "s1779750288902",
           "title": "Sesión presencial ",
           "description": "Espacio terapéutico de acompañamiento psicológico en un ambiente privado, seguro y confidencial, diseñado para favorecer la escucha, la expresión emocional y el trabajo terapéutico de manera cercana y personalizada.\nA través de este proceso se busca brindar herramientas que permitan comprender emociones, fortalecer recursos personales y promover bienestar emocional y mental.",
-          "icon": "⭐"
+          "icon": "📖",
+          "textAlign": "center"
         },
         {
           "id": "s1779750543267",
           "title": "Conferencias de Salud Mental",
           "description": "Espacios educativos y reflexivos orientados a promover el bienestar emocional, la prevención y la sensibilización sobre diferentes temas relacionados con la salud mental en contextos académicos, laborales y sociales.\nA través de un enfoque dinámico, profesional y humano, las conferencias buscan brindar información clara, herramientas prácticas y momentos de reflexión que permitan fortalecer el autocuidado, la inteligencia emocional y las relaciones interpersonales.",
-          "icon": "⭐"
+          "icon": "🧠",
+          "textAlign": "center"
         },
         {
           "id": "s1779750666785",
           "title": "Capacitación sobre Habilidades Blandas",
           "description": "Espacios formativos orientados al desarrollo de competencias personales y sociales que favorecen el desempeño profesional, las relaciones interpersonales y el bienestar dentro de los equipos de trabajo.\nA través de metodologías dinámicas, participativas y con enfoque psicológico, estas capacitaciones buscan fortalecer habilidades que permitan una comunicación más efectiva, un mejor manejo emocional y una convivencia laboral saludable.",
-          "icon": "⭐"
+          "icon": "☀️",
+          "textAlign": "center"
         }
       ],
       "id": "services-1779518883484",
       "type": "services",
-      "visible": true
+      "visible": true,
+      "blockAnimation": "fade",
+      "cardAnimation": "fade-up"
     },
     {
       "title": "Planes y Tarifas",
