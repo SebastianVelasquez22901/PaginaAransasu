@@ -168,7 +168,8 @@
       "type": "services",
       "visible": true,
       "blockAnimation": "fade",
-      "cardAnimation": "fade-up"
+      "cardAnimation": "fade-up",
+      "fontFamily": "\"Merriweather\", serif"
     },
     {
       "title": "Planes y Tarifas",
