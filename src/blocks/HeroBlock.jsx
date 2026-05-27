@@ -1,8 +1,24 @@
+import { getButtonProps } from '../utils/buttonAction'
+import { useScrollAnimation } from '../hooks/useScrollAnimation'
+
+const ALIGN_MAP = {
+  left:   { flex: 'items-start', text: 'text-left' },
+  center: { flex: 'items-center', text: 'text-center' },
+  right:  { flex: 'items-end', text: 'text-right' },
+}
+
 export default function HeroBlock({ block, onCtaClick }) {
+  const btnProps = getButtonProps(block, onCtaClick)
+  const [ref, animStyle] = useScrollAnimation(block.blockAnimation || 'none')
+
+  const align = ALIGN_MAP[block.textAlign] || ALIGN_MAP.center
+  const fontFamily = block.fontFamily || 'Inter, sans-serif'
+
   return (
     <section
-      style={{ backgroundColor: block.bgColor, color: block.textColor }}
-      className="min-h-[90vh] flex flex-col items-center justify-center text-center px-6 py-20"
+      ref={ref}
+      style={{ backgroundColor: block.bgColor, color: block.textColor, fontFamily, ...animStyle }}
+      className={`min-h-[90vh] flex flex-col ${align.flex} justify-center ${align.text} px-6 py-20`}
     >
       {block.image && (
         <img
@@ -15,8 +31,7 @@ export default function HeroBlock({ block, onCtaClick }) {
       <p className="text-base sm:text-xl mb-8 max-w-xl opacity-80">{block.subtitle}</p>
       {block.buttonText && (
         <a
-          href={block.buttonLink || '#'}
-          onClick={onCtaClick}
+          {...btnProps}
           style={{ backgroundColor: block.textColor, color: block.bgColor }}
           className="px-6 py-3 rounded-full font-semibold text-base sm:text-lg transition hover:opacity-80"
         >

@@ -1,4 +1,6 @@
 import ColorField from './ColorField'
+import ButtonActionEditor from './ButtonActionEditor'
+import AnimationField from './AnimationField'
 
 function FeatureRow({ feature, onUpdate, onRemove }) {
   return (
@@ -114,25 +116,17 @@ function PlanCard({ plan, accentColor, onUpdate, onRemove }) {
         </div>
       </div>
 
-      <div className="grid grid-cols-2 gap-2">
-        <div className="flex flex-col gap-1">
-          <label className="text-xs text-gray-400">Texto del botón</label>
-          <input
-            className="border border-gray-200 rounded-lg px-2 py-1.5 text-sm"
-            value={plan.buttonText}
-            onChange={e => onUpdate({ buttonText: e.target.value })}
-            placeholder="Reservar"
-          />
-        </div>
-        <div className="flex flex-col gap-1">
-          <label className="text-xs text-gray-400">Enlace del botón</label>
-          <input
-            className="border border-gray-200 rounded-lg px-2 py-1.5 text-sm"
-            value={plan.buttonLink}
-            onChange={e => onUpdate({ buttonLink: e.target.value })}
-            placeholder="#contacto"
-          />
-        </div>
+      <div className="flex flex-col gap-1">
+        <label className="text-xs text-gray-400">Texto del botón</label>
+        <input
+          className="border border-gray-200 rounded-lg px-2 py-1.5 text-sm"
+          value={plan.buttonText}
+          onChange={e => onUpdate({ buttonText: e.target.value })}
+          placeholder="Reservar"
+        />
+      </div>
+      <div className="border border-gray-100 rounded-xl p-3 bg-white">
+        <ButtonActionEditor config={plan} onChange={onUpdate} compact />
       </div>
 
       {/* Features */}
@@ -211,6 +205,7 @@ export default function PricingEditor({ block, onChange }) {
       <ColorField label="Color de fondo" value={block.bgColor} onChange={v => set('bgColor', v)} />
       <ColorField label="Color de texto" value={block.textColor} onChange={v => set('textColor', v)} />
       <ColorField label="Color de acento" value={block.accentColor} onChange={v => set('accentColor', v)} />
+      <AnimationField value={block.blockAnimation || 'none'} onChange={v => set('blockAnimation', v)} />
 
       <div className="border-t pt-4 flex flex-col gap-3">
         <div className="flex items-center justify-between">

@@ -1,4 +1,7 @@
 import ColorField from './ColorField'
+import AnimationField from './AnimationField'
+import TextAlignField from './TextAlignField'
+import FontField from './FontField'
 
 export default function AboutEditor({ block, onChange }) {
   const set = (key, val) => onChange({ [key]: val })
@@ -22,9 +25,21 @@ export default function AboutEditor({ block, onChange }) {
           onChange={e => set('body', e.target.value)}
         />
       </div>
-      <ColorField label="Color de fondo" value={block.bgColor} onChange={v => set('bgColor', v)} />
-      <ColorField label="Color de texto" value={block.textColor} onChange={v => set('textColor', v)} />
-      <ColorField label="Color de acento" value={block.accentColor} onChange={v => set('accentColor', v)} />
+
+      <div className="border-t pt-4 flex flex-col gap-4">
+        <p className="text-xs font-semibold text-gray-400 uppercase tracking-wide">Estilo y animación</p>
+        <TextAlignField value={block.textAlign || 'left'} onChange={v => set('textAlign', v)} />
+        <FontField value={block.fontFamily} onChange={v => set('fontFamily', v)} />
+        <AnimationField value={block.blockAnimation || 'none'} onChange={v => set('blockAnimation', v)} />
+      </div>
+
+      <div className="border-t pt-4 flex flex-col gap-4">
+        <p className="text-xs font-semibold text-gray-400 uppercase tracking-wide">Colores</p>
+        <ColorField label="Color de fondo" value={block.bgColor} onChange={v => set('bgColor', v)} />
+        <ColorField label="Color de texto" value={block.textColor} onChange={v => set('textColor', v)} />
+        <ColorField label="Color de acento" value={block.accentColor} onChange={v => set('accentColor', v)} />
+      </div>
+
       <div className="flex flex-col gap-1">
         <label className="text-xs font-semibold text-gray-500 uppercase tracking-wide">Imagen (URL)</label>
         <input

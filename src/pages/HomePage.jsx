@@ -6,6 +6,7 @@ import AboutBlock from '../blocks/AboutBlock'
 import ServicesBlock from '../blocks/ServicesBlock'
 import PricingBlock from '../blocks/PricingBlock'
 import BooksBlock from '../blocks/BooksBlock'
+import PodcastBlock from '../blocks/PodcastBlock'
 import ProximamenteModal from '../components/ProximamenteModal'
 
 const BLOCK_COMPONENTS = {
@@ -14,6 +15,7 @@ const BLOCK_COMPONENTS = {
   services: ServicesBlock,
   pricing: PricingBlock,
   books: BooksBlock,
+  podcast: PodcastBlock,
 }
 
 export default function HomePage() {

@@ -22,6 +22,7 @@ import AboutBlock from '../blocks/AboutBlock'
 import ServicesBlock from '../blocks/ServicesBlock'
 import PricingBlock from '../blocks/PricingBlock'
 import BooksBlock from '../blocks/BooksBlock'
+import PodcastBlock from '../blocks/PodcastBlock'
 
 const BLOCK_COMPONENTS = {
   hero: HeroBlock,
@@ -29,6 +30,7 @@ const BLOCK_COMPONENTS = {
   services: ServicesBlock,
   pricing: PricingBlock,
   books: BooksBlock,
+  podcast: PodcastBlock,
 }
 
 const BLOCK_LABELS = {
@@ -37,6 +39,7 @@ const BLOCK_LABELS = {
   services: 'Servicios',
   pricing: 'Precios',
   books: 'Libros recomendados',
+  podcast: 'Podcast',
 }
 
 const ADMIN_PASSWORD = import.meta.env.VITE_ADMIN_PASSWORD || 'admin123'

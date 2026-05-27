@@ -12,6 +12,9 @@ export const BLOCK_TEMPLATES = [
       bgColor: '#f5f0ff',
       textColor: '#3b1f6e',
       image: '',
+      textAlign: 'center',
+      fontFamily: 'Inter, sans-serif',
+      blockAnimation: 'none',
     },
   },
   {
@@ -26,6 +29,9 @@ export const BLOCK_TEMPLATES = [
       textColor: '#2d2d2d',
       accentColor: '#7c3aed',
       image: '',
+      textAlign: 'left',
+      fontFamily: 'Inter, sans-serif',
+      blockAnimation: 'none',
     },
   },
   {
@@ -38,8 +44,11 @@ export const BLOCK_TEMPLATES = [
       bgColor: '#faf7ff',
       textColor: '#2d2d2d',
       accentColor: '#7c3aed',
+      fontFamily: 'Inter, sans-serif',
+      blockAnimation: 'none',
+      cardAnimation: 'none',
       cards: [
-        { id: `s${Date.now()}`, title: 'Nuevo servicio', description: 'Descripción del servicio.', icon: '⭐' },
+        { id: `s${Date.now()}`, title: 'Nuevo servicio', description: 'Descripción del servicio.', icon: '⭐', textAlign: 'left' },
       ],
     },
   },
@@ -54,6 +63,7 @@ export const BLOCK_TEMPLATES = [
       bgColor: '#ffffff',
       textColor: '#2d2d2d',
       accentColor: '#7c3aed',
+      blockAnimation: 'none',
       plans: [
         {
           id: `plan${Date.now()}a`,
@@ -101,6 +111,7 @@ export const BLOCK_TEMPLATES = [
       bgColor: '#faf7ff',
       textColor: '#2d2d2d',
       accentColor: '#7c3aed',
+      blockAnimation: 'none',
       books: [
         {
           id: `b${Date.now()}`,
@@ -111,6 +122,22 @@ export const BLOCK_TEMPLATES = [
           link: '',
         },
       ],
+    },
+  },
+  {
+    type: 'podcast',
+    label: 'Podcast',
+    icon: '🎙️',
+    description: 'Plataformas de escucha y lista de episodios',
+    defaults: {
+      title: 'Mi Podcast',
+      subtitle: 'Conversaciones sobre bienestar emocional y salud mental',
+      bgColor: '#f5f0ff',
+      textColor: '#2d2d2d',
+      accentColor: '#7c3aed',
+      blockAnimation: 'none',
+      platforms: { spotify: '', apple: '', youtube: '', google: '' },
+      episodes: [],
     },
   },
 ]

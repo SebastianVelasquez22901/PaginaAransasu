@@ -4,6 +4,7 @@ import AboutEditor from './AboutEditor'
 import ServicesEditor from './ServicesEditor'
 import PricingEditor from './PricingEditor'
 import BooksEditor from './BooksEditor'
+import PodcastEditor from './PodcastEditor'
 
 const EDITORS = {
   hero: HeroEditor,
@@ -11,6 +12,7 @@ const EDITORS = {
   services: ServicesEditor,
   pricing: PricingEditor,
   books: BooksEditor,
+  podcast: PodcastEditor,
 }
 
 const BLOCK_LABELS = {
@@ -19,6 +21,7 @@ const BLOCK_LABELS = {
   services: 'Servicios',
   pricing: 'Precios',
   books: 'Libros recomendados',
+  podcast: 'Podcast',
 }
 
 export default function BlockWrapper({ block, onUpdate, onUpdateCard, onAddCard, onRemoveCard, onToggle, onDelete, children }) {

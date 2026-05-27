@@ -1,8 +1,12 @@
+import { getButtonProps } from '../utils/buttonAction'
+import { useScrollAnimation } from '../hooks/useScrollAnimation'
+
 export default function PricingBlock({ block, onCtaClick }) {
   const { title, subtitle, bgColor, textColor, accentColor, plans = [] } = block
+  const [ref, animStyle] = useScrollAnimation(block.blockAnimation || 'none')
 
   return (
-    <section style={{ backgroundColor: bgColor, color: textColor }} className="py-16 px-6">
+    <section ref={ref} style={{ backgroundColor: bgColor, color: textColor, ...animStyle }} className="py-16 px-6">
       <div className="max-w-5xl mx-auto">
         {/* Header */}
         <div className="text-center mb-8 md:mb-12">
@@ -91,8 +95,7 @@ export default function PricingBlock({ block, onCtaClick }) {
                 {/* CTA button */}
                 {plan.buttonText && (
                   <a
-                    href={plan.buttonLink || '#'}
-                    onClick={onCtaClick}
+                    {...getButtonProps(plan, onCtaClick)}
                     className="mt-auto block text-center py-3 px-5 rounded-xl font-semibold text-sm transition"
                     style={
                       plan.featured

@@ -1,4 +1,5 @@
 import { useState } from 'react'
+import { useScrollAnimation } from '../hooks/useScrollAnimation'
 
 const DESCRIPTION_LIMIT = 80
 
@@ -71,9 +72,10 @@ function BookCard({ book, accentColor, textColor }) {
 
 export default function BooksBlock({ block }) {
   const { title, subtitle, bgColor, textColor, accentColor, books = [] } = block
+  const [ref, animStyle] = useScrollAnimation(block.blockAnimation || 'none')
 
   return (
-    <section style={{ backgroundColor: bgColor, color: textColor }} className="py-16 px-6">
+    <section ref={ref} style={{ backgroundColor: bgColor, color: textColor, ...animStyle }} className="py-16 px-6">
       <div className="max-w-5xl mx-auto">
         <div className="text-center mb-8 md:mb-12">
           <h2 className="text-2xl sm:text-3xl font-bold mb-3" style={{ color: textColor }}>{title}</h2>

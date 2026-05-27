@@ -6,6 +6,7 @@ const BLOCK_ANCHORS = {
   services: 'servicios',
   pricing: 'precios',
   books: 'libros',
+  podcast: 'podcast',
 }
 
 const BLOCK_NAV_LABELS = {
@@ -14,6 +15,7 @@ const BLOCK_NAV_LABELS = {
   services: 'Servicios',
   pricing: 'Precios',
   books: 'Libros',
+  podcast: 'Podcast',
 }
 
 export { BLOCK_ANCHORS, BLOCK_NAV_LABELS }
