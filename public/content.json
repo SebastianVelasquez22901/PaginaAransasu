@@ -172,6 +172,35 @@
       "fontFamily": "\"Merriweather\", serif"
     },
     {
+      "title": "Mi Consultorio",
+      "subtitle": "Encuentra un espacio seguro cerca a ti",
+      "bgColor": "#ffffff",
+      "textColor": "#2d2d2d",
+      "accentColor": "#7c3aed",
+      "blockAnimation": "none",
+      "address": "",
+      "mapUrl": "https://maps.app.goo.gl/T9sfM34a3GSkR1Ux9",
+      "mapsLink": "https://maps.app.goo.gl/T9sfM34a3GSkR1Ux9",
+      "buttonText": "Cómo llegar",
+      "phone": "",
+      "email": "",
+      "hours": [
+        {
+          "id": "h1",
+          "days": "Lunes – Viernes",
+          "time": "9:00 – 18:00"
+        },
+        {
+          "id": "h2",
+          "days": "Sábado",
+          "time": "9:00 – 13:00"
+        }
+      ],
+      "id": "location-1779848771615",
+      "type": "location",
+      "visible": true
+    },
+    {
       "title": "Planes y Tarifas",
       "subtitle": "Elige el plan que mejor se adapte a tus necesidades",
       "bgColor": "#ffffff",
