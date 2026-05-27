@@ -18,7 +18,10 @@
       "buttonLink": "#contacto",
       "bgColor": "#f5f0ff",
       "textColor": "#000000",
-      "image": ""
+      "image": "",
+      "buttonAction": "whatsapp",
+      "whatsappNumber": "37903297",
+      "whatsappMessage": "Hola, me gustaria agendar una consulta"
     },
     {
       "id": "about",
@@ -53,18 +56,6 @@
       "id": "books-1779517754239",
       "type": "books",
       "visible": true
-    },
-    {
-      "title": "Podcast",
-      "subtitle": "",
-      "buttonText": "Agenda tu consulta",
-      "buttonLink": "#",
-      "bgColor": "#f5f0ff",
-      "textColor": "#3b1f6e",
-      "image": "",
-      "id": "hero-1779832601146",
-      "type": "hero",
-      "visible": false
     },
     {
       "title": "Mi Podcast",
