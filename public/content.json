@@ -19,9 +19,9 @@
       "bgColor": "#f5f0ff",
       "textColor": "#000000",
       "image": "",
-      "buttonAction": "whatsapp",
-      "whatsappNumber": "37903297",
-      "whatsappMessage": "Hola, me gustaria agendar una consulta"
+      "buttonAction": "proximamente",
+      "whatsappNumber": "",
+      "whatsappMessage": ""
     },
     {
       "id": "about",
