@@ -5,16 +5,16 @@
     "bgColor": "#1a1a2e",
     "textColor": "#e8e0f0",
     "accentColor": "#a78bfa",
-    "email": "",
-    "phone": "",
+    "email": "aransasuaguilar@gmail.com",
+    "phone": "42110831",
     "copyright": "© {year} Aransasú Aguilar · Todos los derechos reservados",
     "socials": {
-      "instagram": "",
-      "facebook": "",
+      "instagram": "@aransasuaguilar",
+      "facebook": "Aransasú Aguilar ",
       "whatsapp": "",
-      "tiktok": "",
-      "youtube": "",
-      "linkedin": "",
+      "tiktok": "@aransasuaguilar",
+      "youtube": "@aransasuaguilar",
+      "linkedin": "Aransasú Aguilar",
       "twitter": ""
     }
   },
@@ -38,9 +38,9 @@
       "bgColor": "#f5f0ff",
       "textColor": "#000000",
       "image": "",
-      "buttonAction": "proximamente",
-      "whatsappNumber": "",
-      "whatsappMessage": ""
+      "buttonAction": "whatsapp",
+      "whatsappNumber": "42110831",
+      "whatsappMessage": "Buen día, Aransasú Aguilar te saluda "
     },
     {
       "title": "Carrusel de fotos",
@@ -103,8 +103,8 @@
       "visible": true
     },
     {
-      "title": "Mi Podcast",
-      "subtitle": "Conversaciones sobre bienestar emocional y salud mental",
+      "title": "Aransasu Psicóloga",
+      "subtitle": "Un espacio donde exploramos el fascinante mundo de la psicoterapia, siempre he pensado que si no comparto lo que sé, estaré desperdiciando tiempo y recursos que pueden facilitar la comprensión a otros.\n",
       "bgColor": "#f5f0ff",
       "textColor": "#2d2d2d",
       "accentColor": "#7c3aed",
@@ -118,10 +118,34 @@
       "episodes": [
         {
           "id": "ep1779845467262",
-          "title": "Nuevo episodio",
+          "title": "Año nuevo, vida nueva? cuando enero se vuelte ansiedad",
           "description": "Enero suele venir cargado de expectativas: empezar con energía, cambiar hábitos, hacerlo mejor. Pero en la práctica clínica, este mes muchas veces se vive con culpa, presión y autoexigencia.",
           "duration": "9 min",
           "link": "https://open.spotify.com/episode/2bLGXvUAQkf2qOyO1vyo8j?si=cOD4Br6NS92ZFRTmWKT4aQ",
+          "image": ""
+        },
+        {
+          "id": "ep1780435621024",
+          "title": "Duelo, cuando algo cambia dentro de ti",
+          "description": "En este episodio hablaremos sobre la culpa, esa emoción que a veces nos paraliza y nos llena de dudas. Exploraremos su origen, su función y cómo manejarla de una manera más saludable. La culpa puede ser una señal de que algo nos importa, pero también puede volverse una carga innecesaria. Acompáñame en esta reflexión para aprender a comprenderla y soltar aquello que ya no nos corresponde.",
+          "duration": "",
+          "link": "https://open.spotify.com/episode/3P4pZIFuV2Ggq1vo3w2eT1?si=6861b2a4cb04413c",
+          "image": ""
+        },
+        {
+          "id": "ep1780435693648",
+          "title": "La culpa, una carga emocional",
+          "description": "A veces no todo lo que duele se ve. Hoy hablamos de cómo el duelo emocional transforma nuestro interior y cómo acompañarnos en esos cambios. Escucha y acompáñame en este viaje de comprensión y cuidado de ti mismo.",
+          "duration": "",
+          "link": "https://open.spotify.com/episode/3P4pZIFuV2Ggq1vo3w2eT1?si=NOTpx0h4TAmF3yIeDyAv9Q",
+          "image": ""
+        },
+        {
+          "id": "ep1780435744473",
+          "title": "Ansiedad; cuando la mente no encuentra descanso",
+          "description": "En este episodio exploramos la ansiedad como ese estado en el que la mente parece no encontrar descanso. Hablaremos sobre cómo reconocer sus señales, lo que ocurre en nuestro cuerpo y mente, y algunas estrategias para recuperar la calma y encontrar paz interior. Un espacio para comprendernos y cuidarnos desde la empatía y el autocuidado.",
+          "duration": "",
+          "link": "https://open.spotify.com/episode/59qYOZ9zj5nTpuwSxVFKVQ?si=xvoaFmhoSbippCEohiO37A",
           "image": ""
         }
       ],
@@ -179,8 +203,8 @@
       "accentColor": "#7c3aed",
       "blockAnimation": "none",
       "address": "",
-      "mapUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3860.327568194334!2d-90.5140978!3d14.6373378!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8589a3a624e4f79f%3A0xda2290fa2f398f54!2sLa%20TECA%20Biblioteca!5e0!3m2!1ses-419!2sgt!4v1779849252858!5m2!1ses-419!2sgt\" width=\"600\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade",
-      "mapsLink": "https://maps.app.goo.gl/ysR6LDR9Kge9vfDCA",
+      "mapUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d394.19821841193084!2d-90.51079889534537!3d14.646983373886043!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8589a20df15ea7c7%3A0xb957611d5743070a!2s8A%20Avenida%201-31%2C%20Cdad.%20de%20Guatemala%2001001!5e0!3m2!1ses!2sgt!4v1780434422447!5m2!1ses!2sgt\" width=\"600\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\" referrerpolicy=\"no-referrer-when-downgrade\"></iframe>",
+      "mapsLink": "https://maps.app.goo.gl/jzarBKrDTMxaVonA8",
       "buttonText": "Cómo llegar",
       "phone": "",
       "email": "",
@@ -193,7 +217,7 @@
         {
           "id": "h2",
           "days": "Sábado",
-          "time": "9:00 – 13:00"
+          "time": "8:00 – 11:00"
         }
       ],
       "id": "location-1779848771615",
