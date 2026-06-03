@@ -1,5 +1,6 @@
 import { useState, useEffect, useCallback } from 'react'
 import { useScrollAnimation } from '../hooks/useScrollAnimation'
+import { resolveImageUrl } from '../utils/imageUrl'
 
 export default function CarouselBlock({ block }) {
   const photos = block.photos || []
@@ -62,7 +63,7 @@ export default function CarouselBlock({ block }) {
                 >
                   {photo.url ? (
                     <img
-                      src={photo.url}
+                      src={resolveImageUrl(photo.url)}
                       alt={photo.caption || `Foto ${i + 1}`}
                       className="w-full h-full object-cover"
                       loading="lazy"

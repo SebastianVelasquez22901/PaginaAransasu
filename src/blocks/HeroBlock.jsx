@@ -1,5 +1,6 @@
 import { getButtonProps } from '../utils/buttonAction'
 import { useScrollAnimation } from '../hooks/useScrollAnimation'
+import { resolveImageUrl } from '../utils/imageUrl'
 
 const ALIGN_MAP = {
   left:   { flex: 'items-start', text: 'text-left' },
@@ -22,7 +23,7 @@ export default function HeroBlock({ block, onCtaClick }) {
     >
       {block.image && (
         <img
-          src={block.image}
+          src={resolveImageUrl(block.image)}
           alt="Foto de perfil"
           className="w-32 h-32 rounded-full object-cover mb-8 shadow-lg"
         />

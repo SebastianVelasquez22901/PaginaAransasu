@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import { useScrollAnimation } from '../hooks/useScrollAnimation'
+import { resolveImageUrl } from '../utils/imageUrl'
 
 const PLATFORM_CONFIG = {
   spotify:  { label: 'Spotify',         color: '#1DB954', bg: '#1DB95415' },
@@ -20,7 +21,7 @@ function EpisodeCard({ ep, accentColor, textColor }) {
       {/* Thumbnail */}
       <div className="flex-shrink-0 w-16 h-16 rounded-xl overflow-hidden bg-gray-100 flex items-center justify-center shadow-sm">
         {ep.image ? (
-          <img src={ep.image} alt={ep.title} className="w-full h-full object-cover" />
+          <img src={resolveImageUrl(ep.image)} alt={ep.title} className="w-full h-full object-cover" />
         ) : (
           <span className="text-2xl">🎙️</span>
         )}
