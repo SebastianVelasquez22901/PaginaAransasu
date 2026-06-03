@@ -289,6 +289,35 @@
       "visible": true
     },
     {
+      "title": "Historial Académico",
+      "subtitle": "Formación y certificaciones",
+      "bgColor": "#ffffff",
+      "textColor": "#2d2d2d",
+      "accentColor": "#5BB8A8",
+      "blockAnimation": "none",
+      "items": [
+        {
+          "id": "ac1",
+          "type": "degree",
+          "title": "Licenciatura en Psicología",
+          "institution": "Universidad de San Carlos de Guatemala",
+          "year": "2018",
+          "description": ""
+        },
+        {
+          "id": "ac2",
+          "type": "certification",
+          "title": "Certificación en Primeros Auxilios Psicológicos",
+          "institution": "AGAPI Guatemala",
+          "year": "2020",
+          "description": ""
+        }
+      ],
+      "id": "academic-1780445453206",
+      "type": "academic",
+      "visible": false
+    },
+    {
       "title": "Mi Consultorio",
       "subtitle": "Encuentra un espacio seguro cerca a ti",
       "bgColor": "#ffffff",
