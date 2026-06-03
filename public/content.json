@@ -33,8 +33,8 @@
       "id": "hero",
       "type": "hero",
       "visible": true,
-      "title": "Aransasú Aguilar",
-      "subtitle": "Psicoterapeuta Humanista-Existencial",
+      "title": "",
+      "subtitle": "\"Siempre he pensado que si no comparto lo que sé, estaré desperdiciando tiempo y recursos que pueden facilitar la comprensión a otros.\"",
       "buttonText": "Agenda tu consulta",
       "buttonLink": "#contacto",
       "bgColor": "#f0faf8",
@@ -42,7 +42,9 @@
       "image": "",
       "buttonAction": "whatsapp",
       "whatsappNumber": "42110831",
-      "whatsappMessage": "Buen día, Aransasú Aguilar te saluda "
+      "whatsappMessage": "Buen día, Aransasú Aguilar te saluda ",
+      "fontFamily": "\"Dancing Script\", cursive",
+      "blockAnimation": "fade"
     },
     {
       "title": "Carrusel de fotos",
@@ -81,7 +83,7 @@
       "accentColor": "#5BB8A8",
       "image": "",
       "blockAnimation": "fade-right",
-      "fontFamily": "\"Playfair Display\", serif",
+      "fontFamily": "\"Lato\", sans-serif",
       "textAlign": "justify"
     },
     {
@@ -108,7 +110,7 @@
       "title": "Aransasu Psicóloga",
       "subtitle": "Un espacio donde exploramos el fascinante mundo de la psicoterapia, siempre he pensado que si no comparto lo que sé, estaré desperdiciando tiempo y recursos que pueden facilitar la comprensión a otros.\n",
       "bgColor": "#f0faf8",
-      "textColor": "#2d2d2d",
+      "textColor": "#7e6b6b",
       "accentColor": "#5BB8A8",
       "blockAnimation": "none",
       "platforms": {
@@ -158,7 +160,7 @@
     {
       "title": "Modalidades de atención",
       "bgColor": "#f4faf9",
-      "textColor": "#2d2d2d",
+      "textColor": "#000000",
       "accentColor": "#5BB8A8",
       "cards": [
         {
@@ -186,7 +188,7 @@
     {
       "title": "Atención Psicoterapéutica Integral",
       "bgColor": "#f4faf9",
-      "textColor": "#2d2d2d",
+      "textColor": "#000000",
       "accentColor": "#5BB8A8",
       "fontFamily": "Inter, sans-serif",
       "blockAnimation": "none",
