@@ -14,12 +14,12 @@ function BookCard({ book, accentColor, textColor }) {
   return (
     <div className="flex flex-col group">
       {/* Cover */}
-      <div className="relative w-full aspect-[3/4] rounded-xl overflow-hidden shadow-md mb-3 bg-gray-100">
+      <div className="relative w-full aspect-[3/4] rounded-xl overflow-hidden shadow-md mb-3 bg-gray-50">
         {book.image ? (
           <img
             src={resolveImageUrl(book.image)}
             alt={book.title}
-            className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+            className="w-full h-full object-contain transition-transform duration-300 group-hover:scale-105"
           />
         ) : (
           <div

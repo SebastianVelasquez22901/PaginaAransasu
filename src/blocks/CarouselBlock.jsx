@@ -65,7 +65,8 @@ export default function CarouselBlock({ block }) {
                     <img
                       src={resolveImageUrl(photo.url)}
                       alt={photo.caption || `Foto ${i + 1}`}
-                      className="w-full h-full object-cover"
+                      className="w-full h-full object-contain"
+                      style={{ backgroundColor: block.bgColor || '#ffffff' }}
                       loading="lazy"
                     />
                   ) : (

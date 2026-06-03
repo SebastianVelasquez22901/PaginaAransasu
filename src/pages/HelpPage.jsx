@@ -254,7 +254,12 @@ const MANUAL = [
       {
         title: 'Imagen de portada',
         tags: ['imagen', 'portada', 'libro', 'url', 'foto'],
-        body: 'Busca el libro en Google Images o Amazon, copia la URL de la imagen y pégala en el campo "Imagen". Si no agregas imagen, se mostrará un marcador de posición con el título.',
+        body: 'Busca el libro en Google Images o Amazon, copia la URL de la imagen y pégala en el campo "Imagen". Si no agregas imagen, se mostrará un marcador de posición con el título. También puedes pegar un enlace de Google Drive y se convertirá automáticamente.',
+      },
+      {
+        title: 'Recomendaciones de tamaño y formato para libros',
+        tags: ['tamaño', 'formato', 'resolución', 'calidad', 'jpg', 'portada', 'libro'],
+        body: 'Formato recomendado: JPG o WebP. Orientación ideal: vertical (retrato), por ejemplo 400×533 px (proporción 3:4). Fotos cuadradas o horizontales también funcionan: se verán completas con fondo suave. Si usas fotos tuyas con el libro, cualquier tamaño está bien. Google Drive: pega el enlace de compartir tal cual, el sistema lo convierte automáticamente.',
       },
       {
         title: 'Enlace del libro',
@@ -283,6 +288,44 @@ const MANUAL = [
         title: 'Agregar episodios',
         tags: ['episodio', 'agregar', 'lista', 'podcast'],
         body: 'Cada episodio tiene: título, descripción, duración, fecha y un enlace al episodio. No es necesario completar todos los campos. Los episodios se muestran en el orden en que los agregas.',
+      },
+    ],
+  },
+  {
+    id: 'imagenes',
+    emoji: '🖼️',
+    title: 'Guía de imágenes y fotos',
+    color: 'cyan',
+    items: [
+      {
+        title: 'Formatos recomendados',
+        tags: ['formato', 'jpg', 'png', 'webp', 'imagen', 'calidad'],
+        body: 'Usa JPG para fotos (mejor compresión). Usa PNG si la imagen tiene fondo transparente (logotipos, iconos). WebP es el mejor formato en calidad y peso, pero no todos los servicios lo ofrecen. Evita BMP, TIFF o GIF para fotos.',
+      },
+      {
+        title: 'Tamaños recomendados por bloque',
+        tags: ['tamaño', 'resolución', 'px', 'medidas', 'bloque'],
+        body: 'Bienvenida (Hero): 1200×800 px horizontal. Sobre mí: 600×600 px cuadrada o 600×800 px vertical. Libros: 400×533 px vertical (3:4). Carrusel: 1200×800 px horizontal (3:2). Podcast: 400×400 px cuadrada. Ninguna imagen debería superar 2 MB.',
+      },
+      {
+        title: 'Usar imágenes de Google Drive',
+        tags: ['drive', 'google drive', 'enlace', 'compartir', 'url'],
+        body: 'Pasos: (1) Sube la foto a Google Drive. (2) Clic derecho → "Compartir" → "Cualquier persona con el enlace puede ver". (3) Copia el enlace (formato: drive.google.com/file/d/…/view). (4) Pégalo tal cual en cualquier campo de imagen del editor. El sistema lo convierte automáticamente al formato correcto.',
+      },
+      {
+        title: 'Otras formas de obtener URLs de imágenes',
+        tags: ['url', 'imgbb', 'cloudinary', 'subir', 'hospedar', 'imagen'],
+        body: 'Si Drive no funciona: (1) ImgBB (imgbb.com) — sube gratis y copia el "Direct link". (2) Cloudinary — más profesional, bueno para muchas fotos. (3) Si la imagen ya está en internet: clic derecho sobre ella → "Copiar dirección de imagen" y pega esa URL.',
+      },
+      {
+        title: 'Por qué no se ven las fotos de Instagram',
+        tags: ['instagram', 'foto', 'url', 'no carga', 'bloqueado'],
+        body: 'Instagram bloquea que sus fotos se muestren en otros sitios. No puedes usar links de instagram.com como imágenes. Solución: descarga la foto desde Instagram a tu teléfono o computadora, luego súbela a Google Drive o ImgBB y usa esa URL.',
+      },
+      {
+        title: 'Las fotos se ven completas, no recortadas',
+        tags: ['recortar', 'cortada', 'completa', 'object-fit', 'contener'],
+        body: 'Las fotos se muestran completas dentro de su marco sin recortarse. Si la proporción de la foto no coincide exactamente con el marco, aparecerá el color de fondo del bloque en los bordes. Para evitarlo, usa fotos con la proporción recomendada para cada bloque.',
       },
     ],
   },
@@ -544,7 +587,12 @@ const MANUAL = [
       {
         title: 'Altura de las fotos',
         tags: ['altura', 'tamaño', 'alto', 'slider', 'carrusel'],
-        body: 'El slider "Altura de las fotos" controla qué tan alta se ve cada imagen (de 200px a 700px). Las fotos se recortan automáticamente para llenar ese espacio (object-fit: cover), así que siempre quedan bien sin importar el tamaño original.',
+        body: 'El slider "Altura de las fotos" controla qué tan alta se ve cada imagen (de 200px a 700px). La foto se muestra completa dentro de ese espacio sin recortar, con el fondo del bloque visible si la foto no llena el área por completo.',
+      },
+      {
+        title: 'Recomendaciones de tamaño y formato para el carrusel',
+        tags: ['tamaño', 'formato', 'resolución', 'calidad', 'jpg', 'webp', 'horizontal', 'carrusel'],
+        body: 'Formato recomendado: JPG o WebP. Orientación ideal: horizontal (paisaje), por ejemplo 1200×800 px (proporción 3:2). Peso máximo: 2 MB por foto. Fotos verticales o cuadradas también funcionan: se mostrarán completas con franjas del color de fondo a los lados. Google Drive: usa el enlace "Cualquier persona con el vínculo" y pégalo tal cual, el sistema lo convierte automáticamente.',
       },
       {
         title: 'Navegación manual',
@@ -576,6 +624,7 @@ const COLOR_CLASSES = {
   sky:    { bg: 'bg-sky-50',    border: 'border-sky-200',    badge: 'bg-sky-100 text-sky-700',     dot: 'bg-sky-500' },
   slate:  { bg: 'bg-slate-50',  border: 'border-slate-200',  badge: 'bg-slate-100 text-slate-700', dot: 'bg-slate-500' },
   fuchsia:{ bg: 'bg-fuchsia-50',border: 'border-fuchsia-200',badge: 'bg-fuchsia-100 text-fuchsia-700', dot: 'bg-fuchsia-500' },
+  cyan:   { bg: 'bg-cyan-50',   border: 'border-cyan-200',   badge: 'bg-cyan-100 text-cyan-700',     dot: 'bg-cyan-500' },
 }
 
 function highlight(text, query) {
