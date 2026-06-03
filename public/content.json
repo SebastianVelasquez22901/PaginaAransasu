@@ -38,13 +38,15 @@
       "buttonText": "Agenda tu consulta",
       "buttonLink": "#contacto",
       "bgColor": "#f0faf8",
-      "textColor": "#000000",
+      "textColor": "#4f9056",
       "image": "",
       "buttonAction": "whatsapp",
       "whatsappNumber": "42110831",
       "whatsappMessage": "Buen día, Aransasú Aguilar te saluda ",
       "fontFamily": "\"Lato\", sans-serif",
-      "blockAnimation": "fade"
+      "blockAnimation": "fade",
+      "ambientBg": "bubbles",
+      "ambientIntensity": 0.7
     },
     {
       "title": "Carrusel de fotos",
