@@ -28,3 +28,68 @@ body {
 .animate-progress-bar {
   animation: progress-bar 2s linear both;
 }
+
+/* ── Ambient background ───────────────────────────── */
+@keyframes amb-float {
+  from { transform: translateY(0) translateX(0); }
+  to   { transform: translateY(-22px) translateX(10px); }
+}
+@keyframes amb-blob1 {
+  from { transform: translate(0, 0) scale(1); }
+  to   { transform: translate(9%, 12%) scale(1.18); }
+}
+@keyframes amb-blob2 {
+  from { transform: translate(0, 0) scale(1); }
+  to   { transform: translate(-7%, -9%) scale(1.22); }
+}
+@keyframes amb-blob3 {
+  from { transform: translate(0, 0) scale(0.9); }
+  to   { transform: translate(6%, -6%) scale(1.12); }
+}
+@keyframes amb-wave {
+  0%   { transform: translateY(0px); }
+  50%  { transform: translateY(-14px); }
+  100% { transform: translateY(0px); }
+}
+@keyframes amb-aurora {
+  0%   { background-position: 0% 50%; }
+  50%  { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+@keyframes amb-bubble {
+  0%   { transform: translateY(0) scale(1);    opacity: 0; }
+  10%  { opacity: 1; }
+  85%  { opacity: 0.5; }
+  100% { transform: translateY(-90vh) scale(0.4); opacity: 0; }
+}
+@keyframes amb-geo {
+  from { transform: rotate(0deg) translateY(0); }
+  to   { transform: rotate(22deg) translateY(-18px); }
+}
+
+/* ── Hero text entrance animations ───────────────── */
+@keyframes hero-fall {
+  from { opacity: 0; transform: translateY(-55px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+@keyframes hero-rise {
+  0%   { opacity: 0; transform: translateY(55px); }
+  65%  { transform: translateY(-10px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+@keyframes hero-blur-in {
+  from { opacity: 0; filter: blur(18px); }
+  to   { opacity: 1; filter: blur(0); }
+}
+@keyframes hero-cascade {
+  from { opacity: 0; transform: translateX(-45px); }
+  to   { opacity: 1; transform: translateX(0); }
+}
+@keyframes hero-paint {
+  from { opacity: 0.4; clip-path: inset(0 100% 0 0); }
+  to   { opacity: 1;   clip-path: inset(0 0% 0 0); }
+}
+@keyframes hero-expand {
+  from { opacity: 0; transform: scale(0.78); }
+  to   { opacity: 1; transform: scale(1); }
+}

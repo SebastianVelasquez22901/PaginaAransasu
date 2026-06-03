@@ -44,6 +44,13 @@ export default function HomePage() {
 
   const visibleBlocks = content.blocks.filter(b => b.visible)
 
+  const anchorIds = {}
+  visibleBlocks.forEach(block => {
+    if (BLOCK_ANCHORS[block.type] && !(block.type in anchorIds)) {
+      anchorIds[block.id] = BLOCK_ANCHORS[block.type]
+    }
+  })
+
   return (
     <>
       <Navbar navbar={content.navbar} blocks={content.blocks} />
@@ -52,7 +59,7 @@ export default function HomePage() {
           const Component = BLOCK_COMPONENTS[block.type]
           if (!Component) return null
           return (
-            <section key={block.id} id={BLOCK_ANCHORS[block.type]}>
+            <section key={block.id} id={anchorIds[block.id]}>
               <Component block={block} onCtaClick={handleCtaClick} />
             </section>
           )

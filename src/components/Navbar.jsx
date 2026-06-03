@@ -59,6 +59,7 @@ export default function Navbar({ navbar, blocks }) {
 
   const links = blocks
     .filter(b => b.visible && BLOCK_ANCHORS[b.type])
+    .filter((b, i, arr) => arr.findIndex(x => x.type === b.type) === i)
     .map(b => ({ label: BLOCK_NAV_LABELS[b.type], anchor: BLOCK_ANCHORS[b.type] }))
 
   function handleNavClick(e, anchor) {

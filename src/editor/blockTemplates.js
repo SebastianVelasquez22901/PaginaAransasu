@@ -15,6 +15,11 @@ export const BLOCK_TEMPLATES = [
       textAlign: 'center',
       fontFamily: 'Inter, sans-serif',
       blockAnimation: 'none',
+      textEntrance: 'none',
+      ambientBg: 'none',
+      ambientColor1: '#5BB8A8',
+      ambientColor2: '#a8e6df',
+      ambientIntensity: 0.3,
     },
   },
   {
