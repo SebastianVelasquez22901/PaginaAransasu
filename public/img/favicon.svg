@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <!-- Upper left wing -->
+  <path d="M49 43 C45 28 14 16 13 37 C12 52 38 55 49 47" fill="#5BB8A8"/>
+  <!-- Upper right wing -->
+  <path d="M51 43 C55 28 86 16 87 37 C88 52 62 55 51 47" fill="#5BB8A8"/>
+  <!-- Lower left wing -->
+  <path d="M49 50 C36 54 18 63 21 74 C24 84 46 74 49 59" fill="#5BB8A8"/>
+  <!-- Lower right wing -->
+  <path d="M51 50 C64 54 82 63 79 74 C76 84 54 74 51 59" fill="#5BB8A8"/>
+  <!-- Head dot -->
+  <circle cx="50" cy="36" r="4.5" fill="#5BB8A8"/>
+</svg>

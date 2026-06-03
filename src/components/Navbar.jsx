@@ -37,6 +37,7 @@ const BLOCK_ANCHORS = {
   pricing: 'precios',
   books: 'libros',
   podcast: 'podcast',
+  academic: 'historial',
   location: 'ubicacion',
 }
 
@@ -47,6 +48,7 @@ const BLOCK_NAV_LABELS = {
   pricing: 'Precios',
   books: 'Libros',
   podcast: 'Podcast',
+  academic: 'Historial',
   location: 'Ubicación',
 }
 
@@ -71,15 +73,33 @@ export default function Navbar({ navbar, blocks }) {
       className="sticky top-0 z-40 shadow-sm"
       style={{ backgroundColor: navbar.bgColor, color: navbar.textColor }}
     >
-      <div className="max-w-5xl mx-auto px-6 h-16 flex items-center justify-between">
+      <div className="max-w-5xl mx-auto px-6 h-20 flex items-center justify-between">
         {/* Brand */}
         <a
           href="#"
           onClick={e => handleNavClick(e, links[0]?.anchor || 'inicio')}
-          className="text-lg font-bold tracking-tight"
-          style={{ color: navbar.accentColor }}
+          className="flex items-center gap-2 shrink-0"
         >
-          {navbar.brandName}
+          {navbar.logoUrl && (() => {
+            const h = navbar.logoHeight || 80
+            const w = Math.round(h * 2)
+            const imgH = Math.round(w * 1.25)   // 960/768 ≈ 1.25
+            const mt = -Math.round(imgH * 0.3)  // recorta espacio superior
+            return (
+              <div style={{ height: `${h}px`, width: `${w}px`, overflow: 'hidden', flexShrink: 0 }}>
+                <img
+                  src={navbar.logoUrl}
+                  alt={navbar.brandName}
+                  style={{ width: `${w}px`, height: 'auto', marginTop: `${mt}px` }}
+                />
+              </div>
+            )
+          })()}
+          {!navbar.logoUrl && (
+            <span className="text-lg font-bold tracking-tight" style={{ color: navbar.accentColor }}>
+              {navbar.brandName}
+            </span>
+          )}
         </a>
 
         {/* Desktop links */}

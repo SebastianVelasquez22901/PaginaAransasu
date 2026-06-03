@@ -478,6 +478,39 @@ const MANUAL = [
     ],
   },
   {
+    id: 'historial',
+    emoji: '🎓',
+    title: 'Bloque Historial Académico',
+    color: 'teal',
+    items: [
+      {
+        title: 'Qué es el historial académico',
+        tags: ['historial', 'académico', 'títulos', 'certificaciones', 'logros'],
+        body: 'Este bloque muestra tu formación profesional en forma de línea de tiempo vertical. Cada elemento tiene un ícono según su tipo (título, certificación, curso o reconocimiento), el nombre del logro, la institución y el año.',
+      },
+      {
+        title: 'Tipos de logro',
+        tags: ['tipo', 'título', 'certificación', 'curso', 'reconocimiento', 'ícono'],
+        body: 'Hay cuatro tipos: 🎓 Título / Maestría, 📜 Certificación, 📚 Curso / Diplomado, 🏆 Reconocimiento. El tipo cambia el ícono que aparece en el círculo de la línea de tiempo.',
+      },
+      {
+        title: 'Cómo agregar un logro',
+        tags: ['agregar', 'nuevo', 'añadir', 'logro', 'historial'],
+        body: 'Abre el editor del bloque y presiona "+ Agregar". Se añade una tarjeta nueva. Selecciona el tipo, escribe el nombre del título o certificación, la institución, el año y una descripción opcional.',
+      },
+      {
+        title: 'Cómo eliminar o reordenar logros',
+        tags: ['eliminar', 'borrar', 'orden', 'mover'],
+        body: 'Cada logro tiene un botón "×" a la derecha para eliminarlo. El orden en que aparecen es el mismo orden en que los ves en el editor: el primero arriba es el primero en la línea de tiempo.',
+      },
+      {
+        title: 'Colores del bloque',
+        tags: ['color', 'acento', 'fondo', 'teal', 'verde'],
+        body: 'El color de acento afecta los círculos de la línea, los badges de año y los bordes de las tarjetas. Puedes cambiarlo en la sección "Colores y animación" del editor.',
+      },
+    ],
+  },
+  {
     id: 'carrusel',
     emoji: '🖼️',
     title: 'Bloque Carrusel de fotos',

@@ -7,6 +7,7 @@ import BooksEditor from './BooksEditor'
 import PodcastEditor from './PodcastEditor'
 import CarouselEditor from './CarouselEditor'
 import LocationEditor from './LocationEditor'
+import AcademicEditor from './AcademicEditor'
 
 const EDITORS = {
   hero: HeroEditor,
@@ -17,6 +18,7 @@ const EDITORS = {
   podcast: PodcastEditor,
   carousel: CarouselEditor,
   location: LocationEditor,
+  academic: AcademicEditor,
 }
 
 const BLOCK_LABELS = {
@@ -28,6 +30,7 @@ const BLOCK_LABELS = {
   podcast: 'Podcast',
   carousel: 'Carrusel de fotos',
   location: 'Ubicación',
+  academic: 'Historial Académico',
 }
 
 export default function BlockWrapper({ block, onUpdate, onUpdateCard, onAddCard, onRemoveCard, onToggle, onDelete, children }) {

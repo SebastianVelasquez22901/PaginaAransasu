@@ -10,6 +10,7 @@ import BooksBlock from '../blocks/BooksBlock'
 import PodcastBlock from '../blocks/PodcastBlock'
 import CarouselBlock from '../blocks/CarouselBlock'
 import LocationBlock from '../blocks/LocationBlock'
+import AcademicBlock from '../blocks/AcademicBlock'
 import ProximamenteModal from '../components/ProximamenteModal'
 
 const BLOCK_COMPONENTS = {
@@ -21,6 +22,7 @@ const BLOCK_COMPONENTS = {
   podcast: PodcastBlock,
   carousel: CarouselBlock,
   location: LocationBlock,
+  academic: AcademicBlock,
 }
 
 export default function HomePage() {

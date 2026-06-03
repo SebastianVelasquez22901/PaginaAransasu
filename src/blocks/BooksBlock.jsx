@@ -13,7 +13,7 @@ function BookCard({ book, accentColor, textColor }) {
   return (
     <div className="flex flex-col group">
       {/* Cover */}
-      <div className="relative w-full aspect-[2/3] rounded-xl overflow-hidden shadow-md mb-3 bg-gray-100">
+      <div className="relative w-full aspect-square rounded-xl overflow-hidden shadow-md mb-3 bg-gray-100">
         {book.image ? (
           <img
             src={book.image}

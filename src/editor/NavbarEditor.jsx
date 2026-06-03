@@ -6,6 +6,33 @@ export default function NavbarEditor({ navbar, onChange }) {
   return (
     <div className="flex flex-col gap-4">
       <div className="flex flex-col gap-1">
+        <label className="text-xs font-semibold text-gray-500 uppercase tracking-wide">Logo (URL de imagen)</label>
+        <input
+          className="border border-gray-200 rounded-lg px-3 py-2 text-sm"
+          value={navbar.logoUrl || ''}
+          onChange={e => set('logoUrl', e.target.value)}
+          placeholder="/img/logo.jpg"
+        />
+        {navbar.logoUrl && (
+          <img src={navbar.logoUrl} alt="Logo" className="h-12 w-auto object-contain mt-1 rounded-lg border border-gray-100 p-1" />
+        )}
+        <div className="flex flex-col gap-1 mt-1">
+          <label className="text-xs text-gray-400">Tamaño del logo (px)</label>
+          <input
+            type="range"
+            min={32}
+            max={120}
+            step={4}
+            value={navbar.logoHeight || 80}
+            onChange={e => set('logoHeight', Number(e.target.value))}
+            className="w-full accent-violet-600"
+          />
+          <span className="text-xs text-gray-400 text-right">{navbar.logoHeight || 80} px</span>
+        </div>
+        <p className="text-xs text-gray-400">Cuando hay logo, se muestra la imagen en lugar del nombre de texto.</p>
+      </div>
+
+      <div className="flex flex-col gap-1">
         <label className="text-xs font-semibold text-gray-500 uppercase tracking-wide">Nombre del sitio</label>
         <input
           className="border border-gray-200 rounded-lg px-3 py-2 text-sm"
