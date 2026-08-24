@@ -47,7 +47,8 @@
       "blockAnimation": "fade",
       "ambientBg": "bubbles",
       "ambientIntensity": 0.7,
-      "ambientColor1": "#000000"
+      "ambientColor1": "#000000",
+      "textAlign": "left"
     },
     {
       "title": "Carrusel de fotos",
