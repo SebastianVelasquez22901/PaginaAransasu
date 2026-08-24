@@ -30,6 +30,27 @@
   },
   "blocks": [
     {
+      "title": "",
+      "subtitle": "",
+      "bgColor": "#ffffff",
+      "textColor": "#2d2d2d",
+      "accentColor": "#5BB8A8",
+      "blockAnimation": "zoom",
+      "autoPlay": true,
+      "interval": 4,
+      "height": "480px",
+      "photos": [
+        {
+          "id": "ph1787604993455",
+          "url": "/img/gallery/1787605005148-edlh8-img-1571.jpg",
+          "caption": ""
+        }
+      ],
+      "id": "carousel-1787604985807",
+      "type": "carousel",
+      "visible": true
+    },
+    {
       "id": "hero",
       "type": "hero",
       "visible": true,
@@ -683,6 +704,15 @@
     }
   ],
   "gallery": [
+    {
+      "id": "img1787605006589",
+      "url": "/img/gallery/1787605005148-edlh8-img-1571.jpg",
+      "filename": "IMG_1571.jpg",
+      "sizeBytes": 109062,
+      "width": 683,
+      "height": 911,
+      "uploadedAt": "2026-08-24T20:56:46.589Z"
+    },
     {
       "id": "img1787604847440",
       "url": "/img/gallery/1787604846275-y9rkq-con-aransas-psic-loga-3.jpg",
