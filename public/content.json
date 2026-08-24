@@ -2,9 +2,9 @@
   "footer": {
     "brandName": "Aransasú Aguilar",
     "tagline": "Powered by SV",
-    "bgColor": "#6D4B5E",
-    "textColor": "#FAF5F1",
-    "accentColor": "#55B8AA",
+    "bgColor": "#1a3835",
+    "textColor": "#d4f0ec",
+    "accentColor": "#5BB8A8",
     "email": "aransasuaguilar@gmail.com",
     "phone": "42110831",
     "copyright": "© {year} Aransasú Aguilar · Todos los derechos reservados",
@@ -20,11 +20,11 @@
   },
   "navbar": {
     "brandName": "Aransasú Aguilar",
-    "logoUrl": "/img/logo-transparente.png",
-    "bgColor": "#6D4B5E",
-    "textColor": "#FFFFFF",
-    "accentColor": "#55B8AA",
-    "hoverLineColor": "#55B8AA",
+    "logoUrl": "/img/logo.jpg",
+    "bgColor": "#ffffff",
+    "textColor": "#2d2d2d",
+    "accentColor": "#5BB8A8",
+    "hoverLineColor": "#5BB8A8",
     "ctaText": "",
     "ctaLink": ""
   },
@@ -37,9 +37,9 @@
       "subtitle": "\"Siempre he pensado que si no comparto lo que sé, estaré desperdiciando tiempo y recursos que pueden facilitar la comprensión a otros.\"",
       "buttonText": "Agenda tu sesión",
       "buttonLink": "#contacto",
-      "bgColor": "#FFFFFF",
-      "textColor": "#303234",
-      "image": "",
+      "bgColor": "#ffffff",
+      "textColor": "#000000",
+      "image": "/img/gallery/1787602509159-0mwt1-unnamed.jpg",
       "buttonAction": "whatsapp",
       "whatsappNumber": "42110831",
       "whatsappMessage": "Buen día, Aransasú Aguilar te saluda ",
@@ -47,8 +47,11 @@
       "blockAnimation": "fade",
       "ambientBg": "bubbles",
       "ambientIntensity": 0.7,
-      "ambientColor1": "#55B8AA",
-      "textAlign": "center"
+      "ambientColor1": "#000000",
+      "textAlign": "center",
+      "imageFocalX": 50,
+      "imageFocalY": 50,
+      "imageZoom": 1
     },
     {
       "id": "about",
@@ -56,9 +59,9 @@
       "visible": true,
       "title": "Psicoterapeuta Clínica y Sexual",
       "body": "Soy Aransasú Aguilar, Magíster en Psicología Clínica y Psicoterapia, con enfoque humanista existencial, orientado al acompañamiento emocional, el desarrollo personal y la comprensión integral de la experiencia humana.\n\nMi trabajo terapéutico se centra en brindar espacios seguros de escucha, reflexión y crecimiento, acompañando procesos relacionados con autoestima, ansiedad, manejo emocional, relaciones interpersonales, dinámica familiar y construcción de sentido de vida.\n\nCreo profundamente en la capacidad que tiene cada persona para resignificar sus experiencias, fortalecer sus recursos internos y construir una vida más consciente, auténtica y emocionalmente saludable.\n",
-      "bgColor": "#FFFFFF",
-      "textColor": "#303234",
-      "accentColor": "#6D4B5E",
+      "bgColor": "#ffffff",
+      "textColor": "#000000",
+      "accentColor": "#000000",
       "image": "",
       "blockAnimation": "fade-right",
       "fontFamily": "\"Lato\", sans-serif",
@@ -67,9 +70,9 @@
     {
       "title": "Historial Académico",
       "subtitle": "Formación y certificaciones",
-      "bgColor": "#FFFFFF",
-      "textColor": "#303234",
-      "accentColor": "#55B8AA",
+      "bgColor": "#ffffff",
+      "textColor": "#2d2d2d",
+      "accentColor": "#5BB8A8",
       "blockAnimation": "none",
       "items": [
         {
@@ -110,10 +113,36 @@
       "visible": true
     },
     {
+      "title": "",
+      "subtitle": "",
+      "bgColor": "#ffffff",
+      "textColor": "#2d2d2d",
+      "accentColor": "#5BB8A8",
+      "blockAnimation": "none",
+      "autoPlay": true,
+      "interval": 4,
+      "height": "480px",
+      "photos": [
+        {
+          "id": "ph1787603101414",
+          "url": "/img/gallery/1787603261468-yo0vk-img-3365.jpg",
+          "caption": ""
+        },
+        {
+          "id": "ph1787603368972",
+          "url": "/img/gallery/1787603377755-1sfo1-ac18f7d1-0f45-4821-81ba-2648b171533e-271.jpg",
+          "caption": ""
+        }
+      ],
+      "id": "carousel-1787590814528",
+      "type": "carousel",
+      "visible": true
+    },
+    {
       "title": "Atención Psicoterapéutica Integral",
-      "bgColor": "#FAF5F1",
-      "textColor": "#303234",
-      "accentColor": "#6D4B5E",
+      "bgColor": "#f4faf9",
+      "textColor": "#000000",
+      "accentColor": "#000000",
       "fontFamily": "Inter, sans-serif",
       "blockAnimation": "none",
       "cardAnimation": "none",
@@ -146,9 +175,9 @@
     },
     {
       "title": "Modalidades de atención",
-      "bgColor": "#FAF5F1",
-      "textColor": "#303234",
-      "accentColor": "#6D4B5E",
+      "bgColor": "#f4faf9",
+      "textColor": "#000000",
+      "accentColor": "#000000",
       "cards": [
         {
           "id": "s1779518672303",
@@ -182,18 +211,23 @@
     {
       "title": "Carrusel de fotos",
       "subtitle": "",
-      "bgColor": "#FFFFFF",
-      "textColor": "#303234",
-      "accentColor": "#55B8AA",
+      "bgColor": "#ffffff",
+      "textColor": "#2d2d2d",
+      "accentColor": "#5BB8A8",
       "blockAnimation": "fade-left",
       "autoPlay": true,
       "interval": 4,
       "height": "480px",
       "photos": [
         {
-          "id": "ph1787597414753",
-          "url": "",
-          "caption": ""
+          "id": "ph1779847343270",
+          "url": "https://content.nationalgeographic.com.es/medio/2018/02/27/playa-de-isuntza-lekeitio__1280x720.jpg",
+          "caption": "Foto 1"
+        },
+        {
+          "id": "ph1779847392839",
+          "url": "https://www.dzoom.org.es/wp-content/uploads/2019/09/paisajes-expresivos-734x489.jpg",
+          "caption": "Foto 2"
         }
       ],
       "id": "carousel-1779847307439",
@@ -203,9 +237,9 @@
     {
       "title": "Aransasu Psicóloga",
       "subtitle": "Un espacio donde exploramos el fascinante mundo de la psicoterapia.\n",
-      "bgColor": "#FAF5F1",
-      "textColor": "#303234",
-      "accentColor": "#55B8AA",
+      "bgColor": "#f0faf8",
+      "textColor": "#000000",
+      "accentColor": "#5BB8A8",
       "blockAnimation": "none",
       "platforms": {
         "spotify": "https://open.spotify.com/show/6HzQrV7159UxQVSfLN0naA?si=e02a2bb7f2194d56",
@@ -252,11 +286,32 @@
       "visible": true
     },
     {
+      "title": "",
+      "subtitle": "",
+      "bgColor": "#ffffff",
+      "textColor": "#2d2d2d",
+      "accentColor": "#5BB8A8",
+      "blockAnimation": "none",
+      "autoPlay": true,
+      "interval": 4,
+      "height": "480px",
+      "photos": [
+        {
+          "id": "ph1787603441890",
+          "url": "/img/gallery/1787603451426-a8dr7-con-aransas-psic-loga.jpg",
+          "caption": ""
+        }
+      ],
+      "id": "carousel-1787590792144",
+      "type": "carousel",
+      "visible": true
+    },
+    {
       "title": "Libros recomendados",
       "subtitle": "Recursos que han transformado mi práctica",
-      "bgColor": "#FAF5F1",
-      "textColor": "#303234",
-      "accentColor": "#55B8AA",
+      "bgColor": "#f4faf9",
+      "textColor": "#000000",
+      "accentColor": "#50654e",
       "books": [
         {
           "id": "b1779517698973",
@@ -272,10 +327,25 @@
       "visible": true
     },
     {
+      "title": "",
+      "subtitle": "",
+      "bgColor": "#ffffff",
+      "textColor": "#2d2d2d",
+      "accentColor": "#5BB8A8",
+      "blockAnimation": "none",
+      "autoPlay": true,
+      "interval": 4,
+      "height": "480px",
+      "photos": [],
+      "id": "carousel-1787590755959",
+      "type": "carousel",
+      "visible": true
+    },
+    {
       "title": "Conferencias",
-      "bgColor": "#FAF5F1",
-      "textColor": "#303234",
-      "accentColor": "#6D4B5E",
+      "bgColor": "#f4faf9",
+      "textColor": "#2d2d2d",
+      "accentColor": "#000000",
       "fontFamily": "Inter, sans-serif",
       "blockAnimation": "none",
       "cardAnimation": "none",
@@ -307,10 +377,46 @@
       "visible": true
     },
     {
+      "title": "",
+      "subtitle": "",
+      "bgColor": "#ffffff",
+      "textColor": "#2d2d2d",
+      "accentColor": "#5BB8A8",
+      "blockAnimation": "none",
+      "autoPlay": true,
+      "interval": 4,
+      "height": "480px",
+      "photos": [
+        {
+          "id": "ph1787604152294",
+          "url": "/img/gallery/1787604243755-z3ko4-1154ebf5-9c29-46b4-af5d-e681c881e1e0.jpg",
+          "caption": ""
+        },
+        {
+          "id": "ph1787604253245",
+          "url": "/img/gallery/1787604262609-4jjlh-7362767c-d200-4a41-9098-9c967c88846b-524.jpg",
+          "caption": ""
+        },
+        {
+          "id": "ph1787604265151",
+          "url": "/img/gallery/1787604277169-dcsop-e9b4e298-aae5-4839-b0cf-b9ff913d0bb6-107.jpg",
+          "caption": ""
+        },
+        {
+          "id": "ph1787604289276",
+          "url": "/img/gallery/1787604309640-p608p-23f8ce43-ade6-4af1-9b71-8c99f36b9a66.jpg",
+          "caption": ""
+        }
+      ],
+      "id": "carousel-1787590767319",
+      "type": "carousel",
+      "visible": true
+    },
+    {
       "title": "Capacitaciones",
-      "bgColor": "#FAF5F1",
-      "textColor": "#303234",
-      "accentColor": "#6D4B5E",
+      "bgColor": "#f4faf9",
+      "textColor": "#2d2d2d",
+      "accentColor": "#000000",
       "fontFamily": "Inter, sans-serif",
       "blockAnimation": "none",
       "cardAnimation": "none",
@@ -363,11 +469,26 @@
       "visible": true
     },
     {
+      "title": "",
+      "subtitle": "",
+      "bgColor": "#ffffff",
+      "textColor": "#2d2d2d",
+      "accentColor": "#5BB8A8",
+      "blockAnimation": "none",
+      "autoPlay": true,
+      "interval": 4,
+      "height": "480px",
+      "photos": [],
+      "id": "carousel-1787590736863",
+      "type": "carousel",
+      "visible": true
+    },
+    {
       "title": "Planes y Tarifas",
       "subtitle": "Elige el plan que mejor se adapte a tus necesidades",
-      "bgColor": "#FFFFFF",
-      "textColor": "#303234",
-      "accentColor": "#E8A083",
+      "bgColor": "#ffffff",
+      "textColor": "#2d2d2d",
+      "accentColor": "#3b9680",
       "plans": [
         {
           "id": "plan1779516567309a",
@@ -528,9 +649,9 @@
     {
       "title": "Mi Clínica",
       "subtitle": "Un espacio centrico de fácil acceso para ti",
-      "bgColor": "#FFFFFF",
-      "textColor": "#303234",
-      "accentColor": "#55B8AA",
+      "bgColor": "#ffffff",
+      "textColor": "#2d2d2d",
+      "accentColor": "#5BB8A8",
       "blockAnimation": "none",
       "address": "8va. Avenida 1-31 zona 1 ",
       "mapUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d394.19821841193084!2d-90.51079889534537!3d14.646983373886043!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8589a20df15ea7c7%3A0xb957611d5743070a!2s8A%20Avenida%201-31%2C%20Cdad.%20de%20Guatemala%2001001!5e0!3m2!1ses!2sgt!4v1780434422447!5m2!1ses!2sgt",
@@ -553,7 +674,104 @@
       "id": "location-1779848771615",
       "type": "location",
       "visible": true
+    },
+    {
+      "title": "",
+      "subtitle": "",
+      "bgColor": "#ffffff",
+      "textColor": "#2d2d2d",
+      "accentColor": "#5BB8A8",
+      "blockAnimation": "none",
+      "autoPlay": true,
+      "interval": 4,
+      "height": "480px",
+      "photos": [],
+      "id": "carousel-1787590696191",
+      "type": "carousel",
+      "visible": true
     }
   ],
-  "gallery": []
+  "gallery": [
+    {
+      "id": "img1787604310668",
+      "url": "/img/gallery/1787604309640-p608p-23f8ce43-ade6-4af1-9b71-8c99f36b9a66.jpg",
+      "filename": "23F8CE43-ADE6-4AF1-9B71-8C99F36B9A66.jpg",
+      "sizeBytes": 83811,
+      "width": 872,
+      "height": 656,
+      "uploadedAt": "2026-08-24T20:45:10.668Z"
+    },
+    {
+      "id": "img1787604278270",
+      "url": "/img/gallery/1787604277169-dcsop-e9b4e298-aae5-4839-b0cf-b9ff913d0bb6-107.jpg",
+      "filename": "E9B4E298-AAE5-4839-B0CF-B9FF913D0BB6-10726-00001D0A63FB45D9.jpg",
+      "sizeBytes": 279309,
+      "width": 1306,
+      "height": 911,
+      "uploadedAt": "2026-08-24T20:44:38.270Z"
+    },
+    {
+      "id": "img1787604263463",
+      "url": "/img/gallery/1787604262609-4jjlh-7362767c-d200-4a41-9098-9c967c88846b-524.jpg",
+      "filename": "7362767C-D200-4A41-9098-9C967C88846B-5244-0000018653ED16E2.jpg",
+      "sizeBytes": 10719,
+      "width": 240,
+      "height": 220,
+      "uploadedAt": "2026-08-24T20:44:23.463Z"
+    },
+    {
+      "id": "img1787604245131",
+      "url": "/img/gallery/1787604243755-z3ko4-1154ebf5-9c29-46b4-af5d-e681c881e1e0.jpg",
+      "filename": "1154ebf5-9c29-46b4-af5d-e681c881e1e0.jpg",
+      "sizeBytes": 165123,
+      "width": 1215,
+      "height": 911,
+      "uploadedAt": "2026-08-24T20:44:05.131Z"
+    },
+    {
+      "id": "img1787603452352",
+      "url": "/img/gallery/1787603451426-a8dr7-con-aransas-psic-loga.jpg",
+      "filename": "Con ARANSASÚ PSICÓLOGA.jpg",
+      "sizeBytes": 62760,
+      "width": 911,
+      "height": 911,
+      "uploadedAt": "2026-08-24T20:30:52.352Z"
+    },
+    {
+      "id": "img1787603378788",
+      "url": "/img/gallery/1787603377755-1sfo1-ac18f7d1-0f45-4821-81ba-2648b171533e-271.jpg",
+      "filename": "AC18F7D1-0F45-4821-81BA-2648B171533E-27186-00000C96B6B0D1BB.jpg",
+      "sizeBytes": 103755,
+      "width": 1189,
+      "height": 911,
+      "uploadedAt": "2026-08-24T20:29:38.788Z"
+    },
+    {
+      "id": "img1787603262659",
+      "url": "/img/gallery/1787603261468-yo0vk-img-3365.jpg",
+      "filename": "IMG_3365.jpg",
+      "sizeBytes": 228843,
+      "width": 1215,
+      "height": 911,
+      "uploadedAt": "2026-08-24T20:27:42.659Z"
+    },
+    {
+      "id": "img1787603083735",
+      "url": "/img/gallery/1787603082212-rxdct-img-6385.jpg",
+      "filename": "IMG_6385.jpeg",
+      "sizeBytes": 406443,
+      "width": 1440,
+      "height": 1920,
+      "uploadedAt": "2026-08-24T20:24:43.735Z"
+    },
+    {
+      "id": "img1787602508864",
+      "url": "/img/gallery/1787602509159-0mwt1-unnamed.jpg",
+      "filename": "unnamed.png",
+      "sizeBytes": 475689,
+      "width": 1200,
+      "height": 1600,
+      "uploadedAt": "2026-08-24T20:15:08.864Z"
+    }
+  ]
 }
