@@ -161,7 +161,7 @@ export default function ImagePickerField({
                 {tab === 'gallery' && (
                   <div className="flex flex-col gap-2">
                     <GalleryUsageBar gallery={gallery} />
-                    <GalleryGrid gallery={gallery} content={content} onSelect={applyUrl} onDelete={onRemoveGalleryImage} />
+                    <GalleryGrid gallery={gallery} content={content} onSelect={applyUrl} onDelete={onRemoveGalleryImage} password={password} />
                   </div>
                 )}
 

@@ -15,19 +15,34 @@ export function computeGalleryUsage(gallery) {
   return { usedBytes, pct }
 }
 
-export function findGalleryImageUsage(content, url) {
-  if (!content || !url) return false
+const BLOCK_TYPE_LABELS = {
+  hero: 'Bienvenida (Hero)',
+  about: 'Sobre mí',
+  books: 'Libros recomendados',
+  carousel: 'Carrusel de fotos',
+  podcast: 'Podcast',
+}
 
-  if (content.navbar?.logoUrl === url) return true
+function blockLabel(block) {
+  return BLOCK_TYPE_LABELS[block.type] || block.title || block.type
+}
+
+// Devuelve la lista de lugares donde se usa la imagen (vacía si no se usa en ningún lado).
+export function findGalleryImageUsage(content, url) {
+  const locations = []
+  if (!content || !url) return locations
+
+  if (content.navbar?.logoUrl === url) locations.push('Navbar (logo)')
 
   for (const block of content.blocks || []) {
-    if (block.image === url) return true
-    if (Array.isArray(block.books) && block.books.some(b => b.image === url)) return true
-    if (Array.isArray(block.photos) && block.photos.some(p => p.url === url)) return true
-    if (Array.isArray(block.episodes) && block.episodes.some(e => e.image === url)) return true
+    const label = blockLabel(block)
+    if (block.image === url) locations.push(label)
+    if (Array.isArray(block.books) && block.books.some(b => b.image === url)) locations.push(`${label} (portada de libro)`)
+    if (Array.isArray(block.photos) && block.photos.some(p => p.url === url)) locations.push(`${label} (foto)`)
+    if (Array.isArray(block.episodes) && block.episodes.some(e => e.image === url)) locations.push(`${label} (episodio)`)
   }
 
-  return false
+  return locations
 }
 
 // La imagen recién subida tarda 1-2 min en quedar disponible en /img/gallery/...
@@ -70,5 +85,18 @@ export async function uploadImage(file, password) {
     width: compressed.width,
     height: compressed.height,
     uploadedAt: new Date().toISOString(),
+  }
+}
+
+export async function deleteImage(url, password) {
+  const res = await fetch('/.netlify/functions/delete-image', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({ password, url }),
+  })
+
+  const data = await res.json()
+  if (!res.ok) {
+    throw new Error(data.error || 'No se pudo borrar la imagen.')
   }
 }

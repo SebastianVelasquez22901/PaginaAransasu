@@ -50,7 +50,7 @@ export default function GalleryPanel({ content, gallery, password, onAddGalleryI
 
       <p className="text-xs text-gray-400">Recuerda hacer clic en "Publicar cambios" después de subir imágenes.</p>
 
-      <GalleryGrid gallery={gallery} content={content} onDelete={onRemoveGalleryImage} />
+      <GalleryGrid gallery={gallery} content={content} onDelete={onRemoveGalleryImage} password={password} />
     </div>
   )
 }
