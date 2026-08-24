@@ -65,6 +65,51 @@
       "textAlign": "justify"
     },
     {
+      "title": "Historial Académico",
+      "subtitle": "Formación y certificaciones",
+      "bgColor": "#ffffff",
+      "textColor": "#2d2d2d",
+      "accentColor": "#5BB8A8",
+      "blockAnimation": "none",
+      "items": [
+        {
+          "id": "ac1",
+          "type": "degree",
+          "title": "Licenciatura en Psicología",
+          "institution": "Universidad de San Carlos de Guatemala",
+          "year": "2018",
+          "description": "Formación profesional orientada a la comprensión del comportamiento humano, la salud mental y los procesos psicológicos, integrando conocimientos teóricos, investigación y práctica supervisada. La carrera permite profundizar en áreas como la psicología clínica, educativa, social-comunitaria e industrial, promoviendo una intervención profesional ética y comprometida con el bienestar de la sociedad guatemalteca."
+        },
+        {
+          "id": "ac2",
+          "type": "certification",
+          "title": "Certificación en Primeros Auxilios Psicológicos",
+          "institution": "AGAPI Guatemala",
+          "year": "2020",
+          "description": "Formación orientada a brindar apoyo psicológico inmediato ante situaciones de crisis, proporcionando herramientas para escuchar, contener emocionalmente, identificar necesidades y facilitar estrategias iniciales de afrontamiento, respetando los límites de la intervención y promoviendo el bienestar de la persona afectada."
+        },
+        {
+          "id": "ac1787586539450",
+          "type": "course",
+          "title": "Sexualidad, mucho mas que sexo",
+          "institution": "Los Andes, Colombia ",
+          "year": "2021",
+          "description": "Formación enfocada en comprender la sexualidad humana desde una perspectiva integral, abordando factores psicológicos, afectivos, relacionales y socioculturales, con énfasis en el bienestar, la toma de decisiones informadas y una vivencia responsable y saludable de la sexualidad."
+        },
+        {
+          "id": "ac1787586621969",
+          "type": "degree",
+          "title": "Maestría en Psicología Clínica y Psicoterapia ",
+          "institution": "Universidad de San Carlos de Guatemala",
+          "year": "2026",
+          "description": "Formación de posgrado enfocada en la evaluación, comprensión e intervención de problemáticas psicológicas desde la psicología clínica y la psicoterapia, fortaleciendo competencias para el psicodiagnóstico y la intervención psicoterapéutica desde una perspectiva integrativa y fundamentada científicamente. La Maestría en Psicología Clínica y Psicoterapia forma parte de los programas de posgrado de la Escuela de Ciencias Psicológicas de la Universidad de San Carlos de Guatemala."
+        }
+      ],
+      "id": "academic-1780445453206",
+      "type": "academic",
+      "visible": false
+    },
+    {
       "title": "Atención Psicoterapéutica Integral",
       "bgColor": "#f4faf9",
       "textColor": "#000000",
@@ -124,71 +169,6 @@
       "visible": false
     },
     {
-      "title": "Libros recomendados",
-      "subtitle": "Recursos que han transformado mi práctica",
-      "bgColor": "#f4faf9",
-      "textColor": "#000000",
-      "accentColor": "#50654e",
-      "books": [
-        {
-          "id": "b1779517698973",
-          "title": "El hombre en busca de sentido",
-          "author": "Viktor Frankl",
-          "description": "El hombre en busca de sentido\" es el estremecedor relato en el que Viktor Frankl nos narra su experiencia en los campos de concentración.",
-          "image": "https://books.google.com.gt/books/publisher/content?id=eAOIDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&imgtk=AFLRE70N-VkfNz4DGct2mu7ayNIFMaEdWh5S29yD7OHDmKjP6ErHp6xPOkP9HpV6ZPz7XCxS54zxK1TSng-wootfQF76EzOHOcWwBLV9GQthoNB9qlKEWGqHLap4i5g26u_K2kb1aGKk",
-          "link": ""
-        }
-      ],
-      "id": "books-1779517754239",
-      "type": "books",
-      "visible": true
-    },
-    {
-      "title": "Historial Académico",
-      "subtitle": "Formación y certificaciones",
-      "bgColor": "#ffffff",
-      "textColor": "#2d2d2d",
-      "accentColor": "#5BB8A8",
-      "blockAnimation": "none",
-      "items": [
-        {
-          "id": "ac1",
-          "type": "degree",
-          "title": "Licenciatura en Psicología",
-          "institution": "Universidad de San Carlos de Guatemala",
-          "year": "2018",
-          "description": "Formación profesional orientada a la comprensión del comportamiento humano, la salud mental y los procesos psicológicos, integrando conocimientos teóricos, investigación y práctica supervisada. La carrera permite profundizar en áreas como la psicología clínica, educativa, social-comunitaria e industrial, promoviendo una intervención profesional ética y comprometida con el bienestar de la sociedad guatemalteca."
-        },
-        {
-          "id": "ac2",
-          "type": "certification",
-          "title": "Certificación en Primeros Auxilios Psicológicos",
-          "institution": "AGAPI Guatemala",
-          "year": "2020",
-          "description": "Formación orientada a brindar apoyo psicológico inmediato ante situaciones de crisis, proporcionando herramientas para escuchar, contener emocionalmente, identificar necesidades y facilitar estrategias iniciales de afrontamiento, respetando los límites de la intervención y promoviendo el bienestar de la persona afectada."
-        },
-        {
-          "id": "ac1787586539450",
-          "type": "course",
-          "title": "Sexualidad, mucho mas que sexo",
-          "institution": "Los Andes, Colombia ",
-          "year": "2021",
-          "description": "Formación enfocada en comprender la sexualidad humana desde una perspectiva integral, abordando factores psicológicos, afectivos, relacionales y socioculturales, con énfasis en el bienestar, la toma de decisiones informadas y una vivencia responsable y saludable de la sexualidad."
-        },
-        {
-          "id": "ac1787586621969",
-          "type": "degree",
-          "title": "Maestría en Psicología Clínica y Psicoterapia ",
-          "institution": "Universidad de San Carlos de Guatemala",
-          "year": "2026",
-          "description": "Formación de posgrado enfocada en la evaluación, comprensión e intervención de problemáticas psicológicas desde la psicología clínica y la psicoterapia, fortaleciendo competencias para el psicodiagnóstico y la intervención psicoterapéutica desde una perspectiva integrativa y fundamentada científicamente. La Maestría en Psicología Clínica y Psicoterapia forma parte de los programas de posgrado de la Escuela de Ciencias Psicológicas de la Universidad de San Carlos de Guatemala."
-        }
-      ],
-      "id": "academic-1780445453206",
-      "type": "academic",
-      "visible": false
-    },
-    {
       "title": "Aransasu Psicóloga",
       "subtitle": "Un espacio donde exploramos el fascinante mundo de la psicoterapia, siempre he pensado que si no comparto lo que sé, estaré desperdiciando tiempo y recursos que pueden facilitar la comprensión a otros.\n",
       "bgColor": "#f0faf8",
@@ -240,6 +220,26 @@
       "visible": true
     },
     {
+      "title": "Libros recomendados",
+      "subtitle": "Recursos que han transformado mi práctica",
+      "bgColor": "#f4faf9",
+      "textColor": "#000000",
+      "accentColor": "#50654e",
+      "books": [
+        {
+          "id": "b1779517698973",
+          "title": "El hombre en busca de sentido",
+          "author": "Viktor Frankl",
+          "description": "El hombre en busca de sentido\" es el estremecedor relato en el que Viktor Frankl nos narra su experiencia en los campos de concentración.",
+          "image": "https://books.google.com.gt/books/publisher/content?id=eAOIDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&imgtk=AFLRE70N-VkfNz4DGct2mu7ayNIFMaEdWh5S29yD7OHDmKjP6ErHp6xPOkP9HpV6ZPz7XCxS54zxK1TSng-wootfQF76EzOHOcWwBLV9GQthoNB9qlKEWGqHLap4i5g26u_K2kb1aGKk",
+          "link": ""
+        }
+      ],
+      "id": "books-1779517754239",
+      "type": "books",
+      "visible": true
+    },
+    {
       "title": "Modalidades de atención",
       "bgColor": "#f4faf9",
       "textColor": "#000000",
@@ -266,6 +266,64 @@
       "blockAnimation": "fade",
       "cardAnimation": "fade-right",
       "fontFamily": "\"Merriweather\", serif"
+    },
+    {
+      "title": "Historial Académico",
+      "subtitle": "Formación y certificaciones",
+      "bgColor": "#ffffff",
+      "textColor": "#2d2d2d",
+      "accentColor": "#5BB8A8",
+      "blockAnimation": "none",
+      "items": [
+        {
+          "id": "ac1",
+          "type": "degree",
+          "title": "Licenciatura en Psicología",
+          "institution": "Universidad de San Carlos de Guatemala",
+          "year": "2018",
+          "description": ""
+        },
+        {
+          "id": "ac2",
+          "type": "certification",
+          "title": "Certificación en Primeros Auxilios Psicológicos",
+          "institution": "AGAPI Guatemala",
+          "year": "2020",
+          "description": ""
+        }
+      ],
+      "id": "academic-1787588555544",
+      "type": "academic",
+      "visible": true
+    },
+    {
+      "title": "Historial Académico",
+      "subtitle": "Formación y certificaciones",
+      "bgColor": "#ffffff",
+      "textColor": "#2d2d2d",
+      "accentColor": "#5BB8A8",
+      "blockAnimation": "none",
+      "items": [
+        {
+          "id": "ac1",
+          "type": "degree",
+          "title": "Licenciatura en Psicología",
+          "institution": "Universidad de San Carlos de Guatemala",
+          "year": "2018",
+          "description": ""
+        },
+        {
+          "id": "ac2",
+          "type": "certification",
+          "title": "Certificación en Primeros Auxilios Psicológicos",
+          "institution": "AGAPI Guatemala",
+          "year": "2020",
+          "description": ""
+        }
+      ],
+      "id": "academic-1787588552360",
+      "type": "academic",
+      "visible": true
     },
     {
       "title": "Conferencias",
