@@ -589,15 +589,5 @@
       "visible": true
     }
   ],
-  "gallery": [
-    {
-      "id": "img1787597805658",
-      "url": "/img/gallery/1787597807904-96qkt-prueba-1.jpg",
-      "filename": "prueba 1.jpg",
-      "sizeBytes": 100404,
-      "width": 800,
-      "height": 533,
-      "uploadedAt": "2026-08-24T18:56:45.658Z"
-    }
-  ]
+  "gallery": []
 }
