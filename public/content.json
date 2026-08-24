@@ -124,13 +124,13 @@
       "height": "480px",
       "photos": [
         {
-          "id": "ph1787603101414",
-          "url": "/img/gallery/1787603261468-yo0vk-img-3365.jpg",
+          "id": "ph1787603368972",
+          "url": "/img/gallery/1787603377755-1sfo1-ac18f7d1-0f45-4821-81ba-2648b171533e-271.jpg",
           "caption": ""
         },
         {
-          "id": "ph1787603368972",
-          "url": "/img/gallery/1787603377755-1sfo1-ac18f7d1-0f45-4821-81ba-2648b171533e-271.jpg",
+          "id": "ph1787604872208",
+          "url": "/img/gallery/1787603261468-yo0vk-img-3365.jpg",
           "caption": ""
         }
       ],
@@ -207,32 +207,6 @@
       "blockAnimation": "fade",
       "cardAnimation": "fade-right",
       "fontFamily": "\"Merriweather\", serif"
-    },
-    {
-      "title": "Carrusel de fotos",
-      "subtitle": "",
-      "bgColor": "#ffffff",
-      "textColor": "#2d2d2d",
-      "accentColor": "#5BB8A8",
-      "blockAnimation": "fade-left",
-      "autoPlay": true,
-      "interval": 4,
-      "height": "480px",
-      "photos": [
-        {
-          "id": "ph1779847343270",
-          "url": "https://content.nationalgeographic.com.es/medio/2018/02/27/playa-de-isuntza-lekeitio__1280x720.jpg",
-          "caption": "Foto 1"
-        },
-        {
-          "id": "ph1779847392839",
-          "url": "https://www.dzoom.org.es/wp-content/uploads/2019/09/paisajes-expresivos-734x489.jpg",
-          "caption": "Foto 2"
-        }
-      ],
-      "id": "carousel-1779847307439",
-      "type": "carousel",
-      "visible": false
     },
     {
       "title": "Aransasu Psicóloga",
