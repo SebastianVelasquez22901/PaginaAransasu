@@ -384,12 +384,12 @@
         {
           "id": "h1",
           "days": "Lunes – Viernes",
-          "time": "4:30-6:30"
+          "time": "4:30 pm - 6:30 pm"
         },
         {
           "id": "h2",
           "days": "Sábado",
-          "time": "8:00 – 11:00"
+          "time": "8:00 am – 11:00 am"
         }
       ],
       "id": "location-1779848771615",
