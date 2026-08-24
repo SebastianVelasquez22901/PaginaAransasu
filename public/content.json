@@ -110,21 +110,6 @@
       "visible": true
     },
     {
-      "title": "",
-      "subtitle": "",
-      "bgColor": "#FFFFFF",
-      "textColor": "#303234",
-      "accentColor": "#55B8AA",
-      "blockAnimation": "none",
-      "autoPlay": true,
-      "interval": 4,
-      "height": "480px",
-      "photos": [],
-      "id": "carousel-1787590814528",
-      "type": "carousel",
-      "visible": true
-    },
-    {
       "title": "Atención Psicoterapéutica Integral",
       "bgColor": "#FAF5F1",
       "textColor": "#303234",
