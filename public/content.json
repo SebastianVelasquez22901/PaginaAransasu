@@ -268,64 +268,6 @@
       "visible": true
     },
     {
-      "title": "Historial Académico",
-      "subtitle": "Formación y certificaciones",
-      "bgColor": "#ffffff",
-      "textColor": "#2d2d2d",
-      "accentColor": "#5BB8A8",
-      "blockAnimation": "none",
-      "items": [
-        {
-          "id": "ac1",
-          "type": "degree",
-          "title": "Licenciatura en Psicología",
-          "institution": "Universidad de San Carlos de Guatemala",
-          "year": "2018",
-          "description": ""
-        },
-        {
-          "id": "ac2",
-          "type": "certification",
-          "title": "Certificación en Primeros Auxilios Psicológicos",
-          "institution": "AGAPI Guatemala",
-          "year": "2020",
-          "description": ""
-        }
-      ],
-      "id": "academic-1787588555544",
-      "type": "academic",
-      "visible": true
-    },
-    {
-      "title": "Historial Académico",
-      "subtitle": "Formación y certificaciones",
-      "bgColor": "#ffffff",
-      "textColor": "#2d2d2d",
-      "accentColor": "#5BB8A8",
-      "blockAnimation": "none",
-      "items": [
-        {
-          "id": "ac1",
-          "type": "degree",
-          "title": "Licenciatura en Psicología",
-          "institution": "Universidad de San Carlos de Guatemala",
-          "year": "2018",
-          "description": ""
-        },
-        {
-          "id": "ac2",
-          "type": "certification",
-          "title": "Certificación en Primeros Auxilios Psicológicos",
-          "institution": "AGAPI Guatemala",
-          "year": "2020",
-          "description": ""
-        }
-      ],
-      "id": "academic-1787588552360",
-      "type": "academic",
-      "visible": true
-    },
-    {
       "title": "Conferencias",
       "bgColor": "#f4faf9",
       "textColor": "#2d2d2d",
@@ -436,7 +378,7 @@
       ],
       "id": "location-1779848771615",
       "type": "location",
-      "visible": false
+      "visible": true
     },
     {
       "title": "Planes y Tarifas",
