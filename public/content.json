@@ -124,13 +124,13 @@
       "height": "480px",
       "photos": [
         {
-          "id": "ph1787603368972",
-          "url": "/img/gallery/1787603377755-1sfo1-ac18f7d1-0f45-4821-81ba-2648b171533e-271.jpg",
+          "id": "ph1787604872208",
+          "url": "/img/gallery/1787603261468-yo0vk-img-3365.jpg",
           "caption": ""
         },
         {
-          "id": "ph1787604872208",
-          "url": "/img/gallery/1787603261468-yo0vk-img-3365.jpg",
+          "id": "ph1787605392070",
+          "url": "/img/gallery/1787605399781-usvz2-img-3775.jpg",
           "caption": ""
         }
       ],
@@ -683,6 +683,15 @@
     }
   ],
   "gallery": [
+    {
+      "id": "img1787605400927",
+      "url": "/img/gallery/1787605399781-usvz2-img-3775.jpg",
+      "filename": "IMG_3775.jpg",
+      "sizeBytes": 55920,
+      "width": 617,
+      "height": 911,
+      "uploadedAt": "2026-08-24T21:03:20.927Z"
+    },
     {
       "id": "img1787605006589",
       "url": "/img/gallery/1787605005148-edlh8-img-1571.jpg",
