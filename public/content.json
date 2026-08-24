@@ -478,7 +478,13 @@
       "autoPlay": true,
       "interval": 4,
       "height": "480px",
-      "photos": [],
+      "photos": [
+        {
+          "id": "ph1787604477583",
+          "url": "",
+          "caption": ""
+        }
+      ],
       "id": "carousel-1787590736863",
       "type": "carousel",
       "visible": true
@@ -685,13 +691,28 @@
       "autoPlay": true,
       "interval": 4,
       "height": "480px",
-      "photos": [],
+      "photos": [
+        {
+          "id": "ph1787604643024",
+          "url": "/img/gallery/1787604658652-tgv2i-img-6027.jpg",
+          "caption": ""
+        }
+      ],
       "id": "carousel-1787590696191",
       "type": "carousel",
       "visible": true
     }
   ],
   "gallery": [
+    {
+      "id": "img1787604659760",
+      "url": "/img/gallery/1787604658652-tgv2i-img-6027.jpg",
+      "filename": "IMG_6027.jpg",
+      "sizeBytes": 125394,
+      "width": 1215,
+      "height": 911,
+      "uploadedAt": "2026-08-24T20:50:59.760Z"
+    },
     {
       "id": "img1787604310668",
       "url": "/img/gallery/1787604309640-p608p-23f8ce43-ade6-4af1-9b71-8c99f36b9a66.jpg",
