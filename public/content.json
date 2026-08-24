@@ -123,19 +123,21 @@
           "title": "Terapia indivudual ",
           "description": "Proceso personalizado y confidencial en el que trabajas directamente con un profesional de la salud mental. Uno a uno",
           "icon": "🧘",
-          "textAlign": "left"
+          "textAlign": "center"
         },
         {
           "id": "s1780436125754",
           "title": "Terapia de Pareja",
           "description": "Intervención psicológica orientada a transformar los patrones relacionales que generan malestar, con el objetivo es mejorar la comunicación, resolver conflictos de manera constructiva y fortalecer el vínculo emocional, brindando un espacio seguro y neutral.",
-          "icon": "❤️"
+          "icon": "❤️",
+          "textAlign": "center"
         },
         {
           "id": "s1780436177811",
           "title": "Terapia Familiar",
           "description": "La terapia familiar es una disciplina enfocada en encontrar soluciones a los desafíos y complejidades que pueden surgir en la vida familiar.",
-          "icon": "👐"
+          "icon": "👐",
+          "textAlign": "center"
         }
       ],
       "id": "services-1780436008866",
@@ -153,14 +155,21 @@
           "title": "Sesión virtual ",
           "description": "Modalidad de atención psicológica que se realiza a través de Google Meet,  permitiendo que el proceso terapéutico se lleve a cabo a distancia.\nEste espacio busca brindar acompañamiento emocional, orientación y herramientas psicológicas desde un entorno seguro, confidencial y accesible, adaptándose a las necesidades y horarios de cada persona según cita previa.\n",
           "icon": "💻",
-          "textAlign": "left"
+          "textAlign": "center"
         },
         {
           "id": "s1779750288902",
           "title": "Sesión presencial ",
           "description": "Espacio terapéutico de acompañamiento psicológico en un ambiente privado, seguro y confidencial, diseñado para favorecer la escucha, la expresión emocional y el trabajo terapéutico de manera cercana y personalizada.\nA través de este proceso se busca brindar herramientas que permitan comprender emociones, fortalecer recursos personales y promover bienestar emocional y mental.",
           "icon": "👥",
-          "textAlign": "left"
+          "textAlign": "center"
+        },
+        {
+          "id": "s1787589620327",
+          "title": "Sesión Familiar Sistémica ",
+          "description": "Sesión terapéutica realizada en el entorno familiar, desde un enfoque sistémico, orientada a comprender las dinámicas, vínculos y patrones de comunicación que influyen en el bienestar de la familia. Permite trabajar con sus integrantes en su propio contexto, promoviendo comunicación saludable, resolución de conflictos y fortalecimiento de los vínculos familiares.",
+          "icon": "🪷",
+          "textAlign": "center"
         }
       ],
       "id": "services-1779518883484",
@@ -281,19 +290,21 @@
           "title": "Conferencia sobre Salud Mental",
           "description": "Espacios orientados a promover el bienestar psicológico, fortalecer factores protectores y sensibilizar sobre la importancia del cuidado de la salud mental en los diferentes ámbitos de la vida.",
           "icon": "🧠",
-          "textAlign": "left"
+          "textAlign": "center"
         },
         {
           "id": "s1780436829284",
           "title": "Conferencia sobre Inteligencia Emocional ",
           "description": "Desarrollo de habilidades para reconocer, comprender y regular las emociones, fortaleciendo las relaciones interpersonales, la toma de decisiones y el liderazgo.",
-          "icon": "💆"
+          "icon": "💆",
+          "textAlign": "center"
         },
         {
           "id": "s1780436859492",
           "title": "Conferencia sobre Bienestar en la Salud Emocional ",
           "description": "Espacios de reflexión y aprendizaje orientados a fortalecer el bienestar emocional, la comunicación efectiva, el trabajo en equipo y la creación de ambientes laborales más saludables y productivos.",
-          "icon": "⭐"
+          "icon": "⭐",
+          "textAlign": "center"
         }
       ],
       "id": "services-1780436647539",
@@ -314,37 +325,42 @@
           "title": "Habilidades Blandas",
           "description": "Desarrollo de competencias personales y sociales que favorecen las relaciones interpersonales, la adaptación al cambio y el desempeño efectivo en diferentes entornos.",
           "icon": "✨",
-          "textAlign": "left"
+          "textAlign": "center"
         },
         {
           "id": "s1780436987221",
           "title": "Liderazgo",
           "description": "Fortalecimiento de habilidades para influir positivamente en otros, promover la colaboración, gestionar equipos y alcanzar objetivos de manera efectiva.",
-          "icon": "🙏"
+          "icon": "🙏",
+          "textAlign": "center"
         },
         {
           "id": "s1780437001957",
           "title": "Trabajo en Equipo",
           "description": "Capacitaciones orientadas a mejorar la cooperación, la confianza y la coordinación entre las personas para el logro de metas comunes.",
-          "icon": "💡"
+          "icon": "💡",
+          "textAlign": "center"
         },
         {
           "id": "s1780437015749",
           "title": "Comunicación Asertiva ",
           "description": "Desarrollo de herramientas para expresar ideas con claridad, escuchar activamente y fortalecer las relaciones laborales e interpersonales.",
-          "icon": "🤝"
+          "icon": "🤝",
+          "textAlign": "center"
         },
         {
           "id": "s1787586419681",
           "title": "Salud Emocional en el Área Laboral ",
           "description": "Un espacio participativo que combina psicología, herramientas prácticas y un toque de neurociencia, promoviendo no solo colaboradores más productivos, sino personas emocionalmente más conscientes y saludables.",
-          "icon": "⭐"
+          "icon": "⭐",
+          "textAlign": "center"
         },
         {
           "id": "s1787586469210",
           "title": "Manejo del Estrés",
           "description": "Desde un enfoque de psicología clínica, autocuidado y neurociencia, se brindan herramientas prácticas para regular la respuesta al estrés, fortalecer los recursos personales y afrontar de manera más consciente las demandas del día a día, promoviendo un mayor equilibrio entre bienestar emocional y vida laboral.",
-          "icon": "⭐"
+          "icon": "⭐",
+          "textAlign": "center"
         }
       ],
       "id": "services-1780436917701",
