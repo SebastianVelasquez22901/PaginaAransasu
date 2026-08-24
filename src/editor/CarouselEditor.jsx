@@ -1,7 +1,8 @@
 import ColorField from './ColorField'
 import AnimationField from './AnimationField'
+import ImagePickerField from './ImagePickerField'
 
-export default function CarouselEditor({ block, onChange }) {
+export default function CarouselEditor({ block, onChange, gallery, content, password, onAddGalleryImage, onRemoveGalleryImage }) {
   const set = (key, val) => onChange({ [key]: val })
 
   function addPhoto() {
@@ -124,12 +125,19 @@ export default function CarouselEditor({ block, onChange }) {
               </button>
             </div>
             <div className="flex flex-col gap-1">
-              <label className="text-xs text-gray-400">URL de la imagen</label>
-              <input
-                className="border border-gray-200 rounded-lg px-2 py-1.5 text-sm"
-                value={photo.url}
-                onChange={e => updatePhoto(photo.id, { url: e.target.value })}
-                placeholder="https://..."
+              <label className="text-xs text-gray-400">Imagen</label>
+              <ImagePickerField
+                field="url"
+                data={photo}
+                onChange={changes => updatePhoto(photo.id, changes)}
+                fit="contain"
+                shape="rect"
+                aspectRatio={16 / 9}
+                gallery={gallery}
+                content={content}
+                password={password}
+                onAddGalleryImage={onAddGalleryImage}
+                onRemoveGalleryImage={onRemoveGalleryImage}
               />
             </div>
             <div className="flex flex-col gap-1">
@@ -141,14 +149,6 @@ export default function CarouselEditor({ block, onChange }) {
                 placeholder="Descripción breve..."
               />
             </div>
-            {photo.url && (
-              <img
-                src={photo.url}
-                alt=""
-                className="w-full h-24 object-cover rounded-lg border border-gray-200"
-                onError={e => { e.target.style.display = 'none' }}
-              />
-            )}
           </div>
         ))}
       </div>

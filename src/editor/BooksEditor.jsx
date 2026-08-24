@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import ColorField from './ColorField'
+import ImagePickerField from './ImagePickerField'
 
 function ImageHelp() {
   const [open, setOpen] = useState(false)
@@ -50,7 +51,7 @@ function ImageHelp() {
   )
 }
 
-function BookCard({ book, onUpdate, onRemove }) {
+function BookCard({ book, onUpdate, onRemove, gallery, content, password, onAddGalleryImage, onRemoveGalleryImage }) {
   return (
     <div className="border border-gray-200 rounded-xl p-3 flex flex-col gap-2 bg-gray-50">
       <div className="flex items-center justify-between">
@@ -87,21 +88,20 @@ function BookCard({ book, onUpdate, onRemove }) {
 
       <div className="flex flex-col gap-2">
         <ImageHelp />
-        <label className="text-xs text-gray-400">URL de la portada</label>
-        <input
-          className="border border-gray-200 rounded-lg px-2 py-1.5 text-sm font-mono"
-          value={book.image}
-          onChange={e => onUpdate({ image: e.target.value })}
-          placeholder="https://..."
+        <label className="text-xs text-gray-400">Portada del libro</label>
+        <ImagePickerField
+          field="image"
+          data={book}
+          onChange={onUpdate}
+          fit="contain"
+          shape="rect"
+          aspectRatio={3 / 4}
+          gallery={gallery}
+          content={content}
+          password={password}
+          onAddGalleryImage={onAddGalleryImage}
+          onRemoveGalleryImage={onRemoveGalleryImage}
         />
-        {book.image && (
-          <img
-            src={book.image}
-            alt="Vista previa"
-            className="h-20 w-14 object-cover rounded-lg border border-gray-200 mt-1"
-            onError={e => { e.target.style.display = 'none' }}
-          />
-        )}
       </div>
 
       <div className="flex flex-col gap-1">
@@ -128,7 +128,7 @@ function BookCard({ book, onUpdate, onRemove }) {
   )
 }
 
-export default function BooksEditor({ block, onChange }) {
+export default function BooksEditor({ block, onChange, gallery, content, password, onAddGalleryImage, onRemoveGalleryImage }) {
   const set = (key, val) => onChange({ [key]: val })
 
   function updateBook(bookId, changes) {
@@ -193,6 +193,11 @@ export default function BooksEditor({ block, onChange }) {
             book={book}
             onUpdate={changes => updateBook(book.id, changes)}
             onRemove={() => removeBook(book.id)}
+            gallery={gallery}
+            content={content}
+            password={password}
+            onAddGalleryImage={onAddGalleryImage}
+            onRemoveGalleryImage={onRemoveGalleryImage}
           />
         ))}
       </div>

@@ -1,5 +1,6 @@
 import { useScrollAnimation } from '../hooks/useScrollAnimation'
 import { resolveImageUrl } from '../utils/imageUrl'
+import { getPreviewUrl } from '../utils/gallery'
 
 export default function AboutBlock({ block }) {
   const [ref, animStyle] = useScrollAnimation(block.blockAnimation || 'none')
@@ -15,11 +16,17 @@ export default function AboutBlock({ block }) {
     >
       <div className="max-w-4xl mx-auto flex flex-col md:flex-row items-center gap-8 md:gap-12">
         {block.image && (
-          <img
-            src={resolveImageUrl(block.image)}
-            alt="Sobre mí"
-            className="w-40 h-40 md:w-56 md:h-56 rounded-2xl object-cover shadow-lg flex-shrink-0"
-          />
+          <div className="w-40 h-40 md:w-56 md:h-56 rounded-2xl overflow-hidden shadow-lg flex-shrink-0">
+            <img
+              src={getPreviewUrl(block.image) || resolveImageUrl(block.image)}
+              alt="Sobre mí"
+              className="w-full h-full object-cover"
+              style={{
+                objectPosition: `${block.imageFocalX ?? 50}% ${block.imageFocalY ?? 50}%`,
+                transform: block.imageZoom && block.imageZoom !== 1 ? `scale(${block.imageZoom})` : undefined,
+              }}
+            />
+          </div>
         )}
         <div style={{ textAlign }}>
           <h2

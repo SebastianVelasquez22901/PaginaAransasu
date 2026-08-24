@@ -8,7 +8,7 @@ export function useContent() {
     fetch('/content.json')
       .then(r => r.json())
       .then(data => {
-        setContent(data)
+        setContent({ ...data, gallery: data.gallery || [] })
         setLoading(false)
       })
   }, [])
@@ -101,6 +101,20 @@ export function useContent() {
     }))
   }
 
+  function addGalleryImage(entry) {
+    setContent(prev => ({
+      ...prev,
+      gallery: [entry, ...prev.gallery],
+    }))
+  }
+
+  function removeGalleryImage(id) {
+    setContent(prev => ({
+      ...prev,
+      gallery: prev.gallery.filter(g => g.id !== id),
+    }))
+  }
+
   function moveBlock(activeId, overId) {
     setContent(prev => {
       const blocks = [...prev.blocks]
@@ -126,5 +140,7 @@ export function useContent() {
     removeBlock,
     updateNavbar,
     updateFooter,
+    addGalleryImage,
+    removeGalleryImage,
   }
 }

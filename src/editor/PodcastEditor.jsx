@@ -1,3 +1,5 @@
+import ImagePickerField from './ImagePickerField'
+
 function Field({ label, children }) {
   return (
     <div className="flex flex-col gap-1">
@@ -9,7 +11,7 @@ function Field({ label, children }) {
 
 const inputCls = 'border border-gray-200 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-violet-400 w-full'
 
-function EpisodeRow({ ep, index, onChange, onRemove }) {
+function EpisodeRow({ ep, index, onChange, onRemove, gallery, content, password, onAddGalleryImage, onRemoveGalleryImage }) {
   return (
     <div className="border border-gray-100 rounded-xl p-4 flex flex-col gap-3 bg-gray-50">
       <div className="flex items-center justify-between">
@@ -46,8 +48,20 @@ function EpisodeRow({ ep, index, onChange, onRemove }) {
           </Field>
         </div>
         <div className="col-span-2">
-          <Field label="URL de imagen (opcional)">
-            <input className={inputCls} value={ep.image || ''} onChange={e => onChange({ image: e.target.value })} placeholder="https://..." />
+          <Field label="Imagen (opcional)">
+            <ImagePickerField
+              field="image"
+              data={ep}
+              onChange={onChange}
+              fit="cover"
+              shape="rounded"
+              aspectRatio={1}
+              gallery={gallery}
+              content={content}
+              password={password}
+              onAddGalleryImage={onAddGalleryImage}
+              onRemoveGalleryImage={onRemoveGalleryImage}
+            />
           </Field>
         </div>
       </div>
@@ -55,7 +69,7 @@ function EpisodeRow({ ep, index, onChange, onRemove }) {
   )
 }
 
-export default function PodcastEditor({ block, onChange }) {
+export default function PodcastEditor({ block, onChange, gallery, content, password, onAddGalleryImage, onRemoveGalleryImage }) {
   const platforms = block.platforms || {}
   const episodes = block.episodes || []
 
@@ -152,6 +166,11 @@ export default function PodcastEditor({ block, onChange }) {
               index={i}
               onChange={changes => updateEpisode(ep.id, changes)}
               onRemove={() => removeEpisode(ep.id)}
+              gallery={gallery}
+              content={content}
+              password={password}
+              onAddGalleryImage={onAddGalleryImage}
+              onRemoveGalleryImage={onRemoveGalleryImage}
             />
           ))}
           {episodes.length === 0 && (

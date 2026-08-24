@@ -1,21 +1,26 @@
 import ColorField from './ColorField'
+import ImagePickerField from './ImagePickerField'
 
-export default function NavbarEditor({ navbar, onChange }) {
+export default function NavbarEditor({ navbar, onChange, gallery, content, password, onAddGalleryImage, onRemoveGalleryImage }) {
   const set = (key, val) => onChange({ [key]: val })
 
   return (
     <div className="flex flex-col gap-4">
       <div className="flex flex-col gap-1">
-        <label className="text-xs font-semibold text-gray-500 uppercase tracking-wide">Logo (URL de imagen)</label>
-        <input
-          className="border border-gray-200 rounded-lg px-3 py-2 text-sm"
-          value={navbar.logoUrl || ''}
-          onChange={e => set('logoUrl', e.target.value)}
-          placeholder="/img/logo.jpg"
+        <label className="text-xs font-semibold text-gray-500 uppercase tracking-wide">Logo</label>
+        {/* fit="contain": el hack de recorte de altura fija en Navbar.jsx se deja intacto, no aplica punto focal/zoom */}
+        <ImagePickerField
+          field="logoUrl"
+          data={navbar}
+          onChange={onChange}
+          fit="contain"
+          shape="rect"
+          gallery={gallery}
+          content={content}
+          password={password}
+          onAddGalleryImage={onAddGalleryImage}
+          onRemoveGalleryImage={onRemoveGalleryImage}
         />
-        {navbar.logoUrl && (
-          <img src={navbar.logoUrl} alt="Logo" className="h-12 w-auto object-contain mt-1 rounded-lg border border-gray-100 p-1" />
-        )}
         <div className="flex flex-col gap-1 mt-1">
           <label className="text-xs text-gray-400">Tamaño del logo (px)</label>
           <input

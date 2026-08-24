@@ -3,6 +3,7 @@ import ButtonActionEditor from './ButtonActionEditor'
 import AnimationField from './AnimationField'
 import TextAlignField from './TextAlignField'
 import FontField from './FontField'
+import ImagePickerField from './ImagePickerField'
 
 const TEXT_ENTRANCES = [
   { value: 'none',     emoji: '⬜', label: 'Sin anim.' },
@@ -24,7 +25,7 @@ const AMBIENT_TYPES = [
   { value: 'geometric',  emoji: '◇',  label: 'Geométrico' },
 ]
 
-export default function HeroEditor({ block, onChange }) {
+export default function HeroEditor({ block, onChange, gallery, content, password, onAddGalleryImage, onRemoveGalleryImage }) {
   const set = (key, val) => onChange({ [key]: val })
   const hasAmbient = block.ambientBg && block.ambientBg !== 'none'
 
@@ -153,15 +154,20 @@ export default function HeroEditor({ block, onChange }) {
         <ColorField label="Color de texto" value={block.textColor} onChange={v => set('textColor', v)} />
       </div>
 
-      <div className="flex flex-col gap-1">
-        <label className="text-xs font-semibold text-gray-500 uppercase tracking-wide">Imagen de perfil (URL)</label>
-        <input
-          className="border border-gray-200 rounded-lg px-3 py-2 text-sm"
-          value={block.image}
-          onChange={e => set('image', e.target.value)}
-          placeholder="https://... o deja vacío"
-        />
-      </div>
+      <ImagePickerField
+        label="Imagen de perfil"
+        field="image"
+        data={block}
+        onChange={onChange}
+        fit="cover"
+        shape="circle"
+        aspectRatio={1}
+        gallery={gallery}
+        content={content}
+        password={password}
+        onAddGalleryImage={onAddGalleryImage}
+        onRemoveGalleryImage={onRemoveGalleryImage}
+      />
     </div>
   )
 }

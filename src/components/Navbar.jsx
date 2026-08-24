@@ -1,4 +1,6 @@
 import { useState } from 'react'
+import { resolveImageUrl } from '../utils/imageUrl'
+import { getPreviewUrl } from '../utils/gallery'
 
 function NavLink({ label, anchor, textColor, hoverLineColor, hoverLineWidth, onClick }) {
   const [hovered, setHovered] = useState(false)
@@ -89,7 +91,7 @@ export default function Navbar({ navbar, blocks }) {
             return (
               <div style={{ height: `${h}px`, width: `${w}px`, overflow: 'hidden', flexShrink: 0 }}>
                 <img
-                  src={navbar.logoUrl}
+                  src={getPreviewUrl(navbar.logoUrl) || resolveImageUrl(navbar.logoUrl)}
                   alt={navbar.brandName}
                   style={{ width: `${w}px`, height: 'auto', marginTop: `${mt}px` }}
                 />

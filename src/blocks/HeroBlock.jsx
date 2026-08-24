@@ -1,6 +1,7 @@
 import { getButtonProps } from '../utils/buttonAction'
 import { useScrollAnimation } from '../hooks/useScrollAnimation'
 import { resolveImageUrl } from '../utils/imageUrl'
+import { getPreviewUrl } from '../utils/gallery'
 import AmbientBackground from '../components/AmbientBackground'
 
 const ALIGN_MAP = {
@@ -47,12 +48,20 @@ export default function HeroBlock({ block, onCtaClick }) {
 
       <div className={`relative z-10 flex flex-col ${align.flex} ${align.text} gap-0`}>
         {block.image && (
-          <img
-            src={resolveImageUrl(block.image)}
-            alt="Foto de perfil"
+          <div
             style={makeAnim ? makeAnim(0) : undefined}
-            className="w-32 h-32 rounded-full object-cover mb-8 shadow-lg"
-          />
+            className="w-32 h-32 rounded-full overflow-hidden mb-8 shadow-lg"
+          >
+            <img
+              src={getPreviewUrl(block.image) || resolveImageUrl(block.image)}
+              alt="Foto de perfil"
+              className="w-full h-full object-cover"
+              style={{
+                objectPosition: `${block.imageFocalX ?? 50}% ${block.imageFocalY ?? 50}%`,
+                transform: block.imageZoom && block.imageZoom !== 1 ? `scale(${block.imageZoom})` : undefined,
+              }}
+            />
+          </div>
         )}
         <h1
           className="text-3xl sm:text-5xl font-bold mb-4 leading-tight"

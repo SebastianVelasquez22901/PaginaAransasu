@@ -2,8 +2,9 @@ import ColorField from './ColorField'
 import AnimationField from './AnimationField'
 import TextAlignField from './TextAlignField'
 import FontField from './FontField'
+import ImagePickerField from './ImagePickerField'
 
-export default function AboutEditor({ block, onChange }) {
+export default function AboutEditor({ block, onChange, gallery, content, password, onAddGalleryImage, onRemoveGalleryImage }) {
   const set = (key, val) => onChange({ [key]: val })
 
   return (
@@ -40,15 +41,20 @@ export default function AboutEditor({ block, onChange }) {
         <ColorField label="Color de acento" value={block.accentColor} onChange={v => set('accentColor', v)} />
       </div>
 
-      <div className="flex flex-col gap-1">
-        <label className="text-xs font-semibold text-gray-500 uppercase tracking-wide">Imagen (URL)</label>
-        <input
-          className="border border-gray-200 rounded-lg px-3 py-2 text-sm"
-          value={block.image}
-          onChange={e => set('image', e.target.value)}
-          placeholder="https://... o deja vacío"
-        />
-      </div>
+      <ImagePickerField
+        label="Imagen"
+        field="image"
+        data={block}
+        onChange={onChange}
+        fit="cover"
+        shape="rounded"
+        aspectRatio={1}
+        gallery={gallery}
+        content={content}
+        password={password}
+        onAddGalleryImage={onAddGalleryImage}
+        onRemoveGalleryImage={onRemoveGalleryImage}
+      />
     </div>
   )
 }

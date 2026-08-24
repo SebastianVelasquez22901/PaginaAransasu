@@ -19,6 +19,7 @@ import BlockWrapper from '../editor/BlockWrapper'
 import BlocksSidebar from '../editor/BlocksSidebar'
 import NavbarEditor from '../editor/NavbarEditor'
 import FooterEditor from '../editor/FooterEditor'
+import GalleryPanel from '../editor/GalleryPanel'
 import Footer from '../components/Footer'
 import HeroBlock from '../blocks/HeroBlock'
 import AboutBlock from '../blocks/AboutBlock'
@@ -116,6 +117,7 @@ export default function AdminPage() {
   const [activeDragData, setActiveDragData] = useState(null)
   const [navbarEditorOpen, setNavbarEditorOpen] = useState(false)
   const [footerEditorOpen, setFooterEditorOpen] = useState(false)
+  const [galleryOpen, setGalleryOpen] = useState(false)
 
   const {
     content,
@@ -130,6 +132,8 @@ export default function AdminPage() {
     removeBlock,
     updateNavbar,
     updateFooter,
+    addGalleryImage,
+    removeGalleryImage,
   } = useContent()
 
   const sensors = useSensors(
@@ -244,7 +248,7 @@ export default function AdminPage() {
         </div>
         <div className="flex items-center gap-3">
           <button
-            onClick={() => { setNavbarEditorOpen(o => !o); setFooterEditorOpen(false) }}
+            onClick={() => { setNavbarEditorOpen(o => !o); setFooterEditorOpen(false); setGalleryOpen(false) }}
             className={`text-xs px-3 py-2 rounded-lg font-medium transition ${
               navbarEditorOpen
                 ? 'bg-white text-gray-900'
@@ -254,7 +258,7 @@ export default function AdminPage() {
             ☰ Navbar
           </button>
           <button
-            onClick={() => { setFooterEditorOpen(o => !o); setNavbarEditorOpen(false) }}
+            onClick={() => { setFooterEditorOpen(o => !o); setNavbarEditorOpen(false); setGalleryOpen(false) }}
             className={`text-xs px-3 py-2 rounded-lg font-medium transition ${
               footerEditorOpen
                 ? 'bg-white text-gray-900'
@@ -262,6 +266,16 @@ export default function AdminPage() {
             }`}
           >
             ▦ Footer
+          </button>
+          <button
+            onClick={() => { setGalleryOpen(o => !o); setNavbarEditorOpen(false); setFooterEditorOpen(false) }}
+            className={`text-xs px-3 py-2 rounded-lg font-medium transition ${
+              galleryOpen
+                ? 'bg-white text-gray-900'
+                : 'text-gray-400 hover:text-white border border-gray-600 hover:border-gray-400'
+            }`}
+          >
+            🖼 Galería
           </button>
           <Link to="/admin/ayuda" className="text-xs text-gray-400 hover:text-white transition">
             ? Ayuda
@@ -284,7 +298,15 @@ export default function AdminPage() {
         <div className="bg-white border-b border-gray-200 px-6 py-5 shadow-inner">
           <div className="max-w-lg">
             <p className="text-xs font-bold text-gray-400 uppercase tracking-widest mb-4">Editar navbar</p>
-            <NavbarEditor navbar={content.navbar} onChange={updateNavbar} />
+            <NavbarEditor
+              navbar={content.navbar}
+              onChange={updateNavbar}
+              gallery={content.gallery}
+              content={content}
+              password={password}
+              onAddGalleryImage={addGalleryImage}
+              onRemoveGalleryImage={removeGalleryImage}
+            />
           </div>
         </div>
       )}
@@ -296,6 +318,20 @@ export default function AdminPage() {
             <p className="text-xs font-bold text-gray-400 uppercase tracking-widest mb-4">Editar footer</p>
             <FooterEditor footer={content.footer} onChange={updateFooter} />
           </div>
+        </div>
+      )}
+
+      {/* Gallery panel */}
+      {galleryOpen && (
+        <div className="bg-white border-b border-gray-200 px-6 py-5 shadow-inner">
+          <p className="text-xs font-bold text-gray-400 uppercase tracking-widest mb-4">Galería de imágenes</p>
+          <GalleryPanel
+            content={content}
+            gallery={content.gallery}
+            password={password}
+            onAddGalleryImage={addGalleryImage}
+            onRemoveGalleryImage={removeGalleryImage}
+          />
         </div>
       )}
 
@@ -336,6 +372,11 @@ export default function AdminPage() {
                       onUpdateCard={(cardId, changes) => updateServiceCard(block.id, cardId, changes)}
                       onAddCard={() => addServiceCard(block.id)}
                       onRemoveCard={cardId => removeServiceCard(block.id, cardId)}
+                      gallery={content.gallery}
+                      content={content}
+                      password={password}
+                      onAddGalleryImage={addGalleryImage}
+                      onRemoveGalleryImage={removeGalleryImage}
                     >
                       <Component block={block} />
                     </BlockWrapper>

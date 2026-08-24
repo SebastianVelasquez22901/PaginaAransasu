@@ -33,7 +33,7 @@ const BLOCK_LABELS = {
   academic: 'Historial Académico',
 }
 
-export default function BlockWrapper({ block, onUpdate, onUpdateCard, onAddCard, onRemoveCard, onToggle, onDelete, children }) {
+export default function BlockWrapper({ block, onUpdate, onUpdateCard, onAddCard, onRemoveCard, onToggle, onDelete, children, gallery, content, password, onAddGalleryImage, onRemoveGalleryImage }) {
   const [open, setOpen] = useState(false)
   const [confirmDelete, setConfirmDelete] = useState(false)
   const Editor = EDITORS[block.type]
@@ -93,6 +93,11 @@ export default function BlockWrapper({ block, onUpdate, onUpdateCard, onAddCard,
             onAddCard={onAddCard}
             onRemoveCard={(cardId) => onRemoveCard(cardId)}
             onUpdateCard={(cardId, changes) => onUpdateCard(cardId, changes)}
+            gallery={gallery}
+            content={content}
+            password={password}
+            onAddGalleryImage={onAddGalleryImage}
+            onRemoveGalleryImage={onRemoveGalleryImage}
           />
         </div>
       )}

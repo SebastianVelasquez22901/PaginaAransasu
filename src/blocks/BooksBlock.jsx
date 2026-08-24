@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import { useScrollAnimation } from '../hooks/useScrollAnimation'
 import { resolveImageUrl } from '../utils/imageUrl'
+import { getPreviewUrl } from '../utils/gallery'
 
 const DESCRIPTION_LIMIT = 80
 
@@ -17,7 +18,7 @@ function BookCard({ book, accentColor, textColor }) {
       <div className="relative w-full aspect-[3/4] rounded-xl overflow-hidden shadow-md mb-3 bg-gray-50">
         {book.image ? (
           <img
-            src={resolveImageUrl(book.image)}
+            src={getPreviewUrl(book.image) || resolveImageUrl(book.image)}
             alt={book.title}
             className="w-full h-full object-contain transition-transform duration-300 group-hover:scale-105"
           />
