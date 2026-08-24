@@ -37,8 +37,8 @@
       "subtitle": "\"Siempre he pensado que si no comparto lo que sé, estaré desperdiciando tiempo y recursos que pueden facilitar la comprensión a otros.\"",
       "buttonText": "Agenda tu consulta",
       "buttonLink": "#contacto",
-      "bgColor": "#f0faf8",
-      "textColor": "#4f9056",
+      "bgColor": "#ffffff",
+      "textColor": "#000000",
       "image": "",
       "buttonAction": "whatsapp",
       "whatsappNumber": "42110831",
@@ -46,7 +46,8 @@
       "fontFamily": "\"Lato\", sans-serif",
       "blockAnimation": "fade",
       "ambientBg": "bubbles",
-      "ambientIntensity": 0.7
+      "ambientIntensity": 0.7,
+      "ambientColor1": "#000000"
     },
     {
       "title": "Carrusel de fotos",
@@ -81,8 +82,8 @@
       "title": "Psicoterapeuta Clínica y Sexual",
       "body": "Soy Aransasú Aguilar, Magíster en Psicología Clínica y Psicoterapia, con enfoque humanista existencial, orientado al acompañamiento emocional, el desarrollo personal y la comprensión integral de la experiencia humana.\nCuento con estudios en sexualidad por la Universidad de Los Andes, Colombia, y certificación en Primeros Auxilios Psicológicos por AGAPI Guatemala, integrando en mi práctica herramientas enfocadas en la regulación emocional, el bienestar psicológico y la atención sensible a las necesidades emocionales de cada persona.\n\nMi trabajo terapéutico se centra en brindar espacios seguros de escucha, reflexión y crecimiento, acompañando procesos relacionados con autoestima, ansiedad, manejo emocional, relaciones interpersonales, dinámica familiar y construcción de sentido de vida.\n\nCreo profundamente en la capacidad que tiene cada persona para resignificar sus experiencias, fortalecer sus recursos internos y construir una vida más consciente, auténtica y emocionalmente saludable.\n",
       "bgColor": "#ffffff",
-      "textColor": "#9c6f6f",
-      "accentColor": "#5BB8A8",
+      "textColor": "#000000",
+      "accentColor": "#000000",
       "image": "",
       "blockAnimation": "fade-right",
       "fontFamily": "\"Lato\", sans-serif",
@@ -92,7 +93,7 @@
       "title": "Libros recomendados",
       "subtitle": "Recursos que han transformado mi práctica",
       "bgColor": "#f4faf9",
-      "textColor": "#7e6b6b",
+      "textColor": "#000000",
       "accentColor": "#50654e",
       "books": [
         {
@@ -112,7 +113,7 @@
       "title": "Aransasu Psicóloga",
       "subtitle": "Un espacio donde exploramos el fascinante mundo de la psicoterapia, siempre he pensado que si no comparto lo que sé, estaré desperdiciando tiempo y recursos que pueden facilitar la comprensión a otros.\n",
       "bgColor": "#f0faf8",
-      "textColor": "#7e6b6b",
+      "textColor": "#000000",
       "accentColor": "#5BB8A8",
       "blockAnimation": "none",
       "platforms": {
@@ -163,7 +164,7 @@
       "title": "Modalidades de atención",
       "bgColor": "#f4faf9",
       "textColor": "#000000",
-      "accentColor": "#5BB8A8",
+      "accentColor": "#000000",
       "cards": [
         {
           "id": "s1779518672303",
@@ -191,7 +192,7 @@
       "title": "Atención Psicoterapéutica Integral",
       "bgColor": "#f4faf9",
       "textColor": "#000000",
-      "accentColor": "#5BB8A8",
+      "accentColor": "#000000",
       "fontFamily": "Inter, sans-serif",
       "blockAnimation": "none",
       "cardAnimation": "none",
@@ -224,7 +225,7 @@
       "title": "Conferencias",
       "bgColor": "#f4faf9",
       "textColor": "#2d2d2d",
-      "accentColor": "#5BB8A8",
+      "accentColor": "#000000",
       "fontFamily": "Inter, sans-serif",
       "blockAnimation": "none",
       "cardAnimation": "none",
@@ -257,7 +258,7 @@
       "title": "Capacitaciones",
       "bgColor": "#f4faf9",
       "textColor": "#2d2d2d",
-      "accentColor": "#5BB8A8",
+      "accentColor": "#000000",
       "fontFamily": "Inter, sans-serif",
       "blockAnimation": "none",
       "cardAnimation": "none",
@@ -283,9 +284,21 @@
         },
         {
           "id": "s1780437015749",
-          "title": "Comunicación Efectiva",
+          "title": "Comunicación Asertiva ",
           "description": "Desarrollo de herramientas para expresar ideas con claridad, escuchar activamente y fortalecer las relaciones laborales e interpersonales.",
           "icon": "🤝"
+        },
+        {
+          "id": "s1787586419681",
+          "title": "Salud Emocional en el Área Laboral ",
+          "description": "Un espacio participativo que combina psicología, herramientas prácticas y un toque de neurociencia, promoviendo no solo colaboradores más productivos, sino personas emocionalmente más conscientes y saludables.",
+          "icon": "⭐"
+        },
+        {
+          "id": "s1787586469210",
+          "title": "Manejo del Estrés",
+          "description": "Desde un enfoque de psicología clínica, autocuidado y neurociencia, se brindan herramientas prácticas para regular la respuesta al estrés, fortalecer los recursos personales y afrontar de manera más consciente las demandas del día a día, promoviendo un mayor equilibrio entre bienestar emocional y vida laboral.",
+          "icon": "⭐"
         }
       ],
       "id": "services-1780436917701",
