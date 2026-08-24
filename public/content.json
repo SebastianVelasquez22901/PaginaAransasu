@@ -370,6 +370,21 @@
           "id": "ph1787604289276",
           "url": "/img/gallery/1787604309640-p608p-23f8ce43-ade6-4af1-9b71-8c99f36b9a66.jpg",
           "caption": ""
+        },
+        {
+          "id": "ph1787606391912",
+          "url": "/img/gallery/1787606406953-5itu5-a2b27098-b382-4ea8-a1b1-7c62f619588d-543.jpg",
+          "caption": ""
+        },
+        {
+          "id": "ph1787606427898",
+          "url": "/img/gallery/1787606448771-dz8cm-img-5918.jpg",
+          "caption": ""
+        },
+        {
+          "id": "ph1787606429361",
+          "url": "",
+          "caption": ""
         }
       ],
       "id": "carousel-1787590767319",
@@ -430,6 +445,47 @@
       ],
       "id": "services-1780436917701",
       "type": "services",
+      "visible": true
+    },
+    {
+      "title": "",
+      "subtitle": "",
+      "bgColor": "#FFFFFF",
+      "textColor": "#303234",
+      "accentColor": "#55B8AA",
+      "blockAnimation": "none",
+      "autoPlay": true,
+      "interval": 4,
+      "height": "480px",
+      "photos": [
+        {
+          "id": "ph1787606289968",
+          "url": "/img/gallery/1787606313718-uxgdx-32f1a01b-8e0f-4c9e-8b0f-018c1d6c3f42.jpg",
+          "caption": ""
+        },
+        {
+          "id": "ph1787606342680",
+          "url": "/img/gallery/1787606353760-xvc4j-img-5907.jpg",
+          "caption": ""
+        },
+        {
+          "id": "ph1787606355729",
+          "url": "/img/gallery/1787606367875-qnzkf-5e567655-2e3e-4207-adef-f8be933c5a92.jpg",
+          "caption": ""
+        },
+        {
+          "id": "ph1787606373576",
+          "url": "/img/gallery/1787606383368-0l5y7-img-5621.jpg",
+          "caption": ""
+        },
+        {
+          "id": "ph1787606455466",
+          "url": "/img/gallery/1787606464640-0vold-95a260c0-49d1-4688-a006-5f8b9932be11-564.jpg",
+          "caption": ""
+        }
+      ],
+      "id": "carousel-1787606286192",
+      "type": "carousel",
       "visible": true
     },
     {
@@ -647,6 +703,78 @@
     }
   ],
   "gallery": [
+    {
+      "id": "img1787606465558",
+      "url": "/img/gallery/1787606464640-0vold-95a260c0-49d1-4688-a006-5f8b9932be11-564.jpg",
+      "filename": "95A260C0-49D1-4688-A006-5F8B9932BE11-56461-00000980D12836E8.jpg",
+      "sizeBytes": 66564,
+      "width": 1003,
+      "height": 520,
+      "uploadedAt": "2026-08-24T21:21:05.558Z"
+    },
+    {
+      "id": "img1787606449959",
+      "url": "/img/gallery/1787606448771-dz8cm-img-5918.jpg",
+      "filename": "IMG_5918.jpg",
+      "sizeBytes": 189339,
+      "width": 783,
+      "height": 911,
+      "uploadedAt": "2026-08-24T21:20:49.959Z"
+    },
+    {
+      "id": "img1787606408056",
+      "url": "/img/gallery/1787606406953-5itu5-a2b27098-b382-4ea8-a1b1-7c62f619588d-543.jpg",
+      "filename": "A2B27098-B382-4EA8-A1B1-7C62F619588D-54376-00000E942A1B3FE9.jpg",
+      "sizeBytes": 112599,
+      "width": 683,
+      "height": 911,
+      "uploadedAt": "2026-08-24T21:20:08.056Z"
+    },
+    {
+      "id": "img1787606384565",
+      "url": "/img/gallery/1787606383368-0l5y7-img-5621.jpg",
+      "filename": "IMG_5621.jpg",
+      "sizeBytes": 295962,
+      "width": 1620,
+      "height": 911,
+      "uploadedAt": "2026-08-24T21:19:44.565Z"
+    },
+    {
+      "id": "img1787606369067",
+      "url": "/img/gallery/1787606367875-qnzkf-5e567655-2e3e-4207-adef-f8be933c5a92.jpg",
+      "filename": "5e567655-2e3e-4207-adef-f8be933c5a92.jpg",
+      "sizeBytes": 206505,
+      "width": 1215,
+      "height": 911,
+      "uploadedAt": "2026-08-24T21:19:29.067Z"
+    },
+    {
+      "id": "img1787606354760",
+      "url": "/img/gallery/1787606353760-xvc4j-img-5907.jpg",
+      "filename": "IMG_5907.jpg",
+      "sizeBytes": 118356,
+      "width": 683,
+      "height": 911,
+      "uploadedAt": "2026-08-24T21:19:14.760Z"
+    },
+    {
+      "id": "img1787606332593",
+      "url": "/img/gallery/1787606331534-qcg2e-a2b27098-b382-4ea8-a1b1-7c62f619588d-543.jpg",
+      "filename": "A2B27098-B382-4EA8-A1B1-7C62F619588D-54376-00000E942A1B3FE9.jpg",
+      "sizeBytes": 112599,
+      "width": 683,
+      "height": 911,
+      "uploadedAt": "2026-08-24T21:18:52.593Z"
+    },
+    {
+      "id": "img1787606314810",
+      "url": "/img/gallery/1787606313718-uxgdx-32f1a01b-8e0f-4c9e-8b0f-018c1d6c3f42.jpg",
+      "filename": "32f1a01b-8e0f-4c9e-8b0f-018c1d6c3f42.jpg",
+      "sizeBytes": 95295,
+      "width": 683,
+      "height": 911,
+      "uploadedAt": "2026-08-24T21:18:34.810Z"
+    },
     {
       "id": "img1787605400927",
       "url": "/img/gallery/1787605399781-usvz2-img-3775.jpg",
