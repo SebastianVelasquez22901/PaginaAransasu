@@ -300,6 +300,11 @@
           "id": "ph1787603441890",
           "url": "/img/gallery/1787603451426-a8dr7-con-aransas-psic-loga.jpg",
           "caption": ""
+        },
+        {
+          "id": "ph1787604831472",
+          "url": "/img/gallery/1787604846275-y9rkq-con-aransas-psic-loga-3.jpg",
+          "caption": ""
         }
       ],
       "id": "carousel-1787590792144",
@@ -704,6 +709,15 @@
     }
   ],
   "gallery": [
+    {
+      "id": "img1787604847440",
+      "url": "/img/gallery/1787604846275-y9rkq-con-aransas-psic-loga-3.jpg",
+      "filename": "Con ARANSASÚ PSICÓLOGA - 3.png",
+      "sizeBytes": 31263,
+      "width": 911,
+      "height": 911,
+      "uploadedAt": "2026-08-24T20:54:07.440Z"
+    },
     {
       "id": "img1787604659760",
       "url": "/img/gallery/1787604658652-tgv2i-img-6027.jpg",
