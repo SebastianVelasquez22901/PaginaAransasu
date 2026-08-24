@@ -54,5 +54,35 @@ export default async (req) => {
     return new Response(JSON.stringify({ error: err.message || 'Error al borrar la imagen.' }), { status: 502 })
   }
 
+  // Quitar también la entrada de content.json en el mismo paso, para que no
+  // quede una referencia huérfana esperando a que alguien haga clic en
+  // "Publicar cambios" por separado.
+  const contentPath = 'public/content.json'
+  const getContentRes = await fetch(`${apiBase}/contents/${contentPath}?ref=${GITHUB_BRANCH}`, { headers })
+  if (getContentRes.ok) {
+    const contentFile = await getContentRes.json()
+    try {
+      const decoded = decodeURIComponent(escape(atob(contentFile.content.replace(/\n/g, ''))))
+      const contentJson = JSON.parse(decoded)
+      const nextGallery = (contentJson.gallery || []).filter(g => g.url !== url)
+      if (nextGallery.length !== (contentJson.gallery || []).length) {
+        contentJson.gallery = nextGallery
+        const newContentB64 = btoa(unescape(encodeURIComponent(JSON.stringify(contentJson, null, 2))))
+        await fetch(`${apiBase}/contents/${contentPath}`, {
+          method: 'PUT',
+          headers,
+          body: JSON.stringify({
+            message: 'Actualización de galería (borrado de imagen)',
+            content: newContentB64,
+            sha: contentFile.sha,
+            branch: GITHUB_BRANCH,
+          }),
+        })
+      }
+    } catch {
+      // La imagen ya se borró correctamente; si esto falla no lo tratamos como error fatal.
+    }
+  }
+
   return new Response(JSON.stringify({ ok: true }), { status: 200 })
 }
