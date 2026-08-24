@@ -306,21 +306,6 @@
       "visible": true
     },
     {
-      "title": "",
-      "subtitle": "",
-      "bgColor": "#ffffff",
-      "textColor": "#2d2d2d",
-      "accentColor": "#5BB8A8",
-      "blockAnimation": "none",
-      "autoPlay": true,
-      "interval": 4,
-      "height": "480px",
-      "photos": [],
-      "id": "carousel-1787590755959",
-      "type": "carousel",
-      "visible": true
-    },
-    {
       "title": "Conferencias",
       "bgColor": "#f4faf9",
       "textColor": "#2d2d2d",
@@ -445,27 +430,6 @@
       ],
       "id": "services-1780436917701",
       "type": "services",
-      "visible": true
-    },
-    {
-      "title": "",
-      "subtitle": "",
-      "bgColor": "#ffffff",
-      "textColor": "#2d2d2d",
-      "accentColor": "#5BB8A8",
-      "blockAnimation": "none",
-      "autoPlay": true,
-      "interval": 4,
-      "height": "480px",
-      "photos": [
-        {
-          "id": "ph1787604477583",
-          "url": "",
-          "caption": ""
-        }
-      ],
-      "id": "carousel-1787590736863",
-      "type": "carousel",
       "visible": true
     },
     {
