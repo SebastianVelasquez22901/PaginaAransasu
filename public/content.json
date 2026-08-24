@@ -30,27 +30,6 @@
   },
   "blocks": [
     {
-      "title": "",
-      "subtitle": "",
-      "bgColor": "#ffffff",
-      "textColor": "#2d2d2d",
-      "accentColor": "#5BB8A8",
-      "blockAnimation": "zoom",
-      "autoPlay": true,
-      "interval": 4,
-      "height": "480px",
-      "photos": [
-        {
-          "id": "ph1787604993455",
-          "url": "/img/gallery/1787605005148-edlh8-img-1571.jpg",
-          "caption": ""
-        }
-      ],
-      "id": "carousel-1787604985807",
-      "type": "carousel",
-      "visible": true
-    },
-    {
       "id": "hero",
       "type": "hero",
       "visible": true,
