@@ -1,24 +1,5 @@
 {
-  "gallery": [
-    {
-      "id": "img1787594008697",
-      "url": "/img/gallery/1787594011030-zikdf-habitos.jpg",
-      "filename": "habitos.jpg",
-      "sizeBytes": 50340,
-      "width": 480,
-      "height": 640,
-      "uploadedAt": "2026-08-24T17:53:28.697Z"
-    },
-    {
-      "id": "img1787593916144",
-      "url": "/img/gallery/1787593918451-2as3t-prueba-1.jpg",
-      "filename": "prueba 1.jpg",
-      "sizeBytes": 100404,
-      "width": 800,
-      "height": 533,
-      "uploadedAt": "2026-08-24T17:51:56.144Z"
-    }
-  ],
+  "gallery": [],
   "footer": {
     "brandName": "Aransasú Aguilar",
     "tagline": "Powered by SV",
