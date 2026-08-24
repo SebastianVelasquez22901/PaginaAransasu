@@ -143,6 +143,34 @@
       "visible": true
     },
     {
+      "title": "Modalidades de atención",
+      "bgColor": "#f4faf9",
+      "textColor": "#000000",
+      "accentColor": "#000000",
+      "cards": [
+        {
+          "id": "s1779518672303",
+          "title": "Sesión virtual ",
+          "description": "Modalidad de atención psicológica que se realiza a través de Google Meet,  permitiendo que el proceso terapéutico se lleve a cabo a distancia.\nEste espacio busca brindar acompañamiento emocional, orientación y herramientas psicológicas desde un entorno seguro, confidencial y accesible, adaptándose a las necesidades y horarios de cada persona según cita previa.\n",
+          "icon": "💻",
+          "textAlign": "left"
+        },
+        {
+          "id": "s1779750288902",
+          "title": "Sesión presencial ",
+          "description": "Espacio terapéutico de acompañamiento psicológico en un ambiente privado, seguro y confidencial, diseñado para favorecer la escucha, la expresión emocional y el trabajo terapéutico de manera cercana y personalizada.\nA través de este proceso se busca brindar herramientas que permitan comprender emociones, fortalecer recursos personales y promover bienestar emocional y mental.",
+          "icon": "👥",
+          "textAlign": "left"
+        }
+      ],
+      "id": "services-1779518883484",
+      "type": "services",
+      "visible": true,
+      "blockAnimation": "fade",
+      "cardAnimation": "fade-right",
+      "fontFamily": "\"Merriweather\", serif"
+    },
+    {
       "title": "Carrusel de fotos",
       "subtitle": "",
       "bgColor": "#ffffff",
@@ -238,34 +266,6 @@
       "id": "books-1779517754239",
       "type": "books",
       "visible": true
-    },
-    {
-      "title": "Modalidades de atención",
-      "bgColor": "#f4faf9",
-      "textColor": "#000000",
-      "accentColor": "#000000",
-      "cards": [
-        {
-          "id": "s1779518672303",
-          "title": "Sesión virtual ",
-          "description": "Modalidad de atención psicológica que se realiza a través de Google Meet,  permitiendo que el proceso terapéutico se lleve a cabo a distancia.\nEste espacio busca brindar acompañamiento emocional, orientación y herramientas psicológicas desde un entorno seguro, confidencial y accesible, adaptándose a las necesidades y horarios de cada persona según cita previa.\n",
-          "icon": "💻",
-          "textAlign": "left"
-        },
-        {
-          "id": "s1779750288902",
-          "title": "Sesión presencial ",
-          "description": "Espacio terapéutico de acompañamiento psicológico en un ambiente privado, seguro y confidencial, diseñado para favorecer la escucha, la expresión emocional y el trabajo terapéutico de manera cercana y personalizada.\nA través de este proceso se busca brindar herramientas que permitan comprender emociones, fortalecer recursos personales y promover bienestar emocional y mental.",
-          "icon": "📖",
-          "textAlign": "left"
-        }
-      ],
-      "id": "services-1779518883484",
-      "type": "services",
-      "visible": true,
-      "blockAnimation": "fade",
-      "cardAnimation": "fade-right",
-      "fontFamily": "\"Merriweather\", serif"
     },
     {
       "title": "Historial Académico",
