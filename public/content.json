@@ -307,21 +307,6 @@
       "visible": true
     },
     {
-      "title": "",
-      "subtitle": "",
-      "bgColor": "#FFFFFF",
-      "textColor": "#303234",
-      "accentColor": "#55B8AA",
-      "blockAnimation": "none",
-      "autoPlay": true,
-      "interval": 4,
-      "height": "480px",
-      "photos": [],
-      "id": "carousel-1787590767319",
-      "type": "carousel",
-      "visible": true
-    },
-    {
       "title": "Capacitaciones",
       "bgColor": "#FAF5F1",
       "textColor": "#303234",
@@ -375,21 +360,6 @@
       ],
       "id": "services-1780436917701",
       "type": "services",
-      "visible": true
-    },
-    {
-      "title": "",
-      "subtitle": "",
-      "bgColor": "#FFFFFF",
-      "textColor": "#303234",
-      "accentColor": "#55B8AA",
-      "blockAnimation": "none",
-      "autoPlay": true,
-      "interval": 4,
-      "height": "480px",
-      "photos": [],
-      "id": "carousel-1787590736863",
-      "type": "carousel",
       "visible": true
     },
     {
@@ -582,21 +552,6 @@
       ],
       "id": "location-1779848771615",
       "type": "location",
-      "visible": true
-    },
-    {
-      "title": "",
-      "subtitle": "",
-      "bgColor": "#FFFFFF",
-      "textColor": "#303234",
-      "accentColor": "#55B8AA",
-      "blockAnimation": "none",
-      "autoPlay": true,
-      "interval": 4,
-      "height": "480px",
-      "photos": [],
-      "id": "carousel-1787590696191",
-      "type": "carousel",
       "visible": true
     }
   ],
