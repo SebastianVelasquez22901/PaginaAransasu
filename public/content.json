@@ -547,12 +547,12 @@
         {
           "id": "h1",
           "days": "Lunes – Viernes",
-          "time": "4:30 pm - 6:30 pm"
+          "time": "4:30pm - 6:30pm"
         },
         {
           "id": "h2",
           "days": "Sábado",
-          "time": "8:00 am – 11:00 am"
+          "time": "8:00am – 11:00am"
         }
       ],
       "id": "location-1779848771615",
