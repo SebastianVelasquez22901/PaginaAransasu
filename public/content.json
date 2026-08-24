@@ -314,6 +314,62 @@
           "description": "El hombre en busca de sentido\" es el estremecedor relato en el que Viktor Frankl nos narra su experiencia en los campos de concentración.",
           "image": "https://books.google.com.gt/books/publisher/content?id=eAOIDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&imgtk=AFLRE70N-VkfNz4DGct2mu7ayNIFMaEdWh5S29yD7OHDmKjP6ErHp6xPOkP9HpV6ZPz7XCxS54zxK1TSng-wootfQF76EzOHOcWwBLV9GQthoNB9qlKEWGqHLap4i5g26u_K2kb1aGKk",
           "link": ""
+        },
+        {
+          "id": "b1787607398986",
+          "title": "Dopamina",
+          "author": "Daniel Z. Lieberman y Michael E. Long",
+          "description": "Dopamina, de Daniel Z. Lieberman y Michael E. Long, explora de manera accesible cómo este neurotransmisor influye en el deseo, la motivación, el amor, las adicciones y la búsqueda constante de nuevas experiencias. Una lectura que combina psicología y neurociencia para comprender por qué muchas veces deseamos intensamente algo y, al conseguirlo, comenzamos a buscar lo siguiente",
+          "image": "/img/gallery/1787607422329-yn99t-img-7380.jpg",
+          "link": ""
+        },
+        {
+          "id": "b1787607503683",
+          "title": "La Felicidad ",
+          "author": "Gabriel Rolón",
+          "description": "La felicidad, de Gabriel Rolón, propone una mirada profunda y crítica sobre nuestra constante búsqueda de “ser felices”. Desde el psicoanálisis, la filosofía y la experiencia humana, cuestiona los mandatos sociales que convierten la felicidad en una obligación e invita a escuchar el propio deseo, aceptar que el dolor también forma parte de vivir y construir una existencia con mayor sentido y autenticidad.",
+          "image": "/img/gallery/1787607563213-6z4ki-0ac39a95-cbc8-4ee0-9ca1-11535a8b44c6.jpg",
+          "link": ""
+        },
+        {
+          "id": "b1787607618036",
+          "title": "Circuito de la Esperanza ",
+          "author": "Martin E. P Seligman ",
+          "description": "El circuito de la esperanza, de Martin E. P. Seligman, recorre la trayectoria personal y científica del fundador de la psicología positiva, desde sus investigaciones sobre la indefensión aprendida hasta el estudio del optimismo y la esperanza. Una obra que combina psicología, ciencia y experiencia personal para comprender cómo podemos desarrollar recursos que nos permitan afrontar la adversidad y recuperar la sensación de posibilidad y control sobre nuestra vida.",
+          "image": "/img/gallery/1787607628036-cuucp-4aa8fb4c-3c8d-4448-9bcf-12f6df559eb7.jpg",
+          "link": ""
+        },
+        {
+          "id": "b1787607720708",
+          "title": "No es Posible No Comunicar ",
+          "author": "Paul Watzlawick",
+          "description": "No es posible no comunicar, de Paul Watzlawick, explora cómo toda conducta comunica, incluso el silencio, los gestos o la ausencia de palabras. A través de sus principios sobre la comunicación humana, invita a comprender cómo construimos significados, relaciones y conflictos en nuestra interacción con los demás, convirtiéndose en una obra fundamental para la psicología, la psicoterapia y el enfoque sistémico.",
+          "image": "/img/gallery/1787607734474-7dbja-img-9436.jpg",
+          "link": ""
+        },
+        {
+          "id": "b1787607831197",
+          "title": "La Vida Secreta del Cerebro ",
+          "author": "Lisa Feldman Barrett",
+          "description": "La vida secreta del cerebro, de Lisa Feldman Barrett, explora desde la psicología y la neurociencia cómo nuestro cerebro construye las emociones a partir de la experiencia, el contexto y el aprendizaje. La autora cuestiona la idea de que las emociones sean respuestas automáticas y universales, ofreciendo una perspectiva fascinante para comprender cómo sentimos, interpretamos y damos significado a lo que vivimos.",
+          "image": "/img/gallery/1787607845818-k26z3-90976504-5fcb-4f89-8a80-8a6789b46452.jpg",
+          "link": ""
+        },
+        {
+          "id": "b1787607916285",
+          "title": "Cómo Sentimos ",
+          "author": "Giovanni Frazzetto,",
+          "description": "Cómo sentimos, de Giovanni Frazzetto, explora el mundo de las emociones desde el encuentro entre neurociencia, psicología y experiencia humana. A través de emociones como la ira, la culpa, la angustia, el duelo, la empatía, la alegría y el amor, el autor muestra lo que la ciencia puede explicarnos sobre lo que sentimos, sin olvidar que nuestras emociones también están profundamente vinculadas con nuestra historia y la manera particular en que vivimos.",
+          "image": "/img/gallery/1787607928098-doxqr-29f06b20-c7d0-4cf1-8892-3a7ea079bdf6.jpg",
+          "link": ""
+        },
+        {
+          "id": "b1787608001012",
+          "title": "El dilema de la Pareja ",
+          "author": "Esther Perel,",
+          "description": "El dilema de la pareja, de Esther Perel, ofrece una mirada profunda y provocadora sobre las relaciones modernas, la infidelidad, el deseo y el compromiso. Desde su experiencia como psicoterapeuta de parejas, Perel invita a comprender las crisis afectivas más allá de juicios simples, explorando qué revelan sobre nuestras necesidades, vínculos y expectativas, y cómo una ruptura de la confianza puede abrir preguntas sobre la posibilidad de reparar, reconstruir o transformar una relación.",
+          "image": "/img/gallery/1787608016315-90any-img-2365.jpg",
+          "link": ""
         }
       ],
       "id": "books-1779517754239",
@@ -718,6 +774,69 @@
     }
   ],
   "gallery": [
+    {
+      "id": "img1787608017427",
+      "url": "/img/gallery/1787608016315-90any-img-2365.jpg",
+      "filename": "IMG_2365.jpg",
+      "sizeBytes": 131205,
+      "width": 934,
+      "height": 911,
+      "uploadedAt": "2026-08-24T21:46:57.427Z"
+    },
+    {
+      "id": "img1787607929070",
+      "url": "/img/gallery/1787607928098-doxqr-29f06b20-c7d0-4cf1-8892-3a7ea079bdf6.jpg",
+      "filename": "29F06B20-C7D0-4CF1-8892-3A7EA079BDF6.jpg",
+      "sizeBytes": 132696,
+      "width": 729,
+      "height": 911,
+      "uploadedAt": "2026-08-24T21:45:29.070Z"
+    },
+    {
+      "id": "img1787607847083",
+      "url": "/img/gallery/1787607845818-k26z3-90976504-5fcb-4f89-8a80-8a6789b46452.jpg",
+      "filename": "90976504-5FCB-4F89-8A80-8A6789B46452.jpeg",
+      "sizeBytes": 105837,
+      "width": 703,
+      "height": 911,
+      "uploadedAt": "2026-08-24T21:44:07.083Z"
+    },
+    {
+      "id": "img1787607735527",
+      "url": "/img/gallery/1787607734474-7dbja-img-9436.jpg",
+      "filename": "IMG_9436.jpg",
+      "sizeBytes": 90930,
+      "width": 716,
+      "height": 911,
+      "uploadedAt": "2026-08-24T21:42:15.527Z"
+    },
+    {
+      "id": "img1787607628966",
+      "url": "/img/gallery/1787607628036-cuucp-4aa8fb4c-3c8d-4448-9bcf-12f6df559eb7.jpg",
+      "filename": "4AA8FB4C-3C8D-4448-9BCF-12F6DF559EB7.jpg",
+      "sizeBytes": 112764,
+      "width": 797,
+      "height": 911,
+      "uploadedAt": "2026-08-24T21:40:28.966Z"
+    },
+    {
+      "id": "img1787607564266",
+      "url": "/img/gallery/1787607563213-6z4ki-0ac39a95-cbc8-4ee0-9ca1-11535a8b44c6.jpg",
+      "filename": "0AC39A95-CBC8-4EE0-9CA1-11535A8B44C6.jpg",
+      "sizeBytes": 85038,
+      "width": 683,
+      "height": 911,
+      "uploadedAt": "2026-08-24T21:39:24.266Z"
+    },
+    {
+      "id": "img1787607423295",
+      "url": "/img/gallery/1787607422329-yn99t-img-7380.jpg",
+      "filename": "IMG_7380.jpg",
+      "sizeBytes": 110649,
+      "width": 709,
+      "height": 911,
+      "uploadedAt": "2026-08-24T21:37:03.295Z"
+    },
     {
       "id": "img1787606704733",
       "url": "/img/gallery/1787606703634-z1hg7-636651ff-afd8-4f22-9a4d-87f03d530283.jpg",
