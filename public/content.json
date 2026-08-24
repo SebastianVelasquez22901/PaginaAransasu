@@ -57,13 +57,7 @@
       "autoPlay": true,
       "interval": 4,
       "height": "480px",
-      "photos": [
-        {
-          "id": "ph1787595173978",
-          "url": "/img/gallery/1787595186633-mbgs2-prueba-1.jpg",
-          "caption": "Paisaje"
-        }
-      ],
+      "photos": [],
       "id": "carousel-1779847307439",
       "type": "carousel",
       "visible": false
@@ -95,14 +89,6 @@
           "author": "Viktor Frankl",
           "description": "El hombre en busca de sentido\" es el estremecedor relato en el que Viktor Frankl nos narra su experiencia en los campos de concentración.",
           "image": "https://books.google.com.gt/books/publisher/content?id=eAOIDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&imgtk=AFLRE70N-VkfNz4DGct2mu7ayNIFMaEdWh5S29yD7OHDmKjP6ErHp6xPOkP9HpV6ZPz7XCxS54zxK1TSng-wootfQF76EzOHOcWwBLV9GQthoNB9qlKEWGqHLap4i5g26u_K2kb1aGKk",
-          "link": ""
-        },
-        {
-          "id": "b1787595204055",
-          "title": "Libro prueba",
-          "author": "Autor test",
-          "description": "Muy buen libro",
-          "image": "/img/gallery/1787595216717-7yak9-habitos.jpg",
           "link": ""
         }
       ],
