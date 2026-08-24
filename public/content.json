@@ -417,7 +417,7 @@
           "price": "1000",
           "period": "4 sesiones / mes",
           "featured": true,
-          "buttonText": "Comenzar ahora",
+          "buttonText": "Reservar",
           "buttonLink": "#contacto",
           "features": [
             {
@@ -438,27 +438,98 @@
           "description": "",
           "currency": "Q",
           "price": "400",
-          "period": "50 minutos",
+          "period": "Proceso terapeutico en pareja ",
           "featured": false,
           "buttonText": "Reservar",
           "buttonLink": "#contacto",
           "features": [
             {
-              "id": "f1779750990477",
+              "id": "f1787587059233",
               "text": "Sesión de 50 minutos",
               "included": true
             },
             {
-              "id": "f1779751063207",
+              "id": "f1787587207119",
               "text": "Evaluación inicial ",
-              "included": true
-            },
-            {
-              "id": "f1779751108363",
-              "text": "Nueva característica",
               "included": true
             }
           ]
+        },
+        {
+          "id": "plan1787586975793",
+          "name": "Capacitación ",
+          "description": "Para 20 personas",
+          "currency": "Q",
+          "price": "2000",
+          "period": "",
+          "featured": false,
+          "buttonText": "Reservar",
+          "buttonLink": "#contacto",
+          "features": [
+            {
+              "id": "f1787586975793",
+              "text": "3 horas",
+              "included": true
+            },
+            {
+              "id": "f1787587494465",
+              "text": "Material incluido",
+              "included": true
+            }
+          ],
+          "buttonAction": "whatsapp",
+          "emailAddress": "aransasuaguilar@gmail.com",
+          "whatsappNumber": "42110831"
+        },
+        {
+          "id": "plan1787587328032",
+          "name": "Conferencia de Salud Emocional ",
+          "description": "para 20 personas",
+          "currency": "Q",
+          "price": "1500",
+          "period": "",
+          "featured": false,
+          "buttonText": "Reservar",
+          "buttonLink": "#contacto",
+          "features": [
+            {
+              "id": "f1787587328032",
+              "text": "2 horas",
+              "included": true
+            },
+            {
+              "id": "f1787587481513",
+              "text": "Material incluido ",
+              "included": true
+            }
+          ],
+          "buttonAction": "whatsapp",
+          "whatsappNumber": "42110831"
+        },
+        {
+          "id": "plan1787587599992",
+          "name": "Taller ",
+          "description": "Aprendizaje continuo para 20 personas",
+          "currency": "Q",
+          "price": "9000",
+          "period": "3 dias ",
+          "featured": false,
+          "buttonText": "Reservar",
+          "buttonLink": "#contacto",
+          "features": [
+            {
+              "id": "f1787587599992",
+              "text": "3 horas al día",
+              "included": true
+            },
+            {
+              "id": "f1787587699736",
+              "text": "Mateial incluido ",
+              "included": true
+            }
+          ],
+          "buttonAction": "whatsapp",
+          "whatsappNumber": "42110831"
         }
       ],
       "id": "pricing-1779516602463",
