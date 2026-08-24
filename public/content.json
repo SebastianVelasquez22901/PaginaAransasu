@@ -407,7 +407,9 @@
               "text": "Evaluación inicial",
               "included": true
             }
-          ]
+          ],
+          "buttonAction": "whatsapp",
+          "whatsappNumber": "+502 42110831"
         },
         {
           "id": "plan1779516567309b",
@@ -430,7 +432,9 @@
               "text": "Evaluación inicial",
               "included": true
             }
-          ]
+          ],
+          "buttonAction": "whatsapp",
+          "whatsappNumber": "+502 42110831"
         },
         {
           "id": "plan1779750990477",
@@ -453,7 +457,9 @@
               "text": "Evaluación inicial ",
               "included": true
             }
-          ]
+          ],
+          "buttonAction": "whatsapp",
+          "whatsappNumber": "+502 42110831"
         },
         {
           "id": "plan1787586975793",
@@ -479,7 +485,7 @@
           ],
           "buttonAction": "whatsapp",
           "emailAddress": "aransasuaguilar@gmail.com",
-          "whatsappNumber": "42110831"
+          "whatsappNumber": "+502 42110831"
         },
         {
           "id": "plan1787587328032",
@@ -504,7 +510,7 @@
             }
           ],
           "buttonAction": "whatsapp",
-          "whatsappNumber": "42110831"
+          "whatsappNumber": "+502 42110831"
         },
         {
           "id": "plan1787587599992",
@@ -529,7 +535,7 @@
             }
           ],
           "buttonAction": "whatsapp",
-          "whatsappNumber": "42110831"
+          "whatsappNumber": "+502 42110831"
         }
       ],
       "id": "pricing-1779516602463",
