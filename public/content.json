@@ -368,35 +368,6 @@
       "visible": true
     },
     {
-      "title": "Mi Consultorio",
-      "subtitle": "Un espacio centrico de fácil acceso para ti",
-      "bgColor": "#ffffff",
-      "textColor": "#2d2d2d",
-      "accentColor": "#5BB8A8",
-      "blockAnimation": "none",
-      "address": "8va. Avenida 1-31 zona 1 ",
-      "mapUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d394.19821841193084!2d-90.51079889534537!3d14.646983373886043!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8589a20df15ea7c7%3A0xb957611d5743070a!2s8A%20Avenida%201-31%2C%20Cdad.%20de%20Guatemala%2001001!5e0!3m2!1ses!2sgt!4v1780434422447!5m2!1ses!2sgt",
-      "mapsLink": "https://maps.app.goo.gl/jzarBKrDTMxaVonA8",
-      "buttonText": "Cómo llegar",
-      "phone": "+502 42110831",
-      "email": "aransasuaguilar@gmail.com",
-      "hours": [
-        {
-          "id": "h1",
-          "days": "Lunes – Viernes",
-          "time": "4:30pm - 6:30pm"
-        },
-        {
-          "id": "h2",
-          "days": "Sábado",
-          "time": "8:00am – 11:00am"
-        }
-      ],
-      "id": "location-1779848771615",
-      "type": "location",
-      "visible": true
-    },
-    {
       "title": "Planes y Tarifas",
       "subtitle": "Elige el plan que mejor se adapte a tus necesidades",
       "bgColor": "#ffffff",
@@ -557,6 +528,35 @@
       ],
       "id": "pricing-1779516602463",
       "type": "pricing",
+      "visible": true
+    },
+    {
+      "title": "Mi Consultorio",
+      "subtitle": "Un espacio centrico de fácil acceso para ti",
+      "bgColor": "#ffffff",
+      "textColor": "#2d2d2d",
+      "accentColor": "#5BB8A8",
+      "blockAnimation": "none",
+      "address": "8va. Avenida 1-31 zona 1 ",
+      "mapUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d394.19821841193084!2d-90.51079889534537!3d14.646983373886043!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8589a20df15ea7c7%3A0xb957611d5743070a!2s8A%20Avenida%201-31%2C%20Cdad.%20de%20Guatemala%2001001!5e0!3m2!1ses!2sgt!4v1780434422447!5m2!1ses!2sgt",
+      "mapsLink": "https://maps.app.goo.gl/jzarBKrDTMxaVonA8",
+      "buttonText": "Cómo llegar",
+      "phone": "+502 42110831",
+      "email": "aransasuaguilar@gmail.com",
+      "hours": [
+        {
+          "id": "h1",
+          "days": "Lunes – Viernes",
+          "time": "4:30 pm - 6:30 pm"
+        },
+        {
+          "id": "h2",
+          "days": "Sábado",
+          "time": "8:00 am – 11:00 am"
+        }
+      ],
+      "id": "location-1779848771615",
+      "type": "location",
       "visible": true
     }
   ]
