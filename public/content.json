@@ -51,32 +51,6 @@
       "textAlign": "center"
     },
     {
-      "title": "PRUEBA",
-      "subtitle": "PRUEBA 1",
-      "bgColor": "#FFFFFF",
-      "textColor": "#303234",
-      "accentColor": "#55B8AA",
-      "blockAnimation": "none",
-      "autoPlay": true,
-      "interval": 4,
-      "height": "480px",
-      "photos": [
-        {
-          "id": "ph1787597793813",
-          "url": "/img/gallery/1787597807904-96qkt-prueba-1.jpg",
-          "caption": "FOTO 1"
-        },
-        {
-          "id": "ph1787597814393",
-          "url": "/img/gallery/1787597830071-z54r5-test-1.jpg",
-          "caption": "PRUEBA 2"
-        }
-      ],
-      "id": "carousel-1787597774116",
-      "type": "carousel",
-      "visible": true
-    },
-    {
       "id": "about",
       "type": "about",
       "visible": true,
@@ -290,14 +264,6 @@
           "author": "Viktor Frankl",
           "description": "El hombre en busca de sentido\" es el estremecedor relato en el que Viktor Frankl nos narra su experiencia en los campos de concentración.",
           "image": "https://books.google.com.gt/books/publisher/content?id=eAOIDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&imgtk=AFLRE70N-VkfNz4DGct2mu7ayNIFMaEdWh5S29yD7OHDmKjP6ErHp6xPOkP9HpV6ZPz7XCxS54zxK1TSng-wootfQF76EzOHOcWwBLV9GQthoNB9qlKEWGqHLap4i5g26u_K2kb1aGKk",
-          "link": ""
-        },
-        {
-          "id": "b1787597860464",
-          "title": "HABITOS ATOMICOS",
-          "author": "AUTOR PRUEBA",
-          "description": "",
-          "image": "/img/gallery/1787597883842-9vepl-habitos.jpg",
           "link": ""
         }
       ],
