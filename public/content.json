@@ -272,21 +272,6 @@
       "visible": true
     },
     {
-      "title": "",
-      "subtitle": "",
-      "bgColor": "#FFFFFF",
-      "textColor": "#303234",
-      "accentColor": "#55B8AA",
-      "blockAnimation": "none",
-      "autoPlay": true,
-      "interval": 4,
-      "height": "480px",
-      "photos": [],
-      "id": "carousel-1787590755959",
-      "type": "carousel",
-      "visible": true
-    },
-    {
       "title": "Conferencias",
       "bgColor": "#FAF5F1",
       "textColor": "#303234",
