@@ -68,6 +68,27 @@
       "textAlign": "center"
     },
     {
+      "title": "",
+      "subtitle": "",
+      "bgColor": "#FFFFFF",
+      "textColor": "#303234",
+      "accentColor": "#55B8AA",
+      "blockAnimation": "none",
+      "autoPlay": true,
+      "interval": 4,
+      "height": "480px",
+      "photos": [
+        {
+          "id": "ph1787688836630",
+          "url": "/img/gallery/1787688845133-7pkod-e-15-x-20-cm-20-x-15-cm.jpg",
+          "caption": ""
+        }
+      ],
+      "id": "carousel-1787688830461",
+      "type": "carousel",
+      "visible": true
+    },
+    {
       "title": "Historial Académico",
       "subtitle": "Formación y certificaciones",
       "bgColor": "#ffffff",
@@ -764,6 +785,15 @@
     }
   ],
   "gallery": [
+    {
+      "id": "img1787688846193",
+      "url": "/img/gallery/1787688845133-7pkod-e-15-x-20-cm-20-x-15-cm.jpg",
+      "filename": "e (15 x 20 cm) (20 x 15 cm).png",
+      "sizeBytes": 228300,
+      "width": 1920,
+      "height": 1440,
+      "uploadedAt": "2026-08-25T20:14:06.193Z"
+    },
     {
       "id": "img1787608017427",
       "url": "/img/gallery/1787608016315-90any-img-2365.jpg",
