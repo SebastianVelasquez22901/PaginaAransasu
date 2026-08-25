@@ -734,6 +734,27 @@
       "visible": true
     },
     {
+      "title": "",
+      "subtitle": "",
+      "bgColor": "#ffffff",
+      "textColor": "#2d2d2d",
+      "accentColor": "#5BB8A8",
+      "blockAnimation": "none",
+      "autoPlay": true,
+      "interval": 4,
+      "height": "480px",
+      "photos": [
+        {
+          "id": "ph1787604643024",
+          "url": "/img/gallery/1787604658652-tgv2i-img-6027.jpg",
+          "caption": ""
+        }
+      ],
+      "id": "carousel-1787590696191",
+      "type": "carousel",
+      "visible": true
+    },
+    {
       "title": "Mi Clínica",
       "subtitle": "Un espacio centrico de fácil acceso para ti",
       "bgColor": "#ffffff",
@@ -760,27 +781,6 @@
       ],
       "id": "location-1779848771615",
       "type": "location",
-      "visible": true
-    },
-    {
-      "title": "",
-      "subtitle": "",
-      "bgColor": "#ffffff",
-      "textColor": "#2d2d2d",
-      "accentColor": "#5BB8A8",
-      "blockAnimation": "none",
-      "autoPlay": true,
-      "interval": 4,
-      "height": "480px",
-      "photos": [
-        {
-          "id": "ph1787604643024",
-          "url": "/img/gallery/1787604658652-tgv2i-img-6027.jpg",
-          "caption": ""
-        }
-      ],
-      "id": "carousel-1787590696191",
-      "type": "carousel",
       "visible": true
     }
   ],
