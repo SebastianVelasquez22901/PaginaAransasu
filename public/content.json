@@ -79,8 +79,8 @@
       "height": "480px",
       "photos": [
         {
-          "id": "ph1787688836630",
-          "url": "/img/gallery/1787688845133-7pkod-e-15-x-20-cm-20-x-15-cm.jpg",
+          "id": "ph1787689850756",
+          "url": "/img/gallery/1787689867194-tktxe-proceso-terap-utico.jpg",
           "caption": ""
         }
       ],
@@ -785,6 +785,15 @@
     }
   ],
   "gallery": [
+    {
+      "id": "img1787689868344",
+      "url": "/img/gallery/1787689867194-tktxe-proceso-terap-utico.jpg",
+      "filename": "Proceso terapéutico.png",
+      "sizeBytes": 212916,
+      "width": 1920,
+      "height": 1152,
+      "uploadedAt": "2026-08-25T20:31:08.344Z"
+    },
     {
       "id": "img1787688846193",
       "url": "/img/gallery/1787688845133-7pkod-e-15-x-20-cm-20-x-15-cm.jpg",
