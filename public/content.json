@@ -79,8 +79,8 @@
       "height": "480px",
       "photos": [
         {
-          "id": "ph1787689850756",
-          "url": "/img/gallery/1787689867194-tktxe-proceso-terap-utico.jpg",
+          "id": "ph1787690744583",
+          "url": "/img/gallery/1787690764204-fd8o4-proceso-terap-utico-2.jpg",
           "caption": ""
         }
       ],
@@ -785,6 +785,24 @@
     }
   ],
   "gallery": [
+    {
+      "id": "img1787690765442",
+      "url": "/img/gallery/1787690764204-fd8o4-proceso-terap-utico-2.jpg",
+      "filename": "Proceso terapéutico (2).png",
+      "sizeBytes": 173289,
+      "width": 1920,
+      "height": 1152,
+      "uploadedAt": "2026-08-25T20:46:05.442Z"
+    },
+    {
+      "id": "img1787690706590",
+      "url": "/img/gallery/1787690704802-4hbtq-proceso-terap-utico-1.jpg",
+      "filename": "Proceso terapéutico (1).png",
+      "sizeBytes": 173199,
+      "width": 1920,
+      "height": 1152,
+      "uploadedAt": "2026-08-25T20:45:06.590Z"
+    },
     {
       "id": "img1787689868344",
       "url": "/img/gallery/1787689867194-tktxe-proceso-terap-utico.jpg",
