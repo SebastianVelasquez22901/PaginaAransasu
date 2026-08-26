@@ -63,7 +63,7 @@
       "textColor": "#000000",
       "accentColor": "#000000",
       "image": "",
-      "blockAnimation": "fade-right",
+      "blockAnimation": "fade-up",
       "fontFamily": "\"Lato\", sans-serif",
       "textAlign": "center"
     },
