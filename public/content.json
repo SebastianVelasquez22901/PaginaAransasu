@@ -175,7 +175,7 @@
       "textColor": "#000000",
       "accentColor": "#000000",
       "fontFamily": "Inter, sans-serif",
-      "blockAnimation": "none",
+      "blockAnimation": "fade-up",
       "cardAnimation": "none",
       "cards": [
         {
@@ -235,7 +235,7 @@
       "id": "services-1779518883484",
       "type": "services",
       "visible": true,
-      "blockAnimation": "fade",
+      "blockAnimation": "fade-up",
       "cardAnimation": "fade-right",
       "fontFamily": "\"Merriweather\", serif"
     },
@@ -296,7 +296,7 @@
       "bgColor": "#ffffff",
       "textColor": "#2d2d2d",
       "accentColor": "#5BB8A8",
-      "blockAnimation": "none",
+      "blockAnimation": "fade-up",
       "autoPlay": true,
       "interval": 4,
       "height": "480px",
