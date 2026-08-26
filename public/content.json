@@ -139,7 +139,7 @@
       "bgColor": "#ffffff",
       "textColor": "#2d2d2d",
       "accentColor": "#5BB8A8",
-      "blockAnimation": "none",
+      "blockAnimation": "fade-up",
       "autoPlay": true,
       "interval": 4,
       "height": "480px",
