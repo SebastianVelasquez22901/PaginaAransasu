@@ -418,6 +418,38 @@
           "description": "Emoción y sentimiento, de Daniel López Rosetti, explora cómo las emociones y los sentimientos forman parte esencial de nuestra manera de pensar, decidir y relacionarnos con el mundo. Desde la medicina, la psicología y las neurociencias, el autor explica la relación entre el cerebro, el cuerpo y la experiencia emocional, mostrando que sentir y razonar no son procesos separados.",
           "image": "/img/gallery/1787763493961-3shm2-img-2363.jpg",
           "link": ""
+        },
+        {
+          "id": "b1787763662003",
+          "title": "Los 7 Pilares del Amor Propio ",
+          "author": "Walter Riso",
+          "description": "Los 7 pilares del amor propio, de Walter Riso, propone una mirada práctica y psicológica sobre la construcción de una relación más saludable con uno mismo. A través de siete pilares, el autor explora aspectos fundamentales como el autoconcepto, la autoimagen, la autoestima y el reconocimiento del propio valor, invitando a cuestionar la autocrítica excesiva, la dependencia de la aprobación externa y las creencias que deterioran la valoración personal.",
+          "image": "/img/gallery/1787763690605-lxfk4-img-6007.jpg",
+          "link": ""
+        },
+        {
+          "id": "b1787763664875",
+          "title": "Herencia Emocional ",
+          "author": "Ramon Riera ",
+          "description": "Herencia emocional, de Ramón Riera, explora cómo muchas de nuestras formas de sentir, vincularnos y reaccionar emocionalmente tienen raíces en las experiencias afectivas aprendidas dentro de nuestra familia y nuestro entorno. Desde una perspectiva psicológica y relacional, el autor muestra cómo ciertos patrones emocionales pueden transmitirse entre generaciones y continuar influyendo en nuestra vida adulta sin que seamos plenamente conscientes de ello.",
+          "image": "/img/gallery/1787763751558-uz0xq-img-2360.jpg",
+          "link": ""
+        },
+        {
+          "id": "b1787763665451",
+          "title": "Ya te dije adiós y ahora te olvido ",
+          "author": "Walter Riso ",
+          "description": "Ya te dije adiós, ahora cómo te olvido, de Walter Riso, aborda el proceso emocional de una ruptura amorosa y las dificultades que aparecen cuando una relación termina, pero el vínculo afectivo continúa. Desde una perspectiva psicológica y práctica, el autor explora el apego, la idealización, la esperanza de reconciliación y la resistencia a aceptar la pérdida,",
+          "image": "/img/gallery/1787763829964-yywib-img-2359.jpg",
+          "link": ""
+        },
+        {
+          "id": "b1787763665914",
+          "title": "Rasgos Alterados ",
+          "author": "Daniel Goleman y Richard J. Dabidson ",
+          "description": "Rasgos alterados, de Daniel Goleman y Richard J. Davidson, explora qué ocurre en la mente y el cerebro cuando la meditación se practica de manera sostenida. A partir de décadas de investigación científica, los autores distinguen entre los efectos momentáneos de meditar y los cambios más profundos que pueden permanecer en la forma de experimentar las emociones, afrontar el estrés y relacionarnos con nosotros mismos y con los demás.",
+          "image": "/img/gallery/1787763910269-w17ef-img-0553.jpg",
+          "link": ""
         }
       ],
       "id": "books-1779517754239",
@@ -818,6 +850,42 @@
     }
   ],
   "gallery": [
+    {
+      "id": "img1787763911319",
+      "url": "/img/gallery/1787763910269-w17ef-img-0553.jpg",
+      "filename": "IMG_0553.jpg",
+      "sizeBytes": 115020,
+      "width": 683,
+      "height": 911,
+      "uploadedAt": "2026-08-26T17:05:11.319Z"
+    },
+    {
+      "id": "img1787763831090",
+      "url": "/img/gallery/1787763829964-yywib-img-2359.jpg",
+      "filename": "IMG_2359.jpg",
+      "sizeBytes": 113994,
+      "width": 750,
+      "height": 911,
+      "uploadedAt": "2026-08-26T17:03:51.090Z"
+    },
+    {
+      "id": "img1787763752642",
+      "url": "/img/gallery/1787763751558-uz0xq-img-2360.jpg",
+      "filename": "IMG_2360.jpg",
+      "sizeBytes": 115062,
+      "width": 739,
+      "height": 911,
+      "uploadedAt": "2026-08-26T17:02:32.642Z"
+    },
+    {
+      "id": "img1787763691737",
+      "url": "/img/gallery/1787763690605-lxfk4-img-6007.jpg",
+      "filename": "IMG_6007.jpg",
+      "sizeBytes": 108507,
+      "width": 764,
+      "height": 911,
+      "uploadedAt": "2026-08-26T17:01:31.737Z"
+    },
     {
       "id": "img1787763494889",
       "url": "/img/gallery/1787763493961-3shm2-img-2363.jpg",
