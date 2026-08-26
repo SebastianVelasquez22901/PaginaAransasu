@@ -324,14 +324,6 @@
       "accentColor": "#50654e",
       "books": [
         {
-          "id": "b1779517698973",
-          "title": "El hombre en busca de sentido",
-          "author": "Viktor Frankl",
-          "description": "El hombre en busca de sentido\" es el estremecedor relato en el que Viktor Frankl nos narra su experiencia en los campos de concentración.",
-          "image": "https://books.google.com.gt/books/publisher/content?id=eAOIDwAAQBAJ&printsec=frontcover&img=1&zoom=1&edge=curl&imgtk=AFLRE70N-VkfNz4DGct2mu7ayNIFMaEdWh5S29yD7OHDmKjP6ErHp6xPOkP9HpV6ZPz7XCxS54zxK1TSng-wootfQF76EzOHOcWwBLV9GQthoNB9qlKEWGqHLap4i5g26u_K2kb1aGKk",
-          "link": ""
-        },
-        {
           "id": "b1787607398986",
           "title": "Dopamina",
           "author": "Daniel Z. Lieberman y Michael E. Long",
@@ -385,6 +377,46 @@
           "author": "Esther Perel,",
           "description": "El dilema de la pareja, de Esther Perel, ofrece una mirada profunda y provocadora sobre las relaciones modernas, la infidelidad, el deseo y el compromiso. Desde su experiencia como psicoterapeuta de parejas, Perel invita a comprender las crisis afectivas más allá de juicios simples, explorando qué revelan sobre nuestras necesidades, vínculos y expectativas, y cómo una ruptura de la confianza puede abrir preguntas sobre la posibilidad de reparar, reconstruir o transformar una relación.",
           "image": "/img/gallery/1787608016315-90any-img-2365.jpg",
+          "link": ""
+        },
+        {
+          "id": "b1787763050690",
+          "title": "Remedios para el Desamor ",
+          "author": "Enrique Rojas",
+          "description": "Remedios para el desamor, de Enrique Rojas, ofrece una mirada psicológica sobre el sufrimiento que acompaña las crisis afectivas, el desamor y las rupturas de pareja. Desde su experiencia clínica, Rojas explora las causas y manifestaciones del fracaso sentimental, así como emociones como la tristeza, la decepción, el resentimiento y la pérdida. A lo largo de la obra propone comprender lo vivido, recuperar el equilibrio emocional y reconstruir la propia vida, mostrando que superar un vínculo doloroso implica elaborar la experiencia, fortalecer la autoestima y aprender a mirar hacia el futuro con mayor madurez afectiva.",
+          "image": "/img/gallery/1787763075561-vojw6-img-3669.jpg",
+          "link": ""
+        },
+        {
+          "id": "b1787763173923",
+          "title": "Entrena tu mente",
+          "author": "Mark Freeman",
+          "description": "Entrena tu mente, de Mark Freeman, ofrece una mirada práctica sobre la salud mental y la manera en que podemos cambiar nuestra relación con pensamientos, emociones y experiencias difíciles. A través de ejercicios y reflexiones, Freeman propone dejar de luchar constantemente contra el malestar y comenzar a desarrollar habilidades para afrontar la incertidumbre, el miedo y los pensamientos intrusivos con mayor flexibilidad.",
+          "image": "/img/gallery/1787763192539-nvtyh-img-5581.jpg",
+          "link": ""
+        },
+        {
+          "id": "b1787763274747",
+          "title": "Focus ",
+          "author": "Daniel Goleman",
+          "description": "Focus: desarrollar la atención para alcanzar la excelencia, de Daniel Goleman, explora el papel fundamental que tiene la atención en nuestra vida personal, emocional y profesional. A partir de investigaciones en psicología y neurociencia, Goleman explica cómo nuestra capacidad para dirigir y sostener el foco influye en el aprendizaje, la toma de decisiones, las relaciones y el desempeño.",
+          "image": "/img/gallery/1787763288881-e2yhv-img-2362.jpg",
+          "link": ""
+        },
+        {
+          "id": "b1787763327203",
+          "title": "La Familia",
+          "author": "Alfonso Icart y Jordi Freixas",
+          "description": "La familia: una mirada desde la psicoterapia relacional, de Alfonso Icart y Jordi Freixas, ofrece una aproximación a la familia desde una perspectiva psicológica y relacional, entendiendo que las dificultades individuales también pueden comprenderse dentro de los vínculos y dinámicas familiares.",
+          "image": "/img/gallery/1787763378842-twch7-img-2367.jpg",
+          "link": ""
+        },
+        {
+          "id": "b1787763474562",
+          "title": "Emoción y Sentimientos ",
+          "author": "Daniel López Rossetti",
+          "description": "Emoción y sentimiento, de Daniel López Rosetti, explora cómo las emociones y los sentimientos forman parte esencial de nuestra manera de pensar, decidir y relacionarnos con el mundo. Desde la medicina, la psicología y las neurociencias, el autor explica la relación entre el cerebro, el cuerpo y la experiencia emocional, mostrando que sentir y razonar no son procesos separados.",
+          "image": "/img/gallery/1787763493961-3shm2-img-2363.jpg",
           "link": ""
         }
       ],
@@ -786,6 +818,60 @@
     }
   ],
   "gallery": [
+    {
+      "id": "img1787763494889",
+      "url": "/img/gallery/1787763493961-3shm2-img-2363.jpg",
+      "filename": "IMG_2363.jpg",
+      "sizeBytes": 125421,
+      "width": 738,
+      "height": 911,
+      "uploadedAt": "2026-08-26T16:58:14.889Z"
+    },
+    {
+      "id": "img1787763380084",
+      "url": "/img/gallery/1787763378842-twch7-img-2367.jpg",
+      "filename": "IMG_2367.jpg",
+      "sizeBytes": 96231,
+      "width": 726,
+      "height": 911,
+      "uploadedAt": "2026-08-26T16:56:20.084Z"
+    },
+    {
+      "id": "img1787763342485",
+      "url": "/img/gallery/1787763341327-fiiyr-img-9436.jpg",
+      "filename": "IMG_9436.jpg",
+      "sizeBytes": 90930,
+      "width": 716,
+      "height": 911,
+      "uploadedAt": "2026-08-26T16:55:42.485Z"
+    },
+    {
+      "id": "img1787763290001",
+      "url": "/img/gallery/1787763288881-e2yhv-img-2362.jpg",
+      "filename": "IMG_2362.jpg",
+      "sizeBytes": 151893,
+      "width": 739,
+      "height": 911,
+      "uploadedAt": "2026-08-26T16:54:50.001Z"
+    },
+    {
+      "id": "img1787763193721",
+      "url": "/img/gallery/1787763192539-nvtyh-img-5581.jpg",
+      "filename": "IMG_5581.jpg",
+      "sizeBytes": 143226,
+      "width": 683,
+      "height": 911,
+      "uploadedAt": "2026-08-26T16:53:13.721Z"
+    },
+    {
+      "id": "img1787763076659",
+      "url": "/img/gallery/1787763075561-vojw6-img-3669.jpg",
+      "filename": "IMG_3669.jpg",
+      "sizeBytes": 92301,
+      "width": 560,
+      "height": 911,
+      "uploadedAt": "2026-08-26T16:51:16.659Z"
+    },
     {
       "id": "img1787690765442",
       "url": "/img/gallery/1787690764204-fd8o4-proceso-terap-utico-2.jpg",
