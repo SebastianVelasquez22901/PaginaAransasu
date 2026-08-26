@@ -731,7 +731,8 @@
       ],
       "id": "pricing-1779516602463",
       "type": "pricing",
-      "visible": true
+      "visible": true,
+      "blockAnimation": "fade-up"
     },
     {
       "title": "",
