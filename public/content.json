@@ -44,7 +44,7 @@
       "whatsappNumber": "42110831",
       "whatsappMessage": "Buen día, Aransasú Aguilar te saluda ",
       "fontFamily": "\"Lato\", sans-serif",
-      "blockAnimation": "fade",
+      "blockAnimation": "fade-up",
       "ambientBg": "aurora",
       "ambientIntensity": 0.8,
       "ambientColor1": "#000000",
